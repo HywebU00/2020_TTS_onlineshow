@@ -3,7 +3,7 @@ $(function() {
     var burger = document.querySelector('.burger'),
         header = document.querySelector('.header');
     var _menuStatus = false;
-    burger.onclick = function(e) {
+    $('.burger').click(function(e) {
         if (!_menuStatus) {
             $(this).parent().stop().addClass('menu-opened');
             $('.menuBlock').stop().addClass('menu-opened');
@@ -20,12 +20,12 @@ $(function() {
         };
         e.preventDefault();
         console.log(_menuStatus);
-    }
+    });
     var _searchStatus = false;
     // 打開search
     $('.top_search').off().click(function(e) {
         if (!_searchStatus) {
-        	$('.burger-container').stop().removeClass('menu-opened')
+            $('.burger-container').stop().removeClass('menu-opened')
             $('.search').stop().addClass('search-opened');
             $('.menuBlock').stop().removeClass('menu-opened');
             $('header').stop().removeClass('menu-opened').addClass('menu-opened');
@@ -46,5 +46,56 @@ $(function() {
         $('header').stop().removeClass('menu-opened');
         _searchStatus = false;
         e.preventDefault();
+    });
+    //
+    // 主題公路
+    $('.showgroundSlider_B').slick({
+        mobileFirst: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrow: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease',
+        responsive: [{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
     });
 });
