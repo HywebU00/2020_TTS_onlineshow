@@ -1,3 +1,26 @@
+.iframeBlock {
+    position: fixed;
+    transform: translateZ(0);
+    width: 100%;
+    height: 100%;
+    top:75px;
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: calc(100% - 75px);
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border:none;
+    }
+    @include screen('mobile') {
+    	top:60px;
+    	iframe{
+    		height: calc(100% - 60px);
+    	}
+    }
+}
 %preAndAfter {
     display: flex;
     position: fixed;
@@ -162,7 +185,7 @@
     .btn_go {
         font-size: 1.5rem;
         padding: .75em 1em;
-        background: rgba(0, 0, 0, .75);
+        background: $color-red;
         display: block;
         max-width: 400px;
         margin: 0 auto;
@@ -172,6 +195,9 @@
         border-radius: .25rem;
         line-height: 1.45;
         text-align: center;
+        &:hover, &:focus {
+            background: darken($color-red, 10);
+        }
         @include screen('xs_mobile') {
             max-width: 90%;
         }
@@ -342,13 +368,13 @@
         max-height: 90%;
     }
 }
-.fancybox-slide{
-	@include screen('xs_mobile') {
-		padding:0;
-	}
+.fancybox-slide {
+    @include screen('xs_mobile') {
+        padding: 0;
+    }
 }
-.fancybox-button{
-	@include screen('xs_mobile') {
-		z-index:999999;
-	}
+.fancybox-button {
+    @include screen('xs_mobile') {
+        z-index: 999999;
+    }
 }

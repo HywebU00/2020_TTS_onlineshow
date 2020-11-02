@@ -15,8 +15,6 @@
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
     <!-- hyUI css -->
     <link rel="stylesheet" href="css/hyui.css">
-    <!-- flipdown -->
-    <link rel="stylesheet" href="vendor/flipdown/flipdown.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
 </head>
@@ -80,16 +78,8 @@
         <!-- header End -->
         <!-- main Start -->
         <div id="center" class="main">
-            <div class="preshow">
-                <h2>展覽開幕倒數</h2>
-                <!-- 請參考 -->
-                <!-- https://github.com/PButcher/flipdown#flipdown -->
-                <div id="flipdown" class="flipdown"></div>
-                <a href="#" class="btn_go">前往XXXXX展覽網站</a>
-                <!-- 自行替換背景圖 -->
-                <div class="img_bg">
-                    <img src="images/preshow_bg.jpg" alt="">
-                </div>
+            <div class="iframeBlock">
+                <iframe src="https://livetour.istaging.com/023c9dc5-5b80-4a47-a678-fedaff27756d?index=1" height="100%" width="100%" title="Iframe Example"></iframe>
             </div>
         </div>
     </div>
@@ -105,32 +95,6 @@
     <script src="vendor/scrolltable/jquery.scroltable.min.js"></script><!-- scrolltable -->
     <!-- 客製js -->
     <script src="js/customize.js"></script>
-    <script src="vendor/flipdown/flipdown.min.js"></script>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        // Unix timestamp (in seconds) to count down to
-        var twoDaysFromNow = (new Date().getTime() / 1000) + (86400 * 2) + 1;
-        // Set up FlipDown
-        var flipdown = new FlipDown(twoDaysFromNow)
-            // Start the countdown
-
-            .start()
-            // Do something when the countdown ends
-            .ifEnded(() => {
-                console.log('The countdown has ended!');
-            });
-        // // Toggle theme
-        // var interval = setInterval(() => {
-        //   let body = document.body;
-        //   body.classList.toggle('light-theme');
-        //   body.querySelector('#flipdown').classList.toggle('flipdown__theme-dark');
-        //   body.querySelector('#flipdown').classList.toggle('flipdown__theme-light');
-        // }, 5000);
-        // // Show version number
-        // var ver = document.getElementById('ver');
-        // ver.innerHTML = flipdown.version;
-    });
-    </script>
 </body>
 
 </html>
