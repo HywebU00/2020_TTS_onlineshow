@@ -49,7 +49,7 @@ $(function() {
     });
     //
     // 主題公路
-    $('.showgroundSlider_B').slick({
+    $('.showgroundSlider_C').slick({
         mobileFirst: true,
         dots: false,
         infinite: true,

@@ -1,8 +1,8 @@
 /////////////////////////////////////////////////////////以下為demo範例///
 // 首頁區塊設定
 // 範例：
-.lobby-b {
-    background: url(../images/scence-b.jpg) no-repeat center center;
+.lobby-c {
+    background: url(../images/scence-c.jpg) no-repeat center center;
     position: relative;
     top: 0;
     left: 0;
@@ -14,12 +14,12 @@
     }
     .information_desk {
         position: absolute;
-        width: 218px;
-        height: 113px;
+        width: 190px;
+        height: 110px;
         left: 50%;
-        margin-left: -109px;
-        bottom: 71px;
-        background:#FFF;
+        margin-left: -95px;
+        bottom: 80px;
+        background: #FFF;
         a {
             position: absolute;
             top: 0;
@@ -39,33 +39,40 @@
         top: 5%;
         min-height: 450px;
         margin-left: -550px;
+        display: flex;
+        justify-content: center;
         [class^="item"] {
-            width: 33.3333%;
-            position: absolute;
-            @include aspect-ratio(16, 9);
-            background:#111;
+            width: 824px;
+            height: 326px;
+            margin: 50px auto 0;
+            @include aspect-ratio(16, 8);
+            box-shadow: 0px 3px 0px 2px #222;
+            background: #111;
+            position: relative;
             a {
                 position: absolute;
-                width: 100%;
-                height: 100%;
-                img {
-                    object-fit: coever;
-                }
-            }
-            .iframeBlock{
-                position: absolute;
+                display:block;
                 width: 100%;
                 height: 100%;
                 top:0;
                 left: 0;
-                iframe{
+                img {
+                    object-fit: cover;
+                }
+            }
+            .iframeBlock {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                iframe {
                     position: absolute;
                     width: 100%;
                     height: 100%;
-                    top:0;
-                    left:0;
+                    top: 0;
+                    left: 0;
                 }
-
             }
         }
         &:before {
@@ -76,64 +83,6 @@
             background: url(../images/line.png) no-repeat center center;
             background-size: contain;
             display: none;
-        }
-        .item_1 {
-            left: 0;
-            top: 0;
-        }
-        .item_2 {
-            left: 33%;
-            top: -1%;
-        }
-        .item_3 {
-            left: 66%;
-            top: 0;
-        }
-        .item_4 {
-            left: 0;
-            top: 50%;
-        }
-        .item_5 {
-            left: 33%;
-            top: 50%;
-        }
-        .item_6 {
-            left: 66%;
-            top: 50%;
-        }
-        .item_1 {
-            /* perspective: 200px; */
-            perspective-origin: 50%, 50%;
-            transform: scale(.9, .85) perspective(500px) skew(4deg, -16deg) rotateX(7deg) rotateY(-28deg) translateY(22%) translateX(-12%);
-        }
-        .item_2 {
-            perspective-origin: 0%, 0%;
-            transform: perspective(400px) scale(1.1, 1) rotateX(-2deg);
-        }
-        .item_3 {
-            perspective-origin: 50%, 50%;
-            transform: scale(.9, .85) perspective(500px) skew(-3deg, 16deg) rotateX(7deg) rotateY(28deg) rotateZ(1deg) translateY(22%) translateX(12%);
-        }
-        .item_4 {
-            perspective-origin: 0%, 0%;
-            transform: scale(.96, .8) perspective(1000px) skew(5deg, -8deg) rotateX(2deg) rotateY(-35deg) rotateZ(0deg) translateY(11%) translateX(-2%);
-        }
-        .item_5 {
-            perspective-origin: 0%, 0%;
-            transform: scale(1, .9) perspective(500px) rotateX(-5deg);
-        }
-        .item_6 {
-            perspective-origin: 0%, 0%;
-            transform: scale(.96, .8) perspective(1000px) skew(-5deg, 8deg) rotateX(4deg) rotateY(35deg) rotateZ(-1deg) translateY(11%) translateX(2%);
-        }
-        .item_1, .item_4 {
-            box-shadow: 2px 1px 0px 2px rgba(0, 0, 0, 1);
-        }
-        .item_2, .item_5 {
-            box-shadow: 0px 2px 0px 2px rgba(0, 0, 0, 1);
-        }
-        .item_3, .item_6 {
-            box-shadow: -2px 1px 0px 2px rgba(0, 0, 0, 1);
         }
     }
 }
