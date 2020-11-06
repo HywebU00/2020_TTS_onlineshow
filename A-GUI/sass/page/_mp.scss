@@ -9,17 +9,17 @@
     width: 100%;
     height: 960px;
     margin-top: 75px;
-    position:relative;
+    position: relative;
     @include screen('mobile') {
         margin-top: 0;
     }
     .information_desk {
         position: absolute;
-        width: 218px;
-        height: 113px;
+        width: 184px;
+        height: 108px;
         left: 50%;
-        margin-left: -109px;
-        bottom: 71px;
+        margin-left: -107px;
+        bottom: 83px;
         background: #FFF;
         a {
             position: absolute;
@@ -33,46 +33,48 @@
             }
         }
     }
-    .left_adbanner{
+    .left_adbanner {
         position: absolute;
-        left:0%;
-        bottom:212px;
-        width:475px;
-        @include aspect-ratio(4,2.6);
+        left: 50%;
+        margin-left: -1200px;
+        bottom: 212px;
+        width: 475px;
+        @include aspect-ratio(4, 2.6);
         transform: scale(1, 1) perspective(500px) skew(-2deg, 0deg) rotateX(0deg) rotateY(9deg) rotateZ(2deg) translateY(0%) translateX(0%);
-        a{
+        a {
             position: absolute;
             width: 100%;
             height: 100%;
-            top:0;
+            top: 0;
             left: 0;
         }
-        img{
+        img {
             position: absolute;
             width: 100%;
             height: 100%;
-            object-fit:cover;
+            object-fit: cover;
         }
     }
-    .right_adbanner{
+    .right_adbanner {
         position: absolute;
-        right:0%;
-        bottom:216px;
-        width:475px;
-        @include aspect-ratio(4,2.6);
+        left: 50%;
+        margin-left: 705px;
+        bottom: 216px;
+        width: 475px;
+        @include aspect-ratio(4, 2.6);
         transform: scale(1, 1.03) perspective(500px) skew(4deg, -1deg) rotateX(0deg) rotateY(-9deg) rotateZ(-1deg) translateY(0%) translateX(0%);
-        a{
+        a {
             position: absolute;
             width: 100%;
             height: 100%;
-            top:0;
+            top: 0;
             left: 0;
         }
-        img{
+        img {
             position: absolute;
             width: 100%;
             height: 100%;
-            object-fit:cover;
+            object-fit: cover;
         }
     }
     .banner {
@@ -83,40 +85,40 @@
         margin-left: -550px;
         display: flex;
         justify-content: center;
-        .item{
-            &:first-child{
-                .title{
-                    @include gradient(#2c89a8,#3fc9be,horizontal);
+        .item {
+            &:first-child {
+                .title {
+                    @include gradient(#2c89a8, #3fc9be, horizontal);
                 }
             }
-            &:nth-child(2){
-                .title{
-                    @include gradient(#e05a00,#e9be00,horizontal);
+            &:nth-child(2) {
+                .title {
+                    @include gradient(#e05a00, #e9be00, horizontal);
                 }
             }
-            &:nth-child(3){
-                .title{
-                    @include gradient(#4d8300,#87b000,horizontal);
+            &:nth-child(3) {
+                .title {
+                    @include gradient(#4d8300, #87b000, horizontal);
                 }
             }
         }
         [class^="item"] {
-            width:calc(30% - 2em);
+            width: calc(30% - 2em);
             flex-basis: calc(30% - 2em);
             margin: 0 1em;
             position: relative;
-            display:block;
+            display: block;
             background: #111;
             padding-bottom: 3em;
-            box-shadow:0px 5px 15px -5px rgba(0,0,0,.5);
+            box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, .5);
             a {
                 width: 100%;
-                display:block;
+                display: block;
                 @include aspect-ratio(4, 3);
-                box-shadow:0px 5px 5px rgba(0,0,0,.25);
+                box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
                 img {
                     position: absolute;
-                    top:0;
+                    top: 0;
                     left: 0;
                     width: 100%;
                     height: 100%;
@@ -129,7 +131,7 @@
                 left: 0;
                 position: relative;
                 @include aspect-ratio(4, 3);
-                box-shadow:0px 5px 5px rgba(0,0,0,.25);
+                box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
                 iframe {
                     position: absolute;
                     width: 100%;
@@ -138,22 +140,22 @@
                     left: 0;
                 }
             }
-            .title{
-                background:#000;
+            .title {
+                background: #000;
                 position: absolute;
                 height: 3em;
-                color:#FFF;
-                bottom:0;
+                color: #FFF;
+                bottom: 0;
                 left: 0;
                 width: 100%;
                 padding: .5em 1em;
                 @include text-overflow;
-                span{
-                    display:block;
+                span {
+                    display: block;
                     font-size: 1.5em;
                     line-height: 1.5;
                     font-weight: bold;
-                    text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+                    text-shadow: 1px 1px 2px rgba(0, 0, 0, .75);
                 }
             }
         }
