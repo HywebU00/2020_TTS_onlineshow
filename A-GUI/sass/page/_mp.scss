@@ -1,0 +1,220 @@
+/////////////////////////////////////////////////////////以下為demo範例///
+// 首頁區塊設定
+// 範例：
+.lobby-a {
+    background: url(../images/scence-a.jpg) no-repeat center center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 960px;
+    margin-top: 75px;
+    position:relative;
+    @include screen('mobile') {
+        margin-top: 0;
+    }
+    .information_desk {
+        position: absolute;
+        width: 218px;
+        height: 113px;
+        left: 50%;
+        margin-left: -109px;
+        bottom: 71px;
+        background: #FFF;
+        a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .left_adbanner{
+        position: absolute;
+        left:0%;
+        bottom:212px;
+        width:475px;
+        @include aspect-ratio(4,2.6);
+        transform: scale(1, 1) perspective(500px) skew(-2deg, 0deg) rotateX(0deg) rotateY(9deg) rotateZ(2deg) translateY(0%) translateX(0%);
+        a{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+    }
+    .right_adbanner{
+        position: absolute;
+        right:0%;
+        bottom:216px;
+        width:475px;
+        @include aspect-ratio(4,2.6);
+        transform: scale(1, 1.03) perspective(500px) skew(4deg, -1deg) rotateX(0deg) rotateY(-9deg) rotateZ(-1deg) translateY(0%) translateX(0%);
+        a{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+        }
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit:cover;
+        }
+    }
+    .banner {
+        position: absolute;
+        width: 1100px;
+        left: 50%;
+        top: 0;
+        margin-left: -550px;
+        display: flex;
+        justify-content: center;
+        .item{
+            &:first-child{
+                .title{
+                    @include gradient(#2c89a8,#3fc9be,horizontal);
+                }
+            }
+            &:nth-child(2){
+                .title{
+                    @include gradient(#e05a00,#e9be00,horizontal);
+                }
+            }
+            &:nth-child(3){
+                .title{
+                    @include gradient(#4d8300,#87b000,horizontal);
+                }
+            }
+        }
+        [class^="item"] {
+            width:calc(30% - 2em);
+            flex-basis: calc(30% - 2em);
+            margin: 0 1em;
+            position: relative;
+            display:block;
+            background: #111;
+            padding-bottom: 3em;
+            box-shadow:0px 5px 15px -5px rgba(0,0,0,.5);
+            a {
+                width: 100%;
+                display:block;
+                @include aspect-ratio(4, 3);
+                box-shadow:0px 5px 5px rgba(0,0,0,.25);
+                img {
+                    position: absolute;
+                    top:0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .iframeBlock {
+                width: 100%;
+                top: 0;
+                left: 0;
+                position: relative;
+                @include aspect-ratio(4, 3);
+                box-shadow:0px 5px 5px rgba(0,0,0,.25);
+                iframe {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                }
+            }
+            .title{
+                background:#000;
+                position: absolute;
+                height: 3em;
+                color:#FFF;
+                bottom:0;
+                left: 0;
+                width: 100%;
+                padding: .5em 1em;
+                @include text-overflow;
+                span{
+                    display:block;
+                    font-size: 1.5em;
+                    line-height: 1.5;
+                    font-weight: bold;
+                    text-shadow: 1px 1px 2px rgba(0,0,0,.75);
+                }
+            }
+        }
+    }
+}
+.demosection {
+    [class^="col"] {
+        border: 2px solid #FFF;
+        background: #DEDEDE;
+    }
+}
+// 首頁輪播
+.mpSlider {
+    width: 100%;
+    padding-bottom: 3em;
+    @include gutter(0);
+    .img-container {
+        @include aspect-ratio(5, 2);
+    }
+}
+// 廣告輪播
+.adSlider {
+    @include gutter(70px);
+    margin-bottom: 20px;
+    @include screen('mobile') {
+        @include gutter();
+    }
+    .slick-prev {
+        background: url(../vendor/slick/icon_arrow_left_inverse.png) no-repeat center center;
+        background-size: 80%;
+        left: -15px;
+    }
+    .slick-next {
+        background: url(../vendor/slick/icon_arrow_right_inverse.png) no-repeat center center;
+        background-size: 80%;
+        right: -15px;
+    }
+    .img-container {
+        width: 165px;
+        height: 55px;
+        margin: 0px 15px;
+        a {
+            display: block;
+            text-align: center;
+            img {
+                margin: 0 auto;
+            }
+        }
+        &:focus {
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 9;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                box-shadow: 0 0px 0px 3px $primaryColor inset;
+            }
+        }
+    }
+}
