@@ -2,7 +2,9 @@
 .header {
     position: fixed;
     z-index: 9999;
-    background: rgba(255, 255, 255, .75);
+    background: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
     box-shadow: 0px 2px 5px RGBA(0, 0, 0, .3);
     @extend %clearfix;
     width: 100%;
@@ -71,6 +73,8 @@
             @include screen('mobile') {
                 right: 0;
                 top: 0;
+                height: 60px;
+                width: 40px;
             }
             .burger {
                 width: 24px;
@@ -121,8 +125,8 @@
             @include screen('mobile') {
                 top: 0;
                 width: 6em;
-                padding: 18px.5em;
-                right: 7.5em;
+                padding: 18px 0em;
+                right: 5.5em;
             }
             span {
                 font-size: .813rem;
@@ -149,7 +153,8 @@
             top: .25em;
             @include screen('mobile') {
                 top: 0;
-                right: 4em;
+                right: 3.5em;
+                width:40px;
             }
             &:hover, &:focus {
                 outline: none;
@@ -224,8 +229,8 @@
             max-height: 75px;
         }
         @include screen('mobile') {
-            padding: 2px 60px 2px 0;
-            width: 100%;
+            padding: 0;
+            width: 200px;
             text-align: left;
             height: 60px;
             img {
@@ -502,6 +507,10 @@
                 border-bottom: 1px solid #AAA;
                 background: none;
                 color: #FFF;
+                @include screen('mobile') {
+                    font-size: 1.125rem;
+                    height: 3rem;
+                }
                 &:focus {
                     border: none;
                     box-shadow: none;

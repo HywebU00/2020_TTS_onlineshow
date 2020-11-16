@@ -13,6 +13,7 @@
     position: fixed;
     transform: translateZ(0);
     transition: 1.2s ease-out;
+    overflow: hidden;
     @include screen('mobile') {
         margin-top: 0;
     }
@@ -61,12 +62,38 @@
             height: 100%;
             top: 0;
             left: 0;
+            overflow:hidden;
+            &:hover, &:focus {
+                .caption {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
         }
         img {
             position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .75);
+            opacity: 0;
+            transition: .3s $cubic;
+            span {
+                color: #FFF;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1em;
+                line-height: 1.45em;
+            }
         }
     }
     .right_adbanner {
@@ -83,12 +110,37 @@
             height: 100%;
             top: 0;
             left: 0;
+             &:hover, &:focus {
+                .caption {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
         }
         img {
             position: absolute;
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .75);
+            opacity: 0;
+            transition: .3s $cubic;
+            span {
+                color: #FFF;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1em;
+                line-height: 1.45em;
+            }
         }
     }
     .banner {
@@ -125,11 +177,18 @@
             background: #111;
             padding-bottom: 3em;
             box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, .5);
+            overflow: hidden;
             a {
                 width: 100%;
                 display: block;
                 @include aspect-ratio(4, 3);
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+                &:hover, &:focus {
+                    .caption {
+                        top: 0;
+                        opacity: 1;
+                    }
+                }
                 img {
                     position: absolute;
                     top: 0;
@@ -137,6 +196,26 @@
                     width: 100%;
                     height: 100%;
                     object-fit: cover;
+                }
+                .caption {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    padding-bottom: 2em;
+                    display: flex;
+                    justify-content: center;
+                    align-content: center;
+                    align-items: center;
+                    background: rgba(0, 0, 0, .75);
+                    opacity: 0;
+                    transition: .3s $cubic;
+                    span {
+                        color: #FFF;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        padding: 1em;
+                        line-height: 1.45em;
+                    }
                 }
             }
             .iframeBlock {
@@ -230,6 +309,37 @@
                 bottom: 0;
                 right: 0;
                 box-shadow: 0 0px 0px 3px $primaryColor inset;
+            }
+        }
+    }
+}
+.audio {
+    position: fixed;
+    transform: translateZ(0);
+    bottom: 2.5em;
+    right: 1em;
+    width: 3em;
+    height: 1.5em;
+    z-index: 3;
+    a {
+        display: block;
+        width: 100%;
+        height: 1.5em;
+        border-radius: .25rem;
+        &.on {
+            background: url(../images/music_off.svg) no-repeat center center rgba(0, 0, 0, .65);
+            background-size: 1.25em;
+            &:hover, &:focus {
+                background: url(../images/music_off.svg) no-repeat center center $aHover;
+                background-size: 1.25em;
+            }
+        }
+        &.off {
+            background: url(../images/music_on.svg) no-repeat center center rgba(0, 0, 0, .65);
+            background-size: 1.25em;
+            &:hover, &:focus {
+                background: url(../images/music_on.svg) no-repeat center center $aHover;
+                background-size: 1.25em;
             }
         }
     }

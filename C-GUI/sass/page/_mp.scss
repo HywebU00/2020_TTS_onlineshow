@@ -2,13 +2,17 @@
 // 首頁區塊設定
 // 範例：
 .lobby-c {
-    background: url(../images/scence-c.jpg) no-repeat center center;
+    background: url(../images/scence-c.jpg) no-repeat bottom center;
     position: relative;
     top: 0;
-    left: 0;
-    width: 100%;
-    height: 960px;
+    left: 50%;
+    margin-left: -1506px;
+    width: 3012px;
+    height: calc(100% - 75px);
     margin-top: 75px;
+    position: fixed;
+    transform: translateZ(0);
+    transition: 1.2s ease-out;
     @include screen('mobile') {
         margin-top: 0;
     }
@@ -36,7 +40,7 @@
         position: absolute;
         width: 1100px;
         left: 50%;
-        top: 5%;
+        top: 0%;
         min-height: 450px;
         margin-left: -550px;
         display: flex;
@@ -44,20 +48,46 @@
         [class^="item"] {
             width: 824px;
             height: 326px;
-            margin: 50px auto 0;
+            margin: 10px auto 0;
             @include aspect-ratio(16, 8);
             box-shadow: 0px 3px 0px 2px #222;
             background: #111;
             position: relative;
             a {
                 position: absolute;
-                display:block;
+                display: block;
                 width: 100%;
                 height: 100%;
-                top:0;
+                top: 0;
                 left: 0;
                 img {
                     object-fit: cover;
+                }
+                &:hover, &:focus {
+                    .caption {
+                        bottom: 0;
+                        opacity: 1;
+                    }
+                }
+            }
+            .caption {
+                position: absolute;
+                width: 100%;
+                height:3em;
+                display: flex;
+                justify-content: center;
+                align-content: center;
+                align-items: center;
+                background: rgba(0, 0, 0, .5);
+                opacity: 0;
+                bottom:-3em;
+                transition: .3s $cubic;
+                span {
+                    color: #FFF;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    padding: 1em;
+                    line-height: 1.45em;
                 }
             }
             .iframeBlock {
@@ -141,6 +171,37 @@
                 bottom: 0;
                 right: 0;
                 box-shadow: 0 0px 0px 3px $primaryColor inset;
+            }
+        }
+    }
+}
+.audio {
+    position: fixed;
+    transform: translateZ(0);
+    bottom: 2.5em;
+    right: 1em;
+    width: 3em;
+    height: 1.5em;
+    z-index: 3;
+    a {
+        display: block;
+        width: 100%;
+        height: 1.5em;
+        border-radius: .25rem;
+        &.on {
+            background: url(../images/music_off.svg) no-repeat center center rgba(0, 0, 0, .65);
+            background-size: 1.25em;
+            &:hover, &:focus {
+                background: url(../images/music_off.svg) no-repeat center center $aHover;
+                background-size: 1.25em;
+            }
+        }
+        &.off {
+            background: url(../images/music_on.svg) no-repeat center center rgba(0, 0, 0, .65);
+            background-size: 1.25em;
+            &:hover, &:focus {
+                background: url(../images/music_on.svg) no-repeat center center $aHover;
+                background-size: 1.25em;
             }
         }
     }
