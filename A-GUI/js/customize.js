@@ -1,5 +1,14 @@
 // 自行加入的JS請寫在這裡
 $(function() {
+    // 控制音效
+    $('.audio').find('a').off().click(function(e) {
+        if ($(this).hasClass('off')) {
+            $(this).removeClass('off').addClass('on');
+        }else{
+            $(this).removeClass('on').addClass('off');
+        }
+        e.preventDefault();
+    });
     var burger = document.querySelector('.burger'),
         header = document.querySelector('.header');
     var _menuStatus = false;

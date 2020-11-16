@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="zh-Hant" class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>國貿局專業線上展</title>
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI -->
+    <link rel="stylesheet" href="A-GUI/css/hyui.css">
+    <style>
+    .demo_wrap {
+        max-width: 1000px;
+        margin: 0em auto 1em;
+        padding: 15px 15px 3em;
+        clear: both;
+        background: #FFF
+    }
+    .demo_wrap h1 {
+        display: block;
+        margin: 0px auto;
+        max-width: 300px;
+        float: left;
+        margin-right: 1em
+    }
+    @media screen and (max-width:545px) {
+        .demo_wrap h1 {
+            max-width: 100%;
+            float: none;
+            text-align: center
+        }
+    }
+    .demo_wrap h1 img {
+        width: 300px
+    }
+    .num {
+        width: 12%
+    }
+    body {
+        counter-reset: num
+    }
+    table {
+        margin-bottom: 1em
+    }
+    table caption {
+        text-align: left;
+        font-weight: bold;
+        font-size: 1.25em;
+        padding: .5em 0;
+        color: #ff5050
+    }
+    tbody tr td:first-child:before {
+        counter-increment: num;
+        display: block;
+        text-align: center;
+        content: counters(num, ".") " "
+    }
+    tbody tr td:nth-child(2) {
+        width: 35%
+    }
+    .btn_grp {
+        text-align: right
+    }
+    @media screen and (max-width:545px) {
+        .btn_grp {
+            text-align: center
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="demo_wrap">
+        <h1><img src="A-GUI/images/logo.png" alt=""></h1>
+        <div class="btn_grp">
+            <a href="https://github.com/HywebU00/2020_TTS_onlineshow" class="btn" target="_blank">切版檔案請按此下載</a>
+        </div>
+        <hr>
+        <div class="table_wrapper">
+            <!-- hyUI 標準頁面 -->
+            <h3>標準頁面</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>檔案名稱</th>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>C</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>動畫歡迎頁</td>
+                        <td colspan="3"><a href="welcome/welcome.htm" class="welcome"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>大廳</td>
+                        <td><a href="A-GUI/A_lobby.htm"></a></td>
+                        <td><a href="B-GUI/B_lobby.htm"></a></td>
+                        <td><a href="C-GUI/C_lobby.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>開展前</td>
+                        <td><a href="A-GUI/A_preshow.htm"></a></td>
+                        <td><a href="B-GUI/B_preshow.htm"></a></td>
+                        <td><a href="C-GUI/C_preshow.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>開展後</td>
+                        <td><a href="A-GUI/A_aftershow.htm"></a></td>
+                        <td><a href="B-GUI/B_aftershow.htm"></a></td>
+                        <td><a href="C-GUI/C_aftershow.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>展區</td>
+                        <td><a href="A-GUI/A_showground.htm"></a></td>
+                        <td><a href="B-GUI/B_showground.htm"></a></td>
+                        <td><a href="C-GUI/C_showground.htm"></a></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <a href="javascript:;" class="scrollToTop">回頁首</a>
+    <script src="A-GUI/js/jquery-3.3.1.min.js"></script>
+    <script src="A-GUI/vendor/jquery.easing.min.js"></script>
+    <script src="A-GUI/js/hyui.js"></script>
+    <script src="A-GUI/js/customize.js"></script>
+    <script>
+    $(function() {
+        $('tbody').find('a').each(function(index, el) {
+            var Link = $(this).attr('href').substring(6);
+            $(this).text(Link);
+        });
+        $('tbody').find('a.welcome').each(function(index, el) {
+            var Link = $(this).attr('href').substring(8);
+            $(this).text(Link);
+        });
+    })
+    </script>
+</body>
+
+</html>

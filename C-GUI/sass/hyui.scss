@@ -49,7 +49,8 @@
 @import "page/_cp";						//CP
 @import "page/_fp";						//Forward
 @import "page/_qp";						//QP
-@import "page/_sp";						//QP
+@import "../../common_sass/_common";	//Common共通元素
+@import "../../common_sass/_show_ground";		//SP
 @import "page/_sitemap";				//Sitemap
 
 // 外掛
