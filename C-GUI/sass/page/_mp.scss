@@ -35,20 +35,22 @@
     }
     .banner {
         position: absolute;
-        width: 1100px;
+        width: 824px;
         left: 50%;
-        top: 0%;
-        min-height: 450px;
-        margin-left: -550px;
+        top: 1%;
+        margin-left: -412px;
+        box-shadow: 0px 2px 0px 3px #222;
         display: flex;
         justify-content: center;
+        .slick-prev, .slick-next {
+            display: none !important;
+        }
         [class^="item"] {
             width: 824px;
             height: 326px;
-            margin: 10px auto 0;
-            @include aspect-ratio(16, 8);
-            box-shadow: 0px 3px 0px 2px #222;
+            margin: 0px auto 0;
             background: #111;
+            @include aspect-ratio(16, 8);
             position: relative;
             a {
                 position: absolute;
@@ -70,14 +72,14 @@
             .caption {
                 position: absolute;
                 width: 100%;
-                height:3em;
+                height: 3em;
                 display: flex;
                 justify-content: center;
                 align-content: center;
                 align-items: center;
                 background: rgba(0, 0, 0, .5);
                 opacity: 0;
-                bottom:-3em;
+                bottom: -3em;
                 transition: .3s $cubic;
                 span {
                     color: #FFF;

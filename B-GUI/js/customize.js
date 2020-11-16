@@ -56,7 +56,18 @@ $(function() {
         _searchStatus = false;
         e.preventDefault();
     });
-    //
+    //大廳lobby輪播
+    // $('.lobby-b .banner').slick({
+    //     dots: false,
+    //     arrow: false,
+    //     infinite: true,
+    //     speed: 500,
+    //     autoplay: true,
+    //     fade: true,
+    //     pauseOnHover:true,
+    //     lazyLoad: 'ondemand',
+    //     ease: 'ease'
+    // });
     // 主題公路
     $('.showgroundSlider_B').slick({
         mobileFirst: true,
