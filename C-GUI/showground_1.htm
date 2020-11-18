@@ -13,7 +13,6 @@
     <!-- slick css-->
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css" />
-
     <link rel="stylesheet" href="vendor/flipdown/flipdown.css"><!-- flipdown -->
     <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css"><!-- fancybox -->
     <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css"><!-- fancybox -->
@@ -82,10 +81,80 @@
         <!-- main Start -->
         <div id="center" class="main">
             <div class="showground style_a">
+                <h2>Show Area</h2>
                 <div class="showground_content">
-                    <h2>Showground</h2>
-                    <div class="show_item"></div>
-
+                    <div class="show_item item_01">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_01.svg" alt="">
+                            <span class="title">Health promotion </span>
+                        </a>
+                    </div>
+                    <div class="show_item item_02">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_02.svg" alt="">
+                            <span class="title">Elder Happy Life</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_03">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                             <img src="images/showground/show_03.svg" alt="">
+                            <span class="title">Elder-Friendly Housing</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_04">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                             <img src="images/showground/show_04.svg" alt="">
+                            <span class="title">Dementia Area</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_05">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                             <img src="images/showground/show_05.svg" alt="">
+                            <span class="title">Health Food Appliances</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_06">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                             <img src="images/showground/show_06.svg" alt="">
+                            <span class="title">Epidemic Prevention</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_07">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                             <img src="images/showground/show_07.svg" alt="">
+                            <span class="title">Life Aid </span>
+                        </a>
+                    </div>
+                    <div class="show_item item_08">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_08.svg" alt="">
+                            <span class="title">Sleep tech </span>
+                        </a>
+                    </div>
+                    <div class="show_item item_09">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_09.svg" alt="">
+                            <span class="title">Government Area</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_10">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_10.svg" alt="">
+                            <span class="title">Health promotion </span>
+                        </a>
+                    </div>
+                    <div class="show_item item_11">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_11.svg" alt="">
+                            <span class="title">Waiguan Area</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_12">
+                        <a data-fancybox data-type="iframe" data-src="company.htm" href="javascript:;">
+                            <img src="images/showground/show_12.svg" alt="">
+                            <span class="title">Oral Area</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -101,6 +170,38 @@
         <script src="js/customize.js"></script><!-- 客製js -->
         <script src="vendor/flipdown/flipdown.min.js"></script><!-- flipdown -->
         <script src="vendor/fancybox/jquery.fancybox.min.js"></script><!-- fancybox -->
+        <script type="text/javascript">
+        var lobbyTimer;
+        $(window).on("load resize", function(e) {
+            clearTimeout(lobbyTimer);
+            resizeTimer = setTimeout(function() {
+                var windowW = $(window).width();
+                if (windowW > 992) {
+                    var items = $('.showground_content');
+                    document.addEventListener('mousemove', function(evt) {
+                        //console.log(x);
+                        var x = evt.clientX;
+                        var y = evt.clientY;
+                        var winWidth = window.innerWidth;
+                        var winHeight = window.innerHeight;
+                        var halfWidth = winWidth / 2;
+                        var halfHeight = winHeight / 2;
+                        var rx = x - halfWidth;
+                        var ry = halfHeight - y;
+                        var length = items.length;
+                        var max = 10;
+                        for (var i = 0; i < length; i++) {
+                            var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth));
+                            var dy = (items[i].getBoundingClientRect().height / 5) * (ry / halfHeight);
+                            items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate(' + dx + 'px,' + dy + 'px)';
+                        }
+                    }, false);
+                } else {
+                    $('.showground_content').css('transform', 'translate(' + 0 + 'px,' + 0 + 'px)');
+                }
+            }, 500);
+        });
+        </script>
 </body>
 
 </html>
