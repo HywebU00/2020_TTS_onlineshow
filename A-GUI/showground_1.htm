@@ -82,9 +82,60 @@
         <!-- main Start -->
         <div id="center" class="main">
             <div class="showground style_a">
+                <h2>Show Area</h2>
                 <div class="showground_content">
-                    <h2>Showground</h2>
-                    <div class="show_item"></div>
+
+                    <div class="show_item item_01">
+                        <a href="#">
+                            <span class="title">Health promotion
+</span>
+                        </a>
+                    </div>
+                    <div class="show_item item_02">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_03">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_04">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_05">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_06">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_07">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_08">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_09">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_10">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_11">
+                        <a href="#">
+                        </a>
+                    </div>
+                    <div class="show_item item_12">
+                        <a href="#">
+                        </a>
+                    </div>
+
 
                 </div>
             </div>
@@ -101,6 +152,38 @@
         <script src="js/customize.js"></script><!-- 客製js -->
         <script src="vendor/flipdown/flipdown.min.js"></script><!-- flipdown -->
         <script src="vendor/fancybox/jquery.fancybox.min.js"></script><!-- fancybox -->
+        <script type="text/javascript">
+    var lobbyTimer;
+    $(window).on("load resize", function(e) {
+        clearTimeout(lobbyTimer);
+        resizeTimer = setTimeout(function() {
+            var windowW = $(window).width();
+            if (windowW > 992) {
+                var items = $('.showground_content');
+                document.addEventListener('mousemove', function(evt) {
+                    //console.log(x);
+                    var x = evt.clientX;
+                    var y = evt.clientY;
+                    var winWidth = window.innerWidth;
+                    var winHeight = window.innerHeight;
+                    var halfWidth = winWidth / 2;
+                    var halfHeight = winHeight / 2;
+                    var rx = x - halfWidth;
+                    var ry = halfHeight - y;
+                    var length = items.length;
+                    var max = 10;
+                    for (var i = 0; i < length; i++) {
+                        var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth));
+                        var dy = (items[i].getBoundingClientRect().height / 5) * (ry / halfHeight);
+                        items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate(' + dx + 'px,' + dy + 'px)';
+                    }
+                }, false);
+            } else {
+                $('.showground_content').css('transform', 'translate(' + 0 + 'px,' + 0 + 'px)');
+            }
+        }, 500);
+    });
+    </script>
 </body>
 
 </html>
