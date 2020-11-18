@@ -4,7 +4,7 @@ $(function() {
     $('.audio').find('a').off().click(function(e) {
         if ($(this).hasClass('off')) {
             $(this).removeClass('off').addClass('on');
-        }else{
+        } else {
             $(this).removeClass('on').addClass('off');
         }
         e.preventDefault();
@@ -64,7 +64,7 @@ $(function() {
         speed: 500,
         autoplay: true,
         fade: true,
-        pauseOnHover:true,
+        pauseOnHover: true,
         lazyLoad: 'ondemand',
         ease: 'ease'
     });
@@ -166,5 +166,25 @@ $(function() {
                 arrows: true
             }
         }]
+    });
+    // booth product slider
+    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.controls').html(i + '/' + slick.slideCount);
+    });
+    $('.Slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.Slider-nav'
+    });
+    $('.Slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.Slider-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
     });
 });

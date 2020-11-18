@@ -86,32 +86,32 @@
                         <img src="images/booth/logo.png" alt="">
                     </div>
                     <div class="youtube">
-                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T6jolhKU2l4?rel=0&autohide=1&showinfo=0&controls=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/T6jolhKU2l4?rel=0&autohide=1&showinfo=0&controls=0&autoplay=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                     <!-- 攤位內資料 -->
                     <div class="product">
                         <div class="item_01">
-                            <a href="#">
+                             <a data-fancybox data-type="iframe" data-src="booth_product_01.htm" href="javascript:;">
                                 <img src="images/booth/banner_01.jpg" alt="">
                             </a>
                         </div>
                         <div class="item_02">
-                            <a href="#">
+                            <a data-fancybox data-type="iframe" data-src="booth_product_02.htm" href="javascript:;">
                                 <img src="images/booth/banner_02.jpg" alt="">
                             </a>
                         </div>
                         <div class="item_03">
-                            <a href="#">
+                            <a data-fancybox data-type="iframe" data-src="booth_product_03.htm" href="javascript:;">
                                 <img src="images/booth/banner_03.jpg" alt="">
                             </a>
                         </div>
                         <div class="item_04">
-                            <a href="#">
+                            <a data-fancybox data-type="iframe" data-src="booth_product_04.htm" href="javascript:;">
                                 <img src="images/booth/banner_04.jpg" alt="">
                             </a>
                         </div>
                         <div class="item_05">
-                            <a href="#">
+                            <a data-fancybox data-type="iframe" data-src="booth_product_05.htm" href="javascript:;">
                                 <img src="images/booth/banner_05.jpg" alt="">
                             </a>
                         </div>
@@ -126,7 +126,7 @@
                         </div>
                         <!-- 參展商介紹 -->
                         <div class="item company">
-                            <a data-fancybox data-type="iframe" data-src="booth_company.htm" data-width="600" href="javascript:;">
+                            <a data-fancybox data-type="iframe" data-src="booth_company.htm" href="javascript:;">
                                 <img src="images/booth/icon_company.svg" alt="">
                             </a>
                         </div>
@@ -174,7 +174,22 @@
         <script src="js/customize.js"></script><!-- 客製js -->
         <script src="vendor/flipdown/flipdown.min.js"></script><!-- flipdown -->
         <script src="vendor/fancybox/jquery.fancybox.min.js"></script><!-- fancybox -->
-
+        <script>
+        $('.company').find("[data-fancybox]").fancybox({
+            iframe: {
+                css: {
+                    width: '600px'
+                }
+            }
+        });
+        $('.product').find("[data-fancybox]").fancybox({
+            iframe: {
+                css: {
+                    width: '800px'
+                }
+            }
+        });
+        </script>
 </body>
 
 </html>

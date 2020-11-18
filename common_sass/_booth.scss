@@ -1,3 +1,143 @@
+.booth_company {
+    max-width: 600px;
+    padding: 1em 2em 5em;
+    h1, h2 {
+        line-height: 1.25em;
+        margin: 0;
+        padding: .5em 0 0 0;
+    }
+    img {
+        max-width: 100%;
+    }
+    p {
+        color: #555;
+        line-height: 1.75em;
+    }
+}
+.booth_product {
+    max-width: 100%;
+    padding: 0em 2em;
+    h1, h2 {
+        line-height: 1.25em;
+        margin: 0;
+        padding: .5em 0 0 0;
+    }
+    .product_content {
+        display: flex;
+        justify-content: center;
+        @include screen('xs_mobile') {
+            flex-flow: row wrap;
+        }
+        .Syncing_slider {
+            flex-basis: 40%;
+            min-width: 400px;
+            margin: 0 1em 1em 0;
+            .slick-slide {
+                &:hover, &:focus {
+                    box-shadow: none;
+                }
+            }
+            .controls {
+                display: none !important;
+            }
+            @include screen('xs_mobile') {
+                flex-basis: 100%;
+                margin: 0 auto 1em auto;
+                padding-right: 0;
+                min-width: 320px;
+            }
+            .Slider-for {
+                width: 100%;
+                margin: 0;
+                outline: 1px solid #DDD;
+                .img-container {
+                    width: 100%;
+                    margin: 0;
+                    @include aspect-ratio(4, 3);
+                }
+            }
+            .Slider-nav {
+                width: 100%;
+                margin: 0;
+                border: 1px solid #DDD;
+                .slick-slide {
+                    outline: 1px solid #DDD;
+                }
+                &:hover {
+                    .slick-prev, .slick-next {
+                        opacity: 1;
+                    }
+                }
+                .slick-prev {
+                    left: 0;
+                    opacity: 0;
+                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat rgba(0, 0, 0, .25);
+                    background-size: 80%;
+                    transition: .3s ease-out;
+                    &:hover, &:focus {
+                        background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat rgba(0, 0, 0, .5);
+                        background-size: 80%;
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+                .slick-next {
+                    right: 0;
+                    opacity: 0;
+                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat rgba(0, 0, 0, .25);
+                    background-size: 80%;
+                    transition: .3s ease-out;
+                    &:hover, &:focus {
+                        background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat rgba(0, 0, 0, .5);
+                        background-size: 80%;
+                        box-shadow: none;
+                        outline: none;
+                    }
+                }
+                .img-container {
+                    width: 100%;
+                    margin: 0;
+                    min-width: auto;
+                    @include aspect-ratio(4, 3);
+                    &.youtube {
+                        &:after {
+                            position: absolute;
+                            width: 48px;
+                            height: 48px;
+                            border-radius: 50%;
+                            content: "";
+                            left: 50%;
+                            margin-left: -24px;
+                            top: 25%;
+                            opacity: .85;
+                            background: url(../images/play.png) no-repeat center center;
+                        }
+                    }
+                }
+            }
+        }
+        .profuct_info {
+            flex-basis: 20%;
+            flex-shrink: 1;
+            flex: 1 1 auto;
+            padding: 0em 1em;
+            h3 {
+                margin: 0 0 .5em 0;
+                padding: 0;
+                color: $primaryColor;
+            }
+            p {
+                color: #555;
+                line-height: 1.75em;
+            }
+            @include screen('xs_mobile') {
+                border-top: 1px solid #DDD;
+                padding-top: 1em;
+                padding-bottom: 5em;
+            }
+        }
+    }
+}
 .booth {
     display: block;
     position: fixed;
@@ -8,6 +148,10 @@
     top: 0;
     left: 0;
     padding: 1em;
+    @include screen('mobile') {
+        height: calc(100% - 60px);
+        margin-top: 60px;
+    }
     &.style_a {
         background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
         background-size: cover;
@@ -20,14 +164,14 @@
             bottom: 60px;
             left: 50%;
             margin-left: -440px;
-            transition:.3s ease-out;
+            transition: .3s ease-out;
             @media screen and (max-height: 850px) {
-            	transform:scale(.9);
-            	bottom: 40px;
+                transform: scale(.9);
+                bottom: 40px;
             }
             @media screen and (max-height: 750px) {
-            	transform:scale(.8);
-            	bottom: 0px;
+                transform: scale(.8);
+                bottom: 0px;
             }
         }
         .company_logo {
@@ -85,7 +229,7 @@
                     left: 0;
                     border: 2px solid #FFF;
                     &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef,0px 0px 10px #1de3ef,0px 0px 5px #FFF;
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
                     }
                 }
             }
@@ -103,7 +247,7 @@
             }
             .item_04 {
                 top: 16px;
-                left:298px;
+                left: 298px;
             }
             .item_05 {
                 top: 15px;
@@ -132,8 +276,8 @@
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     border: 5px solid #1de3ef;
-                    &:hover,&:focus {
-                    	box-shadow: 0px 0px 30px #1de3ef,0px 0px 20px #1de3ef,0px 0px 10px #1de3ef;
+                    &:hover, &:focus {
+                        box-shadow: 0px 0px 30px #1de3ef, 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef;
                     }
                     img {
                         width: 72%;
@@ -148,9 +292,9 @@
 }
 // fancy iframe
 .fancybox-slide--iframe .fancybox-content {
-    width  : 1200px;
-    height : 732px;
-    max-width  : 90%;
-    max-height : 90%;
+    width: 1200px;
+    height: 732px;
+    max-width: 90%;
+    max-height: 90%;
     margin: 0;
 }

@@ -118,4 +118,24 @@ $(function() {
             }
         }]
     });
+    // booth product slider
+    $('.Slider-for').on('init reInit afterChange', function(event, slick, currentSlide) {
+        var i = (currentSlide ? currentSlide : 0) + 1;
+        $('.controls').html(i + '/' + slick.slideCount);
+    });
+    $('.Slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        asNavFor: '.Slider-nav'
+    });
+    $('.Slider-nav').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: '.Slider-for',
+        dots: false,
+        centerMode: false,
+        focusOnSelect: true
+    });
 });
