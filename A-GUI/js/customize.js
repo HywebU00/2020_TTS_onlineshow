@@ -189,17 +189,17 @@ $(function() {
     });
     // 設定iframe
     $('.company').find("[data-fancybox]").fancybox({
-            iframe: {
-                css: {
-                    width: '600px'
-                }
+        iframe: {
+            css: {
+                width: '600px'
             }
-        });
-        $('.product').find("[data-fancybox]").fancybox({
-            iframe: {
-                css: {
-                    width: '800px'
-                }
+        }
+    });
+    $('.product').find("[data-fancybox]").fancybox({
+        iframe: {
+            css: {
+                width: '800px'
             }
-        });
+        }
+    });
 });
