@@ -6,6 +6,8 @@
     height: calc(100% - 75px);
     margin-top: 75px;
     padding: 11% 0 1em;
+    top: 0;
+    left: 0;
     @include screen('mobile') {
         height: calc(100% - 60px);
         margin-top: 60px;
@@ -22,6 +24,36 @@
     }
 }
 .showground {
+    display: block;
+    position: fixed;
+    transform: translateZ(0);
+    width: 100%;
+    height: calc(100% - 75px);
+    margin-top: 75px;
+    padding: 11% 0 1em;
+    top: 0;
+    left: 0;
+    @include screen('mobile') {
+        height: calc(100% - 60px);
+        margin-top: 60px;
+    }
+    h2 {
+        width: 90%;
+        margin: 0 auto .25em;
+        font-size: 3.75rem;
+        font-weight: bold;
+        text-align: center;
+        @include screen('xs_mobile') {
+            font-size: 2.75rem;
+        }
+    }
+    &.style_a {
+        background: rgb(20, 107, 126);
+        background: linear-gradient(145deg, rgba(20, 107, 126, 1) 0%, rgba(20, 43, 126, 1) 19%, rgba(58, 26, 155, 1) 79%, rgba(197, 85, 166, 1) 100%);
+        h2{
+            color:#FFF;
+        }
+    }
     &_A {
         background: url(../images/showground_A.jpg) no-repeat center center;
         background-size: cover;

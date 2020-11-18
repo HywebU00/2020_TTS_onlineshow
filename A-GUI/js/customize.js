@@ -56,7 +56,18 @@ $(function() {
         _searchStatus = false;
         e.preventDefault();
     });
-    //
+    //大廳lobby輪播
+    $('.lobby-a .banner .slider').slick({
+        dots: false,
+        arrow: false,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        fade: true,
+        pauseOnHover:true,
+        lazyLoad: 'ondemand',
+        ease: 'ease'
+    });
     // 展區
     $('.showgroundSlider_A').slick({
         mobileFirst: true,

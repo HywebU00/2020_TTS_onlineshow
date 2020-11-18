@@ -4,7 +4,7 @@ $(function() {
     $('.audio').find('a').off().click(function(e) {
         if ($(this).hasClass('off')) {
             $(this).removeClass('off').addClass('on');
-        }else{
+        } else {
             $(this).removeClass('on').addClass('off');
         }
         e.preventDefault();
@@ -57,17 +57,17 @@ $(function() {
         e.preventDefault();
     });
     //大廳lobby輪播
-    // $('.lobby-b .banner').slick({
-    //     dots: false,
-    //     arrow: false,
-    //     infinite: true,
-    //     speed: 500,
-    //     autoplay: true,
-    //     fade: true,
-    //     pauseOnHover:true,
-    //     lazyLoad: 'ondemand',
-    //     ease: 'ease'
-    // });
+    $('.lobby-b .banner .slider').slick({
+        dots: false,
+        arrow: false,
+        infinite: true,
+        speed: 1000,
+        autoplay: true,
+        fade: true,
+        pauseOnHover: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease'
+    });
     // 主題公路
     $('.showgroundSlider_B').slick({
         mobileFirst: true,

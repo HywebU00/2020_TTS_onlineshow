@@ -54,6 +54,26 @@
         @media screen and (max-width:1024px) {
             transform: scale(.8);
         }
+        .slider {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+             @include aspect-ratio(16, 9);
+        }
+        .slick-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+        }
+        .slide {
+            width: 100%;
+            position: absolute;
+            @include aspect-ratio(16, 9);
+        }
         [class^="item"] {
             width: 33.3333%;
             position: absolute;
@@ -70,7 +90,7 @@
                     }
                 }
                 img {
-                    object-fit: coever;
+                    object-fit: cover;
                 }
                 .caption {
                     position: absolute;

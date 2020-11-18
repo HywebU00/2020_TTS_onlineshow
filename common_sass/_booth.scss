@@ -1,0 +1,156 @@
+.booth {
+    display: block;
+    position: fixed;
+    transform: translateZ(0);
+    width: 100%;
+    height: calc(100% - 75px);
+    margin-top: 75px;
+    top: 0;
+    left: 0;
+    padding: 1em;
+    &.style_a {
+        background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
+        background-size: cover;
+        .booth_content {
+            width: 900px;
+            height: 692px;
+            background: url(../images/booth_a.png) no-repeat center center;
+            background-size: contain;
+            position: absolute;
+            bottom: 60px;
+            left: 50%;
+            margin-left: -440px;
+            transition:.3s ease-out;
+            @media screen and (max-height: 850px) {
+            	transform:scale(.9);
+            	bottom: 40px;
+            }
+            @media screen and (max-height: 750px) {
+            	transform:scale(.8);
+            	bottom: 0px;
+            }
+        }
+        .company_logo {
+            position: absolute;
+            width: 420px;
+            height: 100px;
+            top: 8%;
+            left: 30%;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin: auto;
+            }
+        }
+        .youtube {
+            position: absolute;
+            width: 118px;
+            height: 72px;
+            top: 296px;
+            left: 159px;
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+        .product {
+            position: absolute;
+            width: 500px;
+            height: 200px;
+            top: 286px;
+            left: 32%;
+            [class^="item"] {
+                width: 80px;
+                height: 120px;
+                position: absolute;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+                a {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border: 2px solid #FFF;
+                    &:hover, &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef,0px 0px 10px #1de3ef,0px 0px 5px #FFF;
+                    }
+                }
+            }
+            .item_01 {
+                top: 16px;
+                left: 35px;
+            }
+            .item_02 {
+                top: 16px;
+                left: 123px;
+            }
+            .item_03 {
+                top: 16px;
+                left: 211px;
+            }
+            .item_04 {
+                top: 16px;
+                left:298px;
+            }
+            .item_05 {
+                top: 15px;
+                left: 398px;
+                width: 82px;
+                height: 144px;
+            }
+        }
+        // function
+        .function {
+            position: absolute;
+            right: 0px;
+            top: 50px;
+            height: auto;
+            width: 60px;
+            .item {
+                display: block;
+                height: 60px;
+                width: 60px;
+                margin-bottom: 1em;
+                a {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background: #FFF;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+                    border-radius: 50%;
+                    border: 5px solid #1de3ef;
+                    &:hover,&:focus {
+                    	box-shadow: 0px 0px 30px #1de3ef,0px 0px 20px #1de3ef,0px 0px 10px #1de3ef;
+                    }
+                    img {
+                        width: 72%;
+                        height: 72%;
+                        margin: 14%;
+                        opacity: .75
+                    }
+                }
+            }
+        }
+    }
+}
+// fancy iframe
+.fancybox-slide--iframe .fancybox-content {
+    width  : 1200px;
+    height : 732px;
+    max-width  : 90%;
+    max-height : 90%;
+    margin: 0;
+}

@@ -25,121 +25,6 @@
             position: absolute;
         }
     }
-    .information_desk {
-        position: absolute;
-        width: 186px;
-        height: 108px;
-        left: 50%;
-        margin-left: -107px;
-        bottom: 83px;
-        background: #FFF;
-        a {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }
-    }
-    .left_adbanner {
-        position: absolute;
-        left: 50%;
-        margin-left: -1200px;
-        bottom: 212px;
-        width: 475px;
-        @include aspect-ratio(4, 2.6);
-        transform: scale(1, 1) perspective(500px) skew(-2deg, 0deg) rotateX(0deg) rotateY(9deg) rotateZ(2deg) translateY(0%) translateX(0%);
-        a {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            overflow:hidden;
-            &:hover, &:focus {
-                .caption {
-                    top: 0;
-                    opacity: 1;
-                }
-            }
-        }
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .caption {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, .75);
-            opacity: 0;
-            transition: .3s $cubic;
-            span {
-                color: #FFF;
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding: 1em;
-                line-height: 1.45em;
-            }
-        }
-    }
-    .right_adbanner {
-        position: absolute;
-        left: 50%;
-        margin-left: 705px;
-        bottom: 216px;
-        width: 475px;
-        @include aspect-ratio(4, 2.6);
-        transform: scale(1, 1.03) perspective(500px) skew(4deg, -1deg) rotateX(0deg) rotateY(-9deg) rotateZ(-1deg) translateY(0%) translateX(0%);
-        a {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-             &:hover, &:focus {
-                .caption {
-                    top: 0;
-                    opacity: 1;
-                }
-            }
-        }
-        img {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-        .caption {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            align-items: center;
-            background: rgba(0, 0, 0, .75);
-            opacity: 0;
-            transition: .3s $cubic;
-            span {
-                color: #FFF;
-                font-size: 1.5rem;
-                font-weight: bold;
-                padding: 1em;
-                line-height: 1.45em;
-            }
-        }
-    }
     .banner {
         position: absolute;
         width: 1100px;
@@ -148,6 +33,7 @@
         margin-left: -550px;
         display: flex;
         justify-content: center;
+        align-items: flex-start;
         .item {
             &:first-child {
                 .title {
@@ -165,6 +51,33 @@
                 }
             }
         }
+        .slider {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+            @include aspect-ratio(4, 3);
+        }
+        .slick-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+        }
+        .slide {
+            width: 100%;
+            @include aspect-ratio(4, 3);
+            position: absolute;
+            a {
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 0;
+
+            }
+        }
         [class^="item"] {
             width: calc(30% - 2em);
             flex-basis: calc(30% - 2em);
@@ -175,10 +88,12 @@
             padding-bottom: 3em;
             box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, .5);
             overflow: hidden;
+            @include aspect-ratio(4, 3);
             a {
+                position: absolute;
+                outline: 1px solid red;
                 width: 100%;
-                display: block;
-                @include aspect-ratio(4, 3);
+                height: 100%;
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
                 &:hover, &:focus {
                     .caption {
@@ -219,7 +134,7 @@
                 width: 100%;
                 top: 0;
                 left: 0;
-                position: relative;
+                position: absolute;
                 @include aspect-ratio(4, 3);
                 box-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
                 iframe {
@@ -248,6 +163,121 @@
                     text-shadow: 1px 1px 2px rgba(0, 0, 0, .75);
                 }
             }
+        }
+    }
+}
+.information_desk {
+    position: absolute;
+    width: 186px;
+    height: 108px;
+    left: 50%;
+    margin-left: -107px;
+    bottom: 83px;
+    background: #FFF;
+    a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+.left_adbanner {
+    position: absolute;
+    left: 50%;
+    margin-left: -1200px;
+    bottom: 212px;
+    width: 475px;
+    @include aspect-ratio(4, 2.6);
+    transform: scale(1, 1) perspective(500px) skew(-2deg, 0deg) rotateX(0deg) rotateY(9deg) rotateZ(2deg) translateY(0%) translateX(0%);
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        &:hover, &:focus {
+            .caption {
+                top: 0;
+                opacity: 1;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .75);
+        opacity: 0;
+        transition: .3s $cubic;
+        span {
+            color: #FFF;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1em;
+            line-height: 1.45em;
+        }
+    }
+}
+.right_adbanner {
+    position: absolute;
+    left: 50%;
+    margin-left: 705px;
+    bottom: 216px;
+    width: 475px;
+    @include aspect-ratio(4, 2.6);
+    transform: scale(1, 1.03) perspective(500px) skew(4deg, -1deg) rotateX(0deg) rotateY(-9deg) rotateZ(-1deg) translateY(0%) translateX(0%);
+    a {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        &:hover, &:focus {
+            .caption {
+                top: 0;
+                opacity: 1;
+            }
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .caption {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, .75);
+        opacity: 0;
+        transition: .3s $cubic;
+        span {
+            color: #FFF;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 1em;
+            line-height: 1.45em;
         }
     }
 }

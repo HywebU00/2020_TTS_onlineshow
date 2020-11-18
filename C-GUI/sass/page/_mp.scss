@@ -45,12 +45,31 @@
         .slick-prev, .slick-next {
             display: none !important;
         }
+        .slider {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            top: 0;
+             @include aspect-ratio(5, 2);
+        }
+        .slick-list {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 9;
+        }
+        .slide {
+            width: 100%;
+            position: absolute;
+            @include aspect-ratio(5, 2);
+        }
         [class^="item"] {
-            width: 824px;
-            height: 326px;
+            width: 100%;
             margin: 0px auto 0;
             background: #111;
-            @include aspect-ratio(16, 8);
+            @include aspect-ratio(5, 2);
             position: relative;
             a {
                 position: absolute;

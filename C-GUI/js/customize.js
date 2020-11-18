@@ -57,7 +57,7 @@ $(function() {
         e.preventDefault();
     });
     //大廳lobby輪播
-    $('.lobby-c .banner').slick({
+    $('.lobby-c .banner .slider').slick({
         dots: false,
         arrow: false,
         infinite: true,
