@@ -1,16 +1,25 @@
 .lobby-b {
-    background: url(../images/scence-b.jpg) no-repeat bottom center;
     position: relative;
     top: 0;
     left: 50%;
-    margin-left: -1506px;
-    width: 3012px;
+    margin-left: -1350px;
+    width: 2700px;
     height: calc(100% - 75px);
     margin-top: 75px;
     position: fixed;
     transform: translateZ(0);
     transition: 1.2s ease-out;
     overflow: hidden;
+    &:before {
+        position: absolute;
+        background: url(../images/scence-b-new.jpg) no-repeat center bottom;
+        background-size: 100% auto;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        content: "";
+    }
     @include screen('mobile') {
         margin-top: 0;
     }
@@ -18,6 +27,7 @@
         position: absolute;
         width: 218px;
         height: 113px;
+        display: none;
         left: 50%;
         margin-left: -109px;
         bottom: 71px;
@@ -41,15 +51,15 @@
         bottom: 48%;
         min-height: 450px;
         margin-left: -550px;
-        transform: scale(.9);
+        transform: scale(.9) translateX(55px);
         overflow: hidden;
         @media screen and (max-height: 900px) {
-            bottom: 48%;
-            transform: scale(.8);
+            bottom: 42%;
+            transform: scale(.9) translateX(55px);
         }
         @media screen and (max-height:800px) {
-            bottom: 42%;
-            transform: scale(.7);
+            bottom: 40%;
+            transform: scale(.8) translateX(55px);
         }
         @media screen and (max-width:1024px) {
             transform: scale(.8);
@@ -59,7 +69,7 @@
             width: 100%;
             left: 0;
             top: 0;
-             @include aspect-ratio(16, 9);
+            @include aspect-ratio(16, 9);
         }
         .slick-list {
             position: absolute;
@@ -83,7 +93,7 @@
                 position: absolute;
                 width: 100%;
                 height: 100%;
-                &:hover,{
+                &:hover, {
                     .caption {
                         top: 0;
                         opacity: 1;
@@ -194,6 +204,105 @@
         }
         .item_3, .item_6 {
             box-shadow: -2px 1px 0px 2px rgba(0, 0, 0, 1);
+        }
+    }
+    .banner_2f_left {
+        position: absolute;
+        left: 50%;
+        margin-left: -832px;
+        bottom: 293px;
+        width: 245px;
+        @include aspect-ratio(3, 1.28);
+        transform-origin: center center;
+        transform: scale(1, 1) perspective(500px) skew(1deg, 0deg) rotateX(0deg) rotateY(9deg) rotateZ(3deg) translateY(4px) translateX(0%);
+        box-shadow: -2px 2px 0px 2px #222;
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            overflow: hidden;
+            &:hover, &:focus {
+                .caption {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .75);
+            opacity: 0;
+            transition: .3s $cubic;
+            span {
+                color: #FFF;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1em;
+                line-height: 1.45em;
+            }
+        }
+    }
+    .banner_2f_right {
+        position: absolute;
+        left: 50%;
+        margin-left: 723px;
+        bottom: 293px;
+        width: 245px;
+        @include aspect-ratio(3, 1.28);
+        transform-origin: center center;
+        transform: scale(1, 1.03) perspective(500px) skew(3deg, -1deg) rotateX(9deg) rotateY(-9deg) rotateZ(-1deg) translateY(0%) translateX(0%);
+        box-shadow: 2px 2px 0px 2px #222;
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            &:hover, &:focus {
+                .caption {
+                    top: 0;
+                    opacity: 1;
+                }
+            }
+        }
+        img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .caption {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            align-items: center;
+            background: rgba(0, 0, 0, .75);
+            opacity: 0;
+            transition: .3s $cubic;
+            span {
+                color: #FFF;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1em;
+                line-height: 1.45em;
+            }
         }
     }
 }
