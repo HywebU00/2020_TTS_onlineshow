@@ -196,8 +196,8 @@
                         var length = items.length;
                         var max = 10;
                         for (var i = 0; i < length; i++) {
-                            var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth));
-                            var dy = (items[i].getBoundingClientRect().height / 5) * (ry / halfHeight);
+                            var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth))+100;
+                            var dy = Math.floor((items[i].getBoundingClientRect().height / 5) * (ry / halfHeight));
                             items[i].style['transform'] = items[i].style['-webkit-transform'] = 'translate(' + dx + 'px,' + dy + 'px)';
                         }
                     }, false);
