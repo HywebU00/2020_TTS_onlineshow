@@ -153,4 +153,9 @@ $(function() {
             }
         }
     });
+    $('.youtube a').click(function() {
+        $('.youtube iframe').each(function() {
+            $(this).stopVideo();
+        });
+    });
 });
