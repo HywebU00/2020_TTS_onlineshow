@@ -202,4 +202,11 @@ $(function() {
             }
         }
     });
+    $('.youtube').find("[data-fancybox]").fancybox({
+        iframe: {
+            css: {
+                width: '800px'
+            }
+        }
+    });
 });
