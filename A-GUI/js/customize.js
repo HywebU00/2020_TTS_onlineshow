@@ -209,9 +209,12 @@ $(function() {
             }
         }
     });
-    $('.youtube a').click(function() {
-        $('.youtube iframe').each(function() {
-            $(this).stopVideo();
-        });
-    });
+    // $('.youtube a').click(function() {
+    //     $('.youtube iframe').each(function() {
+    //         $(this).stopVideo();
+    //     });
+    // });
+    $('.youtube a').click(function(){
+    $('.youtube-video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+});
 });
