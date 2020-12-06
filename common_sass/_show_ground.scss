@@ -81,11 +81,14 @@
             text-align: left;
         }
         .showground_content {
-            z-index: index 2;
+            z-index:2;
             width: 2000px;
             position: absolute;
             transform: translateZ(0) translate(1000px,-400px);
             transition: 1.2s ease-out;
+            left:0;
+            top:0;
+            outline:none;
         }
         // @for $i from 1 through 20 {
         //     .show_item:nth-child(#{$i}){
@@ -100,7 +103,6 @@
             top: 50px;
             background: url(../images/showground/item_a_bg.png) no-repeat center bottom;
             background-size: 100%;
-
             // outline: 1px solid salmon;
             a {
                 position: absolute;

@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="A-GUI/css/hyui.css">
     <style>
     .demo_wrap {
-        max-width: 1000px;
+        max-width: 1200px;
         margin: 0em auto 1em;
         padding: 15px 15px 3em;
         clear: both;
@@ -26,6 +26,13 @@
         max-width: 300px;
         float: left;
         margin-right: 1em
+    }
+    h3 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: .938rem;
+        color: #666;
     }
     @media screen and (max-width:545px) {
         .demo_wrap h1 {
@@ -40,11 +47,14 @@
     .num {
         width: 12%
     }
-    body {
+    table {
         counter-reset: num
     }
     table {
         margin-bottom: 1em
+    }
+    table td{
+        font-size: .938rem;
     }
     table caption {
         text-align: left;
@@ -60,7 +70,7 @@
         content: counters(num, ".") " "
     }
     tbody tr td:nth-child(2) {
-        width: 15%
+        width: 12%
     }
     .btn_grp {
         text-align: right
@@ -82,7 +92,7 @@
         <hr>
         <div class="table_wrapper">
             <!-- hyUI 標準頁面 -->
-            <h3>標準頁面</h3>
+            <h3>大廳</h3>
             <table>
                 <thead>
                     <tr>
@@ -114,56 +124,141 @@
                     <tr>
                         <td></td>
                         <td>開展前</td>
-                        <td><a href="A-GUI/A_preshow.htm"></a></td>
-                        <td><a href="B-GUI/B_preshow.htm"></a></td>
-                        <td><a href="C-GUI/C_preshow.htm"></a></td>
+                        <td colspan="3"><a href="A-GUI/preshow.htm"></a></td>
                     </tr>
                     <tr>
                         <td></td>
                         <td>開展後</td>
-                        <td><a href="A-GUI/A_aftershow.htm"></a></td>
-                        <td><a href="B-GUI/B_aftershow.htm"></a></td>
-                        <td><a href="C-GUI/C_aftershow.htm"></a></td>
+                        <td colspan="3"><a href="A-GUI/aftershow.htm"></a></td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
-         <div class="table_wrapper">
-            <!-- hyUI 標準頁面 -->
-            <h3>標準頁面</h3>
+        <div class="table_wrapper">
+            <h3>展區</h3>
+            <p>只要套一個檔案，每個款用classname切換即可</p>
             <table>
                 <thead>
                     <tr>
                         <th class="num">編號</th>
                         <th>檔案名稱</th>
-                        <th>A</th>
-                        <th>B</th>
-                        <th>C</th>
-                        <th>D</th>
-                        <th>E</th>
+                        <th>色系1</th>
+                        <th>色系2</th>
+                        <th>色系3</th>
+                        <th>色系4</th>
+                        <th>色系5</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>展區</td>
-                        <td><a href="A-GUI/showground_1.htm"></a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>展區A款</td>
+                        <td><a href="A-GUI/show_A_1.htm"></a></td>
+                        <td><a href="A-GUI/show_A_2.htm"></a></td>
+                        <td><a href="A-GUI/show_A_3.htm"></a></td>
+                        <td><a href="A-GUI/show_A_4.htm"></a></td>
+                        <td><a href="A-GUI/show_A_5.htm"></a></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td>攤位</td>
-                        <td><a href="A-GUI/booth_1.htm"></a></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>展區B款</td>
+                        <td><a href="A-GUI/show_B_1.htm"></a></td>
+                        <td><a href="A-GUI/show_B_2.htm"></a></td>
+                        <td><a href="A-GUI/show_B_3.htm"></a></td>
+                        <td><a href="A-GUI/show_B_4.htm"></a></td>
+                        <td><a href="A-GUI/show_B_5.htm"></a></td>
                     </tr>
-
+                    <tr>
+                        <td></td>
+                        <td>展區C款</td>
+                        <td><a href="A-GUI/show_C_1.htm"></a></td>
+                        <td><a href="A-GUI/show_C_2.htm"></a></td>
+                        <td><a href="A-GUI/show_C_3.htm"></a></td>
+                        <td><a href="A-GUI/show_C_4.htm"></a></td>
+                        <td><a href="A-GUI/show_C_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>展區D款</td>
+                        <td><a href="A-GUI/show_D_1.htm"></a></td>
+                        <td><a href="A-GUI/show_D_2.htm"></a></td>
+                        <td><a href="A-GUI/show_D_3.htm"></a></td>
+                        <td><a href="A-GUI/show_D_4.htm"></a></td>
+                        <td><a href="A-GUI/show_D_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>展區E款</td>
+                        <td><a href="A-GUI/show_E_1.htm"></a></td>
+                        <td><a href="A-GUI/show_E_2.htm"></a></td>
+                        <td><a href="A-GUI/show_E_3.htm"></a></td>
+                        <td><a href="A-GUI/show_E_4.htm"></a></td>
+                        <td><a href="A-GUI/show_E_5.htm"></a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="table_wrapper">
+            <h3>攤位</h3>
+            <p>只要套一個檔案，每個款用classname切換即可</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="num">編號</th>
+                        <th>檔案名稱</th>
+                        <th>色系1</th>
+                        <th>色系2</th>
+                        <th>色系3</th>
+                        <th>色系4</th>
+                        <th>色系5</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td>攤位A</td>
+                        <td><a href="A-GUI/booth_A_1.htm"></a></td>
+                        <td><a href="A-GUI/booth_A_2.htm"></a></td>
+                        <td><a href="A-GUI/booth_A_3.htm"></a></td>
+                        <td><a href="A-GUI/booth_A_4.htm"></a></td>
+                        <td><a href="A-GUI/booth_A_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>攤位B</td>
+                        <td><a href="A-GUI/booth_B_1.htm"></a></td>
+                        <td><a href="A-GUI/booth_B_2.htm"></a></td>
+                        <td><a href="A-GUI/booth_B_3.htm"></a></td>
+                        <td><a href="A-GUI/booth_B_4.htm"></a></td>
+                        <td><a href="A-GUI/booth_B_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>攤位C</td>
+                        <td><a href="A-GUI/booth_C_1.htm"></a></td>
+                        <td><a href="A-GUI/booth_C_2.htm"></a></td>
+                        <td><a href="A-GUI/booth_C_3.htm"></a></td>
+                        <td><a href="A-GUI/booth_C_4.htm"></a></td>
+                        <td><a href="A-GUI/booth_C_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>攤位D</td>
+                        <td><a href="A-GUI/booth_D_1.htm"></a></td>
+                        <td><a href="A-GUI/booth_D_2.htm"></a></td>
+                        <td><a href="A-GUI/booth_D_3.htm"></a></td>
+                        <td><a href="A-GUI/booth_D_4.htm"></a></td>
+                        <td><a href="A-GUI/booth_D_5.htm"></a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>攤位E</td>
+                        <td><a href="A-GUI/booth_E_1.htm"></a></td>
+                        <td><a href="A-GUI/booth_E_2.htm"></a></td>
+                        <td><a href="A-GUI/booth_E_3.htm"></a></td>
+                        <td><a href="A-GUI/booth_E_4.htm"></a></td>
+                        <td><a href="A-GUI/booth_E_5.htm"></a></td>
+                    </tr>
                 </tbody>
             </table>
         </div>
