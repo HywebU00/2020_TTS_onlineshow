@@ -61,6 +61,14 @@
                 top: 0;
                 left: 0;
                 z-index: 2;
+                img{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    left: 0;
+                    top: 0;
+                    object-fit:cover;
+                }
             }
             iframe {
                 position: absolute;
@@ -326,6 +334,9 @@
                 top: 0;
                 left: 0;
                 z-index: 2;
+                &.only_for_image{
+                    z-index:3;
+                }
             }
             iframe {
                 position: absolute;
