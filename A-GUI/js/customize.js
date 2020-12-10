@@ -69,7 +69,7 @@ $(function() {
         ease: 'ease'
     });
     // 展區
-    $('.showgroundSlider_A').slick({
+    $('.showgroundSlider').slick({
         mobileFirst: true,
         dots: false,
         infinite: true,
