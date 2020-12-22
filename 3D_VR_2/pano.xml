@@ -1,116 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<tour apprev="18007" start="node1" appversion="6.1.10">
+<tour appversion="6.1.10" apprev="18007" start="node1">
   <panorama hideabout="1" id="node1">
-    <input height="2607" overlap="1" levelingroll="0" levelbias="0.400" leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" leveltilesize="510" width="2607" levelbiashidpi="1.000" levelingpitch="0">
-      <level height="2607" preload="0" predecode="0" width="2607"/>
-      <level height="1303" preload="0" predecode="0" width="1303"/>
-      <level height="651" preload="0" predecode="0" width="651"/>
-      <level height="325" preload="1" predecode="1" width="325"/>
-      <preview color="0x808080" strip="1"/>
+    <input leveltileurl="tiles/node1/cf_%c/l_%l/c_%x/tile_%y.jpg" levelbiashidpi="1.000" height="2607" width="2607" levelbias="0.400" overlap="1" leveltilesize="510" levelingroll="0" levelingpitch="0">
+      <level height="2607" width="2607" predecode="0" preload="0"/>
+      <level height="1303" width="1303" predecode="0" preload="0"/>
+      <level height="651" width="651" predecode="0" preload="0"/>
+      <level height="325" width="325" predecode="1" preload="1"/>
+      <preview strip="1" color="0x808080"/>
     </input>
-    <view fovmode="0" pannorth="0">
-      <start fov="70" tilt="0" pan="0" projection="4"/>
-      <flyin fov="170" tilt="-90" pan="0" projection="9"/>
-      <min tilt="-90" pan="0" fovpixel="2"/>
-      <max fovstereographic="270" fov="120" tilt="90" pan="360" scaletofit="1" fovfisheye="360"/>
+    <view pannorth="0" fovmode="0">
+      <start tilt="0" projection="4" fov="70" pan="0"/>
+      <flyin tilt="-90" projection="9" fov="170" pan="0"/>
+      <min tilt="-90" fovpixel="2" pan="0"/>
+      <max fovfisheye="360" tilt="90" fovstereographic="270" fov="120" pan="360" scaletofit="1"/>
     </view>
-    <userdata copyright="" title="" longitude="" heading="0" comment="" description="" tags="" nodeid="node1" source="" customnodeid="" info="" author="" datetime="2020/12/10 下午 02:04" latitude=""/>
-    <hotspots height="20" wordwrap="1" width="180">
-      <label height="20" bordercolor="0x000000" wordwrap="1" background="1" borderradius="1" textalpha="1" backgroundalpha="1" borderalpha="1" border="1" enabled="1" textcolor="0x000000" backgroundcolor="0xffffff" width="180"/>
-      <polystyle bordercolor="0x0000ff" backgroundalpha="0.25098" mode="0" borderalpha="1" handcursor="1" backgroundcolor="0x0000ff"/>
-      <hotspot use3D="1" title="Choosing The Right Ski Goggles" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_video_youtube" tilt="13.08" pan="-6.56" description="" id="vp4" target="_blank" customimagewidth="35" url="3g7z_UDMV5Q" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="2" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="11.63" pan="-30.3" description="" id="BP6" target="_blank" customimagewidth="35" url="https://www.taispo.com.tw/en/product/data-list/index.html" distance3D="1002.57"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="-2.91" pan="-330.65" description="" id="BP1" target="_blank" customimagewidth="35" url="https://www.accupass.com/event/1902190758215651089880" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="2" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="-2.95" pan="-28.86" description="" id="BP3" target="_blank" customimagewidth="35" url="https://www.taispo.com.tw/en/menu/DAF9AEEF0D44CBC2D0636733C6861689/info.html" distance3D="1002.57"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="-3.63" pan="-359.67" description="" id="BP2" target="_self" customimagewidth="35" url="http://demo10.taiwantradeshow.com.tw/en/showground_1.htm" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1.93144" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="10.86" pan="-47.42" description="" id="BP8" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="1038.17"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="-5.05" pan="-323.92" description="" id="IP18" target="_blank" customimagewidth="35" url="https://www.taispo.com.tw/en/menu/9FDAD841F1CD9B82D0636733C6861689/info.html" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="2" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="11.25" pan="-327.48" description="" id="BP4" target="_blank" customimagewidth="35" url="https://www.accupass.com/event/1902190758215651089880" distance3D="1002.57"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="12.18" pan="-67.04" description="" id="BP9" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="13.2" pan="-93.11" description="" id="BP10" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="10.95" pan="-118.83" description="" id="BP11" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="8.19" pan="-129.76" description="" id="BP12" target="_blank" customimagewidth="35" url="" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="7.52" pan="-162.63" description="" id="BP13" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="2005.3"/>
-      <hotspot use3D="1" title="" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="7.42" pan="-197.75" description="" id="BP14" target="_blank" customimagewidth="35" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="2005.3"/>
-      <hotspot use3D="0" title="" fov="10" customimage="media/info.png" customimageheight="35" skinid="ht_url" tilt="10.43" pan="-312.86" description="" id="BP7" target="_blank" customimagewidth="35" url="https://www.yahoo.com.tw&#xa;" distance3D="200.026"/>
-      <hotspot use3D="1" title="Choosing The Right Ski Goggles" fov="1" customimage="media/info.png" customimageheight="35" skinid="ht_video_youtube" tilt="10.85" pan="-244.56" description="" id="vp15" target="_blank" customimagewidth="35" url="3g7z_UDMV5Q" distance3D="2005.3"/>
+    <userdata nodeid="node1" longitude="" tags="" source="" customnodeid="" title="" latitude="" info="" copyright="" heading="0" description="" datetime="2020/12/10 下午 02:04" author="" comment=""/>
+    <hotspots height="20" width="180" wordwrap="1">
+      <label background="1" borderradius="1" textcolor="0x000000" backgroundcolor="0xffffff" height="20" textalpha="1" backgroundalpha="1" bordercolor="0x000000" width="180" borderalpha="1" border="1" enabled="1" wordwrap="1"/>
+      <polystyle backgroundcolor="0x0000ff" mode="0" backgroundalpha="0.25098" bordercolor="0x0000ff" borderalpha="1" handcursor="1"/>
+      <hotspot use3D="1" tilt="12.92" skinid="ht_video_youtube" target="_blank" customimageheight="35" title="Choosing The Right Ski Goggles" customimage="media/info.png" url="3g7z_UDMV5Q" distance3D="1002.57" id="vp5" description="" customimagewidth="35" fov="2" pan="-8.84"/>
+      <hotspot use3D="1" tilt="11.41" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.taispo.com.tw/en/product/data-list/index.html" distance3D="1002.57" id="BP6" description="" customimagewidth="35" fov="2" pan="-29.31"/>
+      <hotspot use3D="1" tilt="-2.74" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.accupass.com/event/1902190758215651089880" distance3D="1002.57" id="BP2" description="" customimagewidth="35" fov="2" pan="-334.57"/>
+      <hotspot use3D="1" tilt="-2.95" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.taispo.com.tw/en/menu/DAF9AEEF0D44CBC2D0636733C6861689/info.html" distance3D="1002.57" id="BP3" description="" customimagewidth="35" fov="2" pan="-28.86"/>
+      <hotspot use3D="1" tilt="-3.41" skinid="ht_url" target="_self" customimageheight="35" title="" customimage="media/info.png" url="http://demo10.taiwantradeshow.com.tw/en/showground_1.htm" distance3D="1002.57" id="BP1" description="" customimagewidth="35" fov="2" pan="-4.04999"/>
+      <hotspot use3D="0" tilt="10.38" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP8" description="" customimagewidth="35" fov="10" pan="-48"/>
+      <hotspot use3D="0" tilt="-5.27" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.taispo.com.tw/en/menu/9FDAD841F1CD9B82D0636733C6861689/info.html" distance3D="200.026" id="IP18" description="" customimagewidth="35" fov="10" pan="-323.99"/>
+      <hotspot use3D="1" tilt="12.02" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.accupass.com/event/1902190758215651089880" distance3D="1002.57" id="BP4" description="" customimagewidth="35" fov="2" pan="-334.01"/>
+      <hotspot use3D="0" tilt="11.27" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP9" description="" customimagewidth="35" fov="10" pan="-74.11"/>
+      <hotspot use3D="0" tilt="11.75" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP10" description="" customimagewidth="35" fov="10" pan="-95.34"/>
+      <hotspot use3D="0" tilt="10.69" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP11" description="" customimagewidth="35" fov="10" pan="-121.85"/>
+      <hotspot use3D="0" tilt="7.75" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="" distance3D="200.026" id="BP12" description="" customimagewidth="35" fov="10" pan="-132.96"/>
+      <hotspot use3D="0" tilt="6.73" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP13" description="" customimagewidth="35" fov="10" pan="-163.7"/>
+      <hotspot use3D="0" tilt="6.45" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.youtube.com/watch?v=dMiwuOPcVik" distance3D="200.026" id="BP14" description="" customimagewidth="35" fov="10" pan="-199.5"/>
+      <hotspot use3D="0" tilt="13.29" skinid="ht_url" target="_blank" customimageheight="35" title="" customimage="media/info.png" url="https://www.yahoo.com.tw&#xa;" distance3D="200.026" id="BP7" description="" customimagewidth="35" fov="10" pan="-317.89"/>
+      <hotspot use3D="1" tilt="10.62" skinid="ht_video_youtube" target="_blank" customimageheight="40" title="Choosing The Right Ski Goggles" customimage="media/dot-256-removebg-preview.png" url="3g7z_UDMV5Q" distance3D="1145.8" id="vp15" description="" customimagewidth="40" fov="2" pan="-244.58"/>
     </hotspots>
     <media>
-      <video nodechangekeep="0" field="16.000" tilt="17.220" handcursor="1" pansize="0.000" height="360" loop="0" tiltsize="0.000" fov="23.310" pan="-359.600" rotx="17.000" ambientlevel="0.000" rotz="-0.500" clickmode="2" stretch="0.990" roty="0.000" level="0.300" id="video5" startmutedmobile="1" mode="1" width="640">
+      <video level="0.300" startmutedmobile="1" fov="21.870" rotz="-0.500" height="360" roty="0.000" tiltsize="0.000" nodechangekeep="0" ambientlevel="0.000" rotx="17.000" pan="-359.600" id="video5" pansize="0.000" width="640" handcursor="1" mode="1" stretch="0.990" loop="0" clickmode="2" field="16.000" tilt="17.220">
         <source url="media/videoplayback.mp4"/>
       </video>
-      <video nodechangekeep="0" field="66.000" tilt="12.920" handcursor="0" pansize="12.000" height="360" loop="0" tiltsize="0.000" fov="11.710" pan="-240.430" rotx="16.000" ambientlevel="0.600" rotz="-7.000" clickmode="0" stretch="1.050" roty="29.000" level="1.000" id="video15" startmutedmobile="1" mode="2" width="640">
+      <video level="1.000" startmutedmobile="1" fov="11.610" rotz="-7.000" height="360" roty="29.000" tiltsize="0.000" nodechangekeep="0" ambientlevel="0.600" rotx="15.000" pan="-240.410" id="video15" pansize="12.000" width="640" handcursor="0" mode="2" stretch="1.070" loop="0" clickmode="0" field="66.000" tilt="12.870">
         <source url="media/06-短3.mp4"/>
       </video>
-      <sound pansize="10.000" ambientlevel="0.000" nodechangekeep="0" tiltsize="10.000" startmutedmobile="0" tilt="-1.000" pan="-1.000" id="_background" loop="0" mode="0" field="90.000" level="1.000">
+      <sound level="1.000" tilt="-1.000" mode="0" pansize="10.000" loop="0" tiltsize="10.000" id="_background" startmutedmobile="0" nodechangekeep="0" field="90.000" pan="-1.000" ambientlevel="0.000">
         <source url="media/429_full_dancing-on-the-moon_0148_preview.mp3"/>
       </sound>
-      <image stretch="0.680" height="900" fov="18.930" rotz="0.000" roty="2.000" tilt="-0.860" pan="-359.570" clickmode="0" id="B2" rotx="0.000" handcursor="0" width="1600">
+      <image stretch="0.680" tilt="-0.860" height="900" roty="2.000" rotx="0.000" width="1600" clickmode="0" handcursor="0" id="B2" rotz="0.000" fov="18.930" pan="-359.570">
         <source url="media/T-87877293.jpg"/>
       </image>
-      <image stretch="0.860" height="52" fov="18.610" rotz="0.000" roty="0.000" tilt="3.810" pan="-359.720" clickmode="0" id="BT2" rotx="4.000" handcursor="0" width="425">
-        <source url="media/exhi_w.png"/>
+      <image stretch="0.860" tilt="3.970" height="52" roty="0.000" rotx="4.000" width="425" clickmode="0" handcursor="0" id="BT2" rotz="0.000" fov="31.430" pan="-359.640">
+        <source url="media/h1-removebg-preview.png"/>
       </image>
-      <image stretch="0.930" height="200" fov="11.290" rotz="0.000" roty="19.000" tilt="-0.650" pan="-330.720" clickmode="0" id="B1" rotx="1.000" handcursor="0" width="350">
+      <image stretch="0.930" tilt="-0.650" height="200" roty="19.000" rotx="1.000" width="350" clickmode="0" handcursor="0" id="B1" rotz="0.000" fov="11.290" pan="-330.720">
         <source url="media/T-04791994.jpg"/>
       </image>
-      <image stretch="0.670" height="1335" fov="13.580" rotz="-1.500" roty="-38.000" tilt="-0.710" pan="-28.860" clickmode="0" id="B3" rotx="-2.000" handcursor="0" width="2000">
+      <image stretch="0.670" tilt="-0.710" height="1335" roty="-38.000" rotx="-2.000" width="2000" clickmode="0" handcursor="0" id="B3" rotz="-1.500" fov="13.580" pan="-28.860">
         <source url="media/T-18093576.jpg"/>
       </image>
-      <image stretch="0.640" height="522" fov="9.560" rotz="16.000" roty="-62.000" tilt="14.570" pan="-47.840" clickmode="0" id="B8" rotx="18.000" handcursor="0" width="250">
+      <image stretch="0.640" tilt="14.900" height="522" roty="-65.000" rotx="22.000" width="250" clickmode="0" handcursor="0" id="B8" rotz="18.000" fov="9.560" pan="-47.660">
         <source url="media/image843.png"/>
       </image>
-      <image stretch="1.390" height="1102" fov="16.120" rotz="-5.500" roty="21.000" tilt="14.640" pan="-67.060" clickmode="0" id="B9" rotx="10.000" handcursor="0" width="2560">
+      <image stretch="1.860" tilt="13.560" height="1102" roty="16.000" rotx="9.000" width="2560" clickmode="0" handcursor="0" id="B9" rotz="-4.000" fov="13.330" pan="-70.950">
         <source url="media/8.png"/>
       </image>
-      <image stretch="1.400" height="1102" fov="12.950" rotz="3.000" roty="-16.000" tilt="9.290" pan="-197.790" clickmode="0" id="B14" rotx="11.000" handcursor="0" width="2560">
+      <image stretch="1.190" tilt="14.210" height="610" roty="-5.500" rotx="11.000" width="1000" clickmode="0" handcursor="0" id="BP10" rotz="0.500" fov="14.740" pan="-92.200">
         <source url="media/a (1).png"/>
       </image>
-      <image stretch="1.020" height="234" fov="24.470" rotz="1.000" roty="1.000" tilt="-7.130" pan="1.050" clickmode="0" id="logo17" rotx="64.000" handcursor="0" width="716">
-        <source url="media/wel.png"/>
-        <source url="media/wel.png"/>
-      </image>
-      <image stretch="1.080" height="52" fov="11.820" rotz="-2.000" roty="18.000" tilt="3.180" pan="-330.710" clickmode="0" id="BT1" rotx="12.000" handcursor="0" width="425">
-        <source url="media/forum_w1.png"/>
-      </image>
-      <image stretch="0.860" height="52" fov="11.200" rotz="2.000" roty="-22.000" tilt="3.290" pan="-28.840" clickmode="0" id="BT3" rotx="8.000" handcursor="0" width="425">
-        <source url="media/enevt_w1.png"/>
-      </image>
-      <image stretch="0.990" height="521" fov="6.750" rotz="-19.000" roty="54.000" tilt="14.720" pan="-312.740" clickmode="0" id="B7" rotx="24.000" handcursor="0" width="252">
-        <source url="media/image1046.png"/>
-      </image>
-      <image stretch="1.080" height="150" fov="47.840" rotz="2.500" roty="-8.000" tilt="16.600" pan="-278.980" clickmode="0" id="logo16" rotx="16.000" handcursor="0" width="1100">
-        <source url="media/LOG02.png"/>
-      </image>
-      <image stretch="0.940" height="1102" fov="8.500" rotz="6.500" roty="-26.000" tilt="12.070" pan="-118.850" clickmode="0" id="B11" rotx="14.000" handcursor="0" width="2560">
-        <source url="media/VS90005.png"/>
-      </image>
-      <image stretch="0.750" height="1333" fov="11.410" rotz="8.000" roty="-41.000" tilt="10.330" pan="-129.750" clickmode="0" id="B12" rotx="12.000" handcursor="0" width="2000">
-        <source url="media/T-31063477.jpg"/>
-      </image>
-      <image stretch="0.810" height="361" fov="12.780" rotz="-3.000" roty="15.000" tilt="9.300" pan="-162.570" clickmode="0" id="B13" rotx="10.000" handcursor="0" width="477">
+      <image stretch="1.680" tilt="8.250" height="1102" roty="-25.000" rotx="6.000" width="2560" clickmode="0" handcursor="0" id="B14" rotz="2.000" fov="10.400" pan="-197.670">
         <source url="media/3.png"/>
       </image>
-      <image stretch="1.000" height="612" fov="26.070" rotz="0.000" roty="0.000" tilt="16.550" pan="-359.650" clickmode="0" id="B5" rotx="16.000" handcursor="0" width="800">
-        <source url="media/a.png"/>
+      <image stretch="1.000" tilt="3.470" height="52" roty="24.000" rotx="6.000" width="425" clickmode="0" handcursor="0" id="BT1" rotz="-2.000" fov="15.170" pan="-330.500">
+        <source url="media/bpt2-removebg-preview.png"/>
       </image>
-      <image stretch="1.000" height="612" fov="15.170" rotz="7.000" roty="-27.000" tilt="14.460" pan="-29.180" clickmode="0" id="B6" rotx="14.000" handcursor="0" width="800">
-        <source url="media/B1.png"/>
+      <image stretch="1.320" tilt="3.380" height="52" roty="-22.000" rotx="8.000" width="425" clickmode="0" handcursor="0" id="BT3" rotz="2.000" fov="15.280" pan="-28.630">
+        <source url="media/bpt3-removebg-preview.png"/>
       </image>
-      <image stretch="1.000" height="612" fov="14.250" rotz="-7.000" roty="25.000" tilt="14.100" pan="-330.590" clickmode="0" id="B4" rotx="15.000" handcursor="0" width="800">
-        <source url="media/B2.png"/>
+      <image stretch="0.990" tilt="18.220" height="521" roty="54.000" rotx="23.000" width="252" clickmode="0" handcursor="0" id="B7" rotz="-19.000" fov="6.750" pan="-317.800">
+        <source url="media/image1046.png"/>
       </image>
-      <image stretch="0.780" height="612" fov="17.510" rotz="0.900" roty="-3.000" tilt="15.670" pan="-92.860" clickmode="0" id="B10" rotx="6.000" handcursor="0" width="820">
+      <image stretch="1.310" tilt="16.300" height="150" roty="-14.000" rotx="12.000" width="1100" clickmode="0" handcursor="0" id="logo16" rotz="3.000" fov="53.650" pan="-281.370">
+        <source url="media/C_W.png"/>
+      </image>
+      <image stretch="0.900" tilt="12.100" height="1102" roty="-30.000" rotx="14.000" width="2560" clickmode="0" handcursor="0" id="B11" rotz="7.000" fov="8.710" pan="-118.820">
+        <source url="media/VS90005.png"/>
+      </image>
+      <image stretch="0.730" tilt="10.250" height="1333" roty="-42.000" rotx="11.000" width="2000" clickmode="0" handcursor="0" id="B12" rotz="8.000" fov="12.083" pan="-129.950">
+        <source url="media/T-31063477.jpg"/>
+      </image>
+      <image stretch="0.770" tilt="8.310" height="361" roty="20.000" rotx="8.000" width="477" clickmode="0" handcursor="0" id="B13" rotz="-3.000" fov="12.980" pan="-159.560">
         <source url="media/6.png"/>
       </image>
+      <image stretch="0.910" tilt="16.620" height="612" roty="0.000" rotx="16.000" width="800" clickmode="0" handcursor="0" id="B5" rotz="0.000" fov="26.070" pan="-359.650">
+        <source url="media/a.png"/>
+      </image>
+      <image stretch="1.190" tilt="13.280" height="612" roty="-29.000" rotx="14.000" width="800" clickmode="0" handcursor="0" id="B6" rotz="7.500" fov="13.080" pan="-28.740">
+        <source url="media/B1.png"/>
+      </image>
+      <image stretch="1.230" tilt="13.170" height="612" roty="25.000" rotx="15.000" width="800" clickmode="0" handcursor="0" id="B4" rotz="-7.000" fov="12.300" pan="-331.460">
+        <source url="media/B2.png"/>
+      </image>
+      <image stretch="2.000" tilt="-11.040" height="149" roty="-3.000" rotx="71.000" width="1000" clickmode="0" handcursor="0" id="logo17" rotz="0.000" fov="43.350" pan="-360.000">
+        <source url="media/wel.png"/>
+      </image>
     </media>
-    <transition zoomfov="16" zoomafteroutfov="20" blendtime="1" zoomspeed="0.01" zoomout="0" zoomafterinfov="90" zoomoutpause="1" enabled="0" type="crossdissolve" zoomin="0" blendcolor="0x000000" softedge="0"/>
-    <autorotate delay="1.00" nodefilter="" startloaded="0" speed="0.150" useanimation="0" nodedelay="0.00" enabled="1" returntohorizon="0.000" noderandom="1"/>
+    <transition softedge="0" zoomout="0" zoomoutpause="1" blendtime="1" zoomspeed="0.01" type="crossdissolve" zoomfov="16" blendcolor="0x000000" zoomin="0" enabled="0" zoomafterinfov="90" zoomafteroutfov="20"/>
+    <autorotate returntohorizon="0.000" startloaded="0" useanimation="0" noderandom="1" nodefilter="" nodedelay="0.00" speed="0.150" delay="1.00" enabled="1"/>
     <flyintransition speed="1.01" enabled="1"/>
-    <animation useinautorotation="0" animsequence="Animation01" syncanimationwithvideo="0"/>
-    <control hideabout="1" invertcontrol="1" lockedkeyboardzoom="0" lockedkeyboard="0" invertwheel="0" speedwheel="1" dblclickfullscreen="0" sensitivity="10" lockedwheel="0" rubberband="0" lockedmouse="0" simulatemass="1" contextprojections="0" contextfullscreen="0"/>
+    <animation syncanimationwithvideo="0" animsequence="Animation01" useinautorotation="0"/>
+    <control simulatemass="1" lockedwheel="0" invertcontrol="1" lockedmouse="0" contextprojections="0" sensitivity="10" speedwheel="1" hideabout="1" dblclickfullscreen="0" contextfullscreen="0" lockedkeyboard="0" rubberband="0" invertwheel="0" lockedkeyboardzoom="0"/>
   </panorama>
   <masternode>
-    <userdata copyright="" title="" longitude="" heading="0" comment="" description="" tags="" nodeid="master" source="" customnodeid="" info="" author="" datetime="" latitude=""/>
+    <userdata nodeid="master" longitude="" tags="" source="" customnodeid="" title="" latitude="" info="" copyright="" heading="0" description="" datetime="" author="" comment=""/>
   </masternode>
 </tour>

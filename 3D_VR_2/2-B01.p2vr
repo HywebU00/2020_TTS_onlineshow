@@ -219,8 +219,8 @@
         </hotspot>
         <hotspot>
           <position>
-            <pan>-328.74</pan>
-            <tilt>10.9</tilt>
+            <pan>-327.48</pan>
+            <tilt>11.25</tilt>
             <fov>2</fov>
           </position>
           <next>
@@ -1040,14 +1040,14 @@
         </sound>
         <sound>
           <position>
-            <pan>-30.31</pan>
-            <tilt>14.23</tilt>
+            <pan>-29.18</pan>
+            <tilt>14.46</tilt>
           </position>
           <videorect>
             <rotx>14</rotx>
             <roty>-27</roty>
             <rotz>7</rotz>
-            <fov>17.66</fov>
+            <fov>15.17</fov>
             <stretch>100</stretch>
             <dimx>800</dimx>
             <dimy>612</dimy>
@@ -1071,14 +1071,14 @@
         </sound>
         <sound>
           <position>
-            <pan>-328.78</pan>
-            <tilt>14.07</tilt>
+            <pan>-330.59</pan>
+            <tilt>14.1</tilt>
           </position>
           <videorect>
             <rotx>15</rotx>
-            <roty>24</roty>
+            <roty>25</roty>
             <rotz>-7</rotz>
-            <fov>17.53</fov>
+            <fov>14.25</fov>
             <stretch>100</stretch>
             <dimx>800</dimx>
             <dimy>612</dimy>
