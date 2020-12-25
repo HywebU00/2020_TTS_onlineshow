@@ -24,7 +24,7 @@ $color-word:	 				#222; //一般字的顏色
 $aColor: 						rgb(0, 100, 185); //主色
 $aHover: 						lighten($aColor, 10);
 
-// 色系漸層
+// 色系漸層for 展區
 %color_1 {
     background: #4a2562;
     background: -webkit-linear-gradient(145deg, #4a2562, #b475cc);

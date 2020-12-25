@@ -1806,6 +1806,8 @@
         box-shadow: none;
     }
 }
+//最後的版本-----所有色系整併在一起
+$chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444, #99001d, #d74261;
 .chat_window {
     position: fixed;
     width: 720px;
@@ -1821,19 +1823,37 @@
     transform: translateX(100%);
     // transition: .3s $cubic;
     &.color_1{
-        background: darken(nth($color, 1),20);
+        background: darken(nth($chat_color, 1),20);
     }
-    &.color_2{
-        background: darken(nth($color, 2),20);
+    &.color_blue {
+        background: darken(nth($chat_color, 1),20);
     }
-    &.color_3{
-        background: darken(nth($color, 3),20);
+    &.color_red {
+        background: darken(nth($chat_color, 2),20);
     }
-    &.color_4{
-        background: darken(nth($color, 4),20);
+    &.color_brown {
+        background: darken(nth($chat_color, 3),20);
     }
-    &.color_5{
-        background: darken(nth($color, 5),20);
+    &.color_yellow {
+        background: darken(nth($chat_color, 4),20);
+    }
+    &.color_green {
+        background: darken(nth($chat_color, 5),20);
+    }
+    &.color_cyanblue {
+        background: darken(nth($chat_color, 6),20);
+    }
+    &.color_purple {
+        background: darken(nth($chat_color, 7),20);
+    }
+    &.color_gray {
+        background: darken(nth($chat_color, 8),20);
+    }
+    &.color_redyellow {
+        background: darken(nth($chat_color, 9),20);
+    }
+    &.color_pink {
+        background: darken(nth($chat_color, 10),20);
     }
     &.half {
         width: 360px;
@@ -1907,7 +1927,7 @@
         }
         &:before {
             position: absolute;
-            top: .35em;
+            top: .25em;
             left: .25em;
             width: 10px;
             height: 10px;
