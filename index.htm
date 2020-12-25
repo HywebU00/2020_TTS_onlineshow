@@ -46,7 +46,7 @@
         width: 300px
     }
     .num {
-        width: 12%
+       width: 20px;
     }
     table {
         counter-reset: num
@@ -61,7 +61,10 @@
     table td a{
         white-space: nowrap;
     }
-    table td:first-child{
+    table td a:hover{
+        color: #00b9e7;
+    }
+    table tr td:first-child{
         width: 20px;
     }
     table caption {
@@ -78,7 +81,9 @@
         content: counters(num, ".") " "
     }
     tbody tr td:nth-child(2) {
-        width: 12%
+        width: 12%;
+        font-weight: bold;
+        text-align: center;
     }
     .btn_grp {
         text-align: right
@@ -116,7 +121,7 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>動畫歡迎頁</td>
+                        <td>歡迎頁</td>
                         <td colspan="5"><a href="welcome/welcome.htm" class="welcome">welcome.htm</a></td>
                     </tr>
                    <!--  <tr>
@@ -166,8 +171,8 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>展區A款</td>
-                        <td><a href="A-GUI/show_A_1.htm" target="_blank">show_A_1.htm</a></td>
+                        <td>A展區</td>
+                        <td><a href="A-GUI/show_A_1.htm" target="_blank">show_A_1.htm(有底圖)</a></td>
                         <td><a href="A-GUI/show_A_2.htm" target="_blank">show_A_2.htm</a></td>
                         <td><a href="A-GUI/show_A_3.htm" target="_blank">show_A_3.htm</a></td>
                         <td><a href="A-GUI/show_A_4.htm" target="_blank">show_A_4.htm</a></td>
@@ -175,8 +180,8 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>展區B款</td>
-                        <td><a href="A-GUI/show_B_1.htm" target="_blank">show_B_1.htm</a></td>
+                        <td>B展區</td>
+                        <td><a href="A-GUI/show_B_1.htm" target="_blank">show_B_1.htm(有底圖)</a></td>
                         <td><a href="A-GUI/show_B_2.htm" target="_blank">show_B_2.htm</a></td>
                         <td><a href="A-GUI/show_B_3.htm" target="_blank">show_B_3.htm</a></td>
                         <td><a href="A-GUI/show_B_4.htm" target="_blank">show_B_4.htm</a></td>
@@ -184,7 +189,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>展區C款</td>
+                        <td>C展區</td>
                         <td><a href="A-GUI/show_C_1.htm" target="_blank">show_C_1.htm</a></td>
                         <td><a href="A-GUI/show_C_2.htm" target="_blank">show_C_2.htm</a></td>
                         <td><a href="A-GUI/show_C_3.htm" target="_blank">show_C_3.htm</a></td>
@@ -213,7 +218,7 @@
                 <tbody>
                     <tr>
                         <td></td>
-                        <td>攤位A</td>
+                        <td>A攤位</td>
                         <td><a href="A-GUI/booth_A_1.htm" target="_blank">booth_A_1.htm</a></td>
                         <td><a href="A-GUI/booth_A_2.htm" target="_blank">booth_A_2.htm</a></td>
                         <td><a href="A-GUI/booth_A_3.htm" target="_blank">booth_A_3.htm</a></td>
@@ -222,7 +227,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>攤位B</td>
+                        <td>B攤位</td>
                         <td><a href="A-GUI/booth_B_1.htm" target="_blank">booth_B_1.htm</a></td>
                         <td><a href="A-GUI/booth_B_2.htm" target="_blank">booth_B_2.htm</a></td>
                         <td><a href="A-GUI/booth_B_3.htm" target="_blank">booth_B_3.htm</a></td>
@@ -231,7 +236,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>攤位C</td>
+                        <td>C攤位</td>
                         <td><a href="A-GUI/booth_C_1.htm" target="_blank">booth_C_1.htm</a></td>
                         <td><a href="A-GUI/booth_C_2.htm" target="_blank">booth_C_2.htm</a></td>
                         <td><a href="A-GUI/booth_C_3.htm" target="_blank">booth_C_3.htm</a></td>
@@ -240,7 +245,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>攤位D</td>
+                        <td>D攤位</td>
                         <td><a href="A-GUI/booth_D_1.htm" target="_blank">booth_D_1.htm</a></td>
                         <td><a href="A-GUI/booth_D_2.htm" target="_blank">booth_D_2.htm</a></td>
                         <td><a href="A-GUI/booth_D_3.htm" target="_blank">booth_D_3.htm</a></td>
@@ -249,7 +254,7 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td>攤位E</td>
+                        <td>E攤位</td>
                         <td><a href="A-GUI/booth_E_1.htm" target="_blank">booth_E_1.htm</a></td>
                         <td><a href="A-GUI/booth_E_2.htm" target="_blank">booth_E_2.htm</a></td>
                         <td><a href="A-GUI/booth_E_3.htm" target="_blank">booth_E_3.htm</a></td>

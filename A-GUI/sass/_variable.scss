@@ -1,6 +1,6 @@
 // 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
 // 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
-$color:#1de3ef,#76ef1d,#ff981f,#f7327c,#4a93f6;
+$color:#aa5ac5,#5cb85c,#ff981f,#d74261,#4a93f6;
 
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
@@ -23,6 +23,33 @@ $color-word:	 				#222; //一般字的顏色
 	// 連結顏色
 $aColor: 						rgb(0, 100, 185); //主色
 $aHover: 						lighten($aColor, 10);
+
+// 色系漸層
+%color_1 {
+    background: #4a2562;
+    background: -webkit-linear-gradient(145deg, #4a2562, #b475cc);
+    background: linear-gradient(145deg, #4a2562, #b475cc);
+}
+%color_2 {
+    background: #283c86;
+    background: -webkit-linear-gradient(-145deg, #32cf35, #283c86);
+    background: linear-gradient(-145deg, #32cf35, #283c86);
+}
+%color_3 {
+    background: #108dc7;
+    background: -webkit-linear-gradient(145deg, #ef8e38, #108dc7);
+    background: linear-gradient(145deg, #ef8e38, #108dc7);
+}
+%color_4 {
+    background: #FC5C7D;
+    background: -webkit-linear-gradient(145deg, #6A82FB, #FC5C7D);
+    background: linear-gradient(145deg, #6A82FB, #FC5C7D);
+}
+%color_5 {
+    background: #7474BF;
+    background: -webkit-linear-gradient(145deg, #348AC7, #7474BF);
+    background: linear-gradient(145deg, #348AC7, #7474BF);
+}
 
 // 表單focus顏色
 $form-focus: 					#21baff; //表單
