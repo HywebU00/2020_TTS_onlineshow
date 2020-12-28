@@ -16,7 +16,7 @@ html{
   }
 }
 body {
-    background:#000;
+    // background:#000;
     &.noscroll {
         position: static !important;
         width: 100%;
@@ -31,6 +31,7 @@ body {
 .wrapper {
     width: 100%;
     margin: 0px auto;
+    background:#000;
     @include screen('mobile') {
         background: #FFF;
         overflow: hidden;
