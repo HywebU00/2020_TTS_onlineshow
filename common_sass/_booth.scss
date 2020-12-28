@@ -1,3 +1,5 @@
+//最後的版本-----所有色系整併在一起
+$chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444, #99001d, #d74261;
 @mixin booth_content_xs {
     @media screen and (max-height: 850px) {
         transform: scale(.9);
@@ -27,6 +29,7 @@
         flex: 0 1 100%;
         width: 100%;
         @include aspect-ratio(16, 9);
+        height: auto;
         top: 0;
         left: 0;
         background: #FFF;
@@ -62,6 +65,7 @@
         top: 0;
         left: 0;
         display: flex;
+        margin-left: 0 !important;
     }
 }
 @mixin item_xs {
@@ -70,9 +74,12 @@
         min-width: 47%;
         width: auto !important;
         flex-basis: 47% !important;
-        height: auto;
+        height: auto !important;
         flex: 0 1 47%;
         margin-bottom: 1.2em;
+        left: 0 !important;
+        top: 0 !important;
+        transform: none !important;
         justify-content: space-between;
         align-items: flex-start;
         @include aspect-ratio(4, 3);
@@ -83,7 +90,8 @@
         right: -3.2em !important;
         top: 12em !important;
         width: 50px !important;
-        height:auto  !important;
+        height: auto !important;
+        bottom: auto !important;
         .item {
             margin: 0 0 1em !important;
             width: 48px !important;
@@ -179,9 +187,12 @@
     &.style_A {
         // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
         // background-size: cover;
-        &:before{
+        &:before {
             @include screen('xs_mobile') {
-                height: 15em;
+                height: 13em;
+                width: 90%;
+                top: 1.5em;
+                left: 0;
             }
         }
         .booth_content {
@@ -462,14 +473,14 @@
                 }
                 .youtube {
                     &:after {
-                        background: nth($color, $i);
+                        background: saturate(lighten(nth($color, $i), 10), 60);
                         animation-name: wave_#{$i};
                     }
                 }
                 .product {
                     [class^="item"] {
                         &:after {
-                            background: nth($color, $i);
+                            background: saturate(lighten(nth($color, $i), 10), 60);
                             animation-name: wave_#{$i};
                         }
                         a {
@@ -499,7 +510,7 @@
     &.style_B {
         // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
         // background-size: cover;
-        &:before{
+        &:before {
             @include screen('xs_mobile') {
                 height: 18em;
             }
@@ -568,7 +579,7 @@
                 width: 177px;
                 height: 108px;
                 position: absolute;
-                 @include item_xs;
+                @include item_xs;
                 img {
                     position: absolute;
                     width: 100%;
@@ -756,14 +767,14 @@
                 }
                 .youtube {
                     &:after {
-                        background: nth($color, $i);
+                        background: saturate(lighten(nth($color, $i), 10), 60);
                         animation-name: wave_#{$i};
                     }
                 }
                 .product {
                     [class^="item"] {
                         &:after {
-                            background: nth($color, $i);
+                            background: saturate(lighten(nth($color, $i), 10), 60);
                             animation-name: wave_#{$i};
                         }
                         a {
@@ -852,7 +863,7 @@
                 width: 91px;
                 height: 172px;
                 position: absolute;
-                 @include item_xs;
+                @include item_xs;
                 img {
                     position: absolute;
                     width: 100%;
@@ -894,7 +905,7 @@
                         }
                     }
                 }
-                &:before {
+                &:after {
                     position: absolute;
                     width: 1em;
                     height: 1em;
@@ -920,6 +931,9 @@
                     animation-timing-function: linear;
                     animation-iteration-count: infinite;
                     pointer-events: none;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
                 }
                 a {
                     display: block;
@@ -970,18 +984,18 @@
         .function {
             position: absolute;
             left: 50%;
-            margin-left: -600px;
+            margin-left: -500px;
             top: auto;
             bottom: 100px;
             height: 60px;
-            width: 1200px;
+            width: 1000px;
             z-index: 99;
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-end;
             @include function_xs;
             @include screen('xs_mobile') {
-                display:block;
+                display: block;
                 margin-left: auto;
             }
             .item {
@@ -1055,14 +1069,14 @@
                 }
                 .youtube {
                     &:after {
-                        background: nth($color, $i);
+                        background: saturate(lighten(nth($color, $i), 10), 60);
                         animation-name: wave_#{$i};
                     }
                 }
                 .product {
                     [class^="item"] {
-                        &:before {
-                            background: nth($color, $i);
+                        &:after {
+                            background: saturate(lighten(nth($color, $i), 10), 60);
                             animation-name: wave_#{$i};
                         }
                         a {
@@ -1089,9 +1103,9 @@
     &.style_D {
         // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
         // background-size: cover;
-        &:before{
+        &:before {
             @include screen('xs_mobile') {
-                top:3em;
+                top: 3em;
             }
         }
         .booth_content {
@@ -1157,7 +1171,7 @@
                 width: 68px;
                 height: 87px;
                 position: absolute;
-                 @include item_xs;
+                @include item_xs;
                 img {
                     position: absolute;
                     width: 100%;
@@ -1199,7 +1213,7 @@
                         }
                     }
                 }
-                &:before {
+                &:after {
                     position: absolute;
                     width: 1em;
                     height: 1em;
@@ -1225,6 +1239,9 @@
                     animation-timing-function: linear;
                     animation-iteration-count: infinite;
                     pointer-events: none;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
                 }
                 a {
                     display: block;
@@ -1275,18 +1292,18 @@
         .function {
             position: absolute;
             left: 50%;
-            margin-left: -600px;
+            margin-left: -500px;
             top: auto;
             bottom: 130px;
             height: 60px;
-            width: 1200px;
+            width: 1000px;
             z-index: 99;
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-end;
             @include function_xs;
             @include screen('xs_mobile') {
-                display:block;
+                display: block;
                 margin-left: auto;
             }
             .item {
@@ -1360,14 +1377,14 @@
                 }
                 .youtube {
                     &:after {
-                        background: nth($color, $i);
+                        background: saturate(lighten(nth($color, $i), 10), 60);
                         animation-name: wave_#{$i};
                     }
                 }
                 .product {
                     [class^="item"] {
-                        &:before {
-                            background: nth($color, $i);
+                        &:after {
+                            background: saturate(lighten(nth($color, $i), 10), 60);
                             animation-name: wave_#{$i};
                         }
                         a {
@@ -1394,9 +1411,9 @@
     &.style_E {
         // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
         // background-size: cover;
-        &:before{
+        &:before {
             @include screen('xs_mobile') {
-                top:1em;
+                top: 1em;
             }
         }
         .booth_content {
@@ -1462,7 +1479,7 @@
                 width: 100px;
                 height: 80px;
                 position: absolute;
-                 @include item_xs;
+                @include item_xs;
                 img {
                     position: absolute;
                     width: 100%;
@@ -1504,7 +1521,7 @@
                         }
                     }
                 }
-                &:before {
+                &:after {
                     position: absolute;
                     width: 1em;
                     height: 1em;
@@ -1530,6 +1547,9 @@
                     animation-timing-function: linear;
                     animation-iteration-count: infinite;
                     pointer-events: none;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
                 }
                 a {
                     display: block;
@@ -1581,18 +1601,18 @@
         .function {
             position: absolute;
             left: 50%;
-            margin-left: -600px;
+            margin-left: -500px;
             top: auto;
             bottom: 130px;
             height: 60px;
-            width: 1200px;
+            width: 1000px;
             z-index: 99;
             display: flex;
             flex-flow: row nowrap;
             justify-content: flex-end;
             @include function_xs;
             @include screen('xs_mobile') {
-                display:block;
+                display: block;
                 margin-left: auto;
             }
             .item {
@@ -1666,14 +1686,14 @@
                 }
                 .youtube {
                     &:after {
-                        background: nth($color, $i);
+                        background: saturate(lighten(nth($color, $i), 10), 60);
                         animation-name: wave_#{$i};
                     }
                 }
                 .product {
                     [class^="item"] {
-                        &:before {
-                            background: nth($color, $i);
+                        &:after {
+                            background: saturate(lighten(nth($color, $i), 10), 60);
                             animation-name: wave_#{$i};
                         }
                         a {
@@ -1848,46 +1868,17 @@
     margin: 0;
 }
 // ripple animation
-@keyframes wave_1 {
-    0% {
-        box-shadow: 0 0 0px 0px rgba(nth($color, 1), 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba(nth($color, 1), 0);
-    }
-}
-@keyframes wave_2 {
-    0% {
-        box-shadow: 0 0 0px 0px rgba(nth($color, 2), 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba(nth($color, 2), 0);
+@for $i from 1 through 5 {
+    @keyframes wave_#{$i} {
+        0% {
+            box-shadow: 0 0 0px 0px rgba(saturate(lighten(nth($color, $i), 10), 60), 1);
+        }
+        100% {
+            box-shadow: 0 0 0px 15px rgba(saturate(lighten(nth($color, $i), 10), 60), 0);
+        }
     }
 }
-@keyframes wave_3 {
-    0% {
-        box-shadow: 0 0 0px 0px rgba(nth($color, 3), 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba(nth($color, 3), 0);
-    }
-}
-@keyframes wave_4 {
-    0% {
-        box-shadow: 0 0 0px 0px rgba(nth($color, 4), 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba(nth($color, 4), 0);
-    }
-}
-@keyframes wave_5 {
-    0% {
-        box-shadow: 0 0 0px 0px rgba(nth($color, 5), 1);
-    }
-    100% {
-        box-shadow: 0 0 0px 15px rgba(nth($color, 5), 0);
-    }
-}
+
 .open_chat {
     width: 50px;
     height: 50px;
@@ -1931,8 +1922,7 @@
         box-shadow: none;
     }
 }
-//最後的版本-----所有色系整併在一起
-$chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444, #99001d, #d74261;
+
 .chat_window {
     position: fixed;
     width: 720px;
