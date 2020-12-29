@@ -558,4 +558,26 @@
             }
         }
     }
+    &.style_C{
+        &.color_purple {
+
+            @extend %color_purple;
+        }
+        &.color_green {
+
+            @extend %color_green;
+        }
+        &.color_brown {
+
+            @extend %color_brown;
+        }
+        &.color_red {
+
+            @extend %color_red;
+        }
+        &.color_blue {
+
+            @extend %color_blue;
+        }
+    }
 }
