@@ -305,6 +305,11 @@ img.img-responsive {
         pointer-events: none;
         img {
             margin-bottom: 1em;
+            height:400px;
+            object-fit: cover;
+            @include screen('xs_mobile') {
+                height:320px;
+            }
         }
         span {
             display: block;
