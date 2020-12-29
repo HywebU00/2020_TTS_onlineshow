@@ -182,6 +182,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 display: none;
             }
         }
+        a {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                object-fit: cover;
+            }
+        }
+        iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
     }
     //style_A
     &.style_A {
@@ -228,30 +252,6 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             left: 159px;
             background: #000;
             @include youtube_xs;
-            a {
-                display: block;
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-                z-index: 2;
-                img {
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    left: 0;
-                    top: 0;
-                    object-fit: cover;
-                }
-            }
-            iframe {
-                position: absolute;
-                width: 100%;
-                height: 100%;
-                top: 0;
-                left: 0;
-            }
         }
         .product {
             position: absolute;
@@ -812,6 +812,9 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 z-index: 2;
                 &.only_for_image {
                     z-index: 3;
+                    // img{
+                    //     width: 100%;
+                    // }
                 }
             }
             iframe {
