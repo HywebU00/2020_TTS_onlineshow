@@ -6,7 +6,6 @@
         transform: translateZ(0) translate(100px, 100px);
     }
 }
-
 .showground {
     display: block;
     position: fixed;
@@ -16,7 +15,7 @@
     margin-top: 75px;
     top: 0;
     left: 0;
-    .img_bg,.bg_img{
+    .img_bg, .bg_img {
         position: absolute;
         width: 100%;
         height: 100%;
@@ -39,6 +38,9 @@
         right: 0;
         padding: 5% 0 1em;
         z-index: 1;
+        @include screen('xs_mobile') {
+            padding-top: 4em;
+        }
     }
     @include screen('mobile') {
         height: calc(100% - 60px);
@@ -224,40 +226,40 @@
                 top: 220px;
             }
         }
-        &.color_1 {
+        &.color_purple {
             .show_item {
                 background: url(../images/showground/item_a_bg.png) no-repeat center bottom;
                 background-size: 100%;
             }
-            @extend %color_1;
+            @extend %color_purple;
         }
-        &.color_2 {
+        &.color_green {
             .show_item {
                 background: url(../images/showground/item_b_bg.png) no-repeat center bottom;
                 background-size: 100%;
             }
-            @extend %color_2;
+            @extend %color_green;
         }
-        &.color_3 {
+        &.color_brown {
             .show_item {
                 background: url(../images/showground/item_b_bg.png) no-repeat center bottom;
                 background-size: 100%;
             }
-            @extend %color_3;
+            @extend %color_brown;
         }
-        &.color_4 {
+        &.color_red {
             .show_item {
                 background: url(../images/showground/item_b_bg.png) no-repeat center bottom;
                 background-size: 100%;
             }
-            @extend %color_4;
+            @extend %color_red;
         }
-        &.color_5 {
+        &.color_blue {
             .show_item {
                 background: url(../images/showground/item_b_bg.png) no-repeat center bottom;
                 background-size: 100%;
             }
-            @extend %color_5;
+            @extend %color_blue;
         }
     }
     &.style_B {
@@ -347,6 +349,9 @@
                         transition: .3s ease-out;
                         object-fit: cover;
                     }
+                    .title{
+                        color:#FFF;
+                    }
                     &:after {
                         content: "";
                         bottom: 0px;
@@ -356,6 +361,7 @@
                         height: 0;
                         border-style: solid;
                         border-width: 20px 0 0 350px;
+                        transition: .3s ease-out;
                         border-color: transparent transparent transparent #FFF;
                     }
                 }
@@ -395,7 +401,7 @@
                 }
             }
             a {
-                color: #333;
+                color: #FFF;
             }
         }
         @for $i from 1 through 5 {
@@ -406,33 +412,15 @@
                     .item {
                         .img-container {
                             &:after {
-                                content: "";
-                                bottom: 0px;
-                                left: 0;
-                                transition: .3s ease-out;
-                                position: absolute;
-                                width: 0;
-                                height: 0;
-                                border-style: solid;
-                                border-width: 20px 0 0 350px;
                                 border-color: transparent transparent transparent darken(nth($color, $i), 25);
                             }
                         }
                         .title {
-                            color: #FFF;
                             background: darken(nth($color, $i), 25);
                         }
                         &:hover, &:focus {
                             .img-container {
                                 &:after {
-                                    content: "";
-                                    bottom: 0px;
-                                    left: 0;
-                                    position: absolute;
-                                    width: 0;
-                                    height: 0;
-                                    border-style: solid;
-                                    border-width: 20px 0 0 350px;
                                     border-color: transparent transparent transparent darken(nth($color, $i), 20);
                                 }
                             }
@@ -444,20 +432,130 @@
                 }
             }
         }
-        &.color_1 {
-            @extend %color_1;
+        &.color_purple {
+            @extend %color_purple;
+            .showgroundSlider {
+                .item {
+                    .img-container {
+                        &:after {
+                            border-color: transparent transparent transparent darken(nth($color, 1), 25);
+                        }
+                    }
+                    .title {
+                        background: darken(nth($color, 1), 25);
+                    }
+                    &:hover, &:focus {
+                        .img-container {
+                            &:after {
+                                border-color: transparent transparent transparent darken(nth($color, 1), 20);
+                            }
+                        }
+                        .title {
+                            background: darken(nth($color, 1), 20);
+                        }
+                    }
+                }
+            }
         }
-        &.color_2 {
-            @extend %color_2;
+        &.color_green {
+            @extend %color_green;
+            .showgroundSlider {
+                .item {
+                    .img-container {
+                        &:after {
+                            border-color: transparent transparent transparent darken(nth($color, 2), 25);
+                        }
+                    }
+                    .title {
+                        background: darken(nth($color, 2), 25);
+                    }
+                    &:hover, &:focus {
+                        .img-container {
+                            &:after {
+                                border-color: transparent transparent transparent darken(nth($color, 2), 20);
+                            }
+                        }
+                        .title {
+                            background: darken(nth($color, 2), 20);
+                        }
+                    }
+                }
+            }
         }
-        &.color_3 {
-            @extend %color_3;
+        &.color_brown {
+            @extend %color_brown;
+            .showgroundSlider {
+                .item {
+                    .img-container {
+                        &:after {
+                            border-color: transparent transparent transparent darken(nth($color, 3), 25);
+                        }
+                    }
+                    .title {
+                        background: darken(nth($color, 3), 25);
+                    }
+                    &:hover, &:focus {
+                        .img-container {
+                            &:after {
+                                border-color: transparent transparent transparent darken(nth($color, 3), 20);
+                            }
+                        }
+                        .title {
+                            background: darken(nth($color, 3), 20);
+                        }
+                    }
+                }
+            }
         }
-        &.color_4 {
-            @extend %color_4;
+        &.color_red {
+            @extend %color_red;
+            .showgroundSlider {
+                .item {
+                    .img-container {
+                        &:after {
+                            border-color: transparent transparent transparent darken(nth($color, 4), 25);
+                        }
+                    }
+                    .title {
+                        background: darken(nth($color, 4), 25);
+                    }
+                    &:hover, &:focus {
+                        .img-container {
+                            &:after {
+                                border-color: transparent transparent transparent darken(nth($color, 4), 20);
+                            }
+                        }
+                        .title {
+                            background: darken(nth($color, 4), 20);
+                        }
+                    }
+                }
+            }
         }
-        &.color_5 {
-            @extend %color_5;
+        &.color_blue {
+            @extend %color_blue;
+            .showgroundSlider {
+                .item {
+                    .img-container {
+                        &:after {
+                            border-color: transparent transparent transparent darken(nth($color, 5), 25);
+                        }
+                    }
+                    .title {
+                        background: darken(nth($color, 5), 25);
+                    }
+                    &:hover, &:focus {
+                        .img-container {
+                            &:after {
+                                border-color: transparent transparent transparent darken(nth($color, 5), 20);
+                            }
+                        }
+                        .title {
+                            background: darken(nth($color, 5), 20);
+                        }
+                    }
+                }
+            }
         }
     }
 }

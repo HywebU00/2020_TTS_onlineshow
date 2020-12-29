@@ -25,27 +25,27 @@ $aColor: 						rgb(0, 100, 185); //主色
 $aHover: 						lighten($aColor, 10);
 
 // 色系漸層for 展區
-%color_1 {
+%color_purple {
     background: #4a2562;
     background: -webkit-linear-gradient(145deg, #4a2562, #b475cc);
     background: linear-gradient(145deg, #4a2562, #b475cc);
 }
-%color_2 {
+%color_green {
     background: #283c86;
     background: -webkit-linear-gradient(-145deg, #32cf35, #283c86);
     background: linear-gradient(-145deg, #32cf35, #283c86);
 }
-%color_3 {
+%color_brown {
     background: #108dc7;
     background: -webkit-linear-gradient(145deg, #ef8e38, #108dc7);
     background: linear-gradient(145deg, #ef8e38, #108dc7);
 }
-%color_4 {
+%color_red {
     background: #FC5C7D;
     background: -webkit-linear-gradient(145deg, #6A82FB, #FC5C7D);
     background: linear-gradient(145deg, #6A82FB, #FC5C7D);
 }
-%color_5 {
+%color_blue {
     background: #7474BF;
     background: -webkit-linear-gradient(145deg, #348AC7, #7474BF);
     background: linear-gradient(145deg, #348AC7, #7474BF);
