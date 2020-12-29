@@ -506,6 +506,261 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
         }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m1_1.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_a_1.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m1_2.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_a_2.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m1_3.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_a_3.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m1_4.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_a_4.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m1_5.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_a_5.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
+                        }
+                    }
+                }
+            }
+        }
     }
     &.style_B {
         // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
@@ -792,6 +1047,261 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                                 box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
+                        }
+                    }
+                }
+            }
+        }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m2_1.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_b_1.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m2_2.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_b_2.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m2_3.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_b_3.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m2_4.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_b_4.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m2_5.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_b_5.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
                         }
                     }
                 }
@@ -1094,6 +1604,261 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                                 box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
+                        }
+                    }
+                }
+            }
+        }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m3_1.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_c_1.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m3_2.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_c_2.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m3_3.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_c_3.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m3_4.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_c_4.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m3_5.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_c_5.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
                         }
                     }
                 }
@@ -1402,6 +2167,261 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                                 box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
+                        }
+                    }
+                }
+            }
+        }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m4_1.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_d_1.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m4_2.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_d_2.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m4_3.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_d_3.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m4_4.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_d_4.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m4_5.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_d_5.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
                         }
                     }
                 }
@@ -1716,12 +2736,271 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
         }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m5_1.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_e_1.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m5_2.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_e_2.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m5_3.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_e_3.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m5_4.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_e_4.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            @include screen('xs_mobile') {
+                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                &:before {
+                    background: url(../images/booth/booth_m5_5.png) no-repeat top center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_e_5.png) no-repeat center center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^="item"] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover, &:focus {
+                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 // --------------------------------------開燈箱內的設定-----//
 .booth_company {
     max-width: 600px;
     padding: 1em 2em 5em;
+    background: #FFF;
+    a {
+        word-break: break-all;
+    }
     h1, h2 {
         line-height: 1.25em;
         margin: 0;
@@ -1878,7 +3157,6 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
     }
 }
-
 .open_chat {
     width: 50px;
     height: 50px;
@@ -1922,7 +3200,6 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         box-shadow: none;
     }
 }
-
 .chat_window {
     position: fixed;
     width: 720px;
