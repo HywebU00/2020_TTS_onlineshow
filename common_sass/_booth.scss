@@ -3670,6 +3670,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             margin-left: -990px;
             transition: 0.3s ease-out;
             @include booth_content_xs;
+            @media screen and (max-height: 750px) {
+                bottom: 0px;
+            }
         }
         .company_logo {
             position: absolute;
