@@ -13,86 +13,103 @@
     <!-- hyUI -->
     <link rel="stylesheet" href="A-GUI/css/hyui.css">
     <style>
-    .demo_wrap {
-        max-width: 1200px;
-        margin: 0em auto 1em;
-        padding: 15px 15px 3em;
-        clear: both;
-        background: #FFF
-    }
-    .demo_wrap h1 {
-        display: block;
-        margin: 0px auto;
-        max-width: 300px;
-        float: left;
-        margin-right: 1em
-    }
-    h3 {
-        font-size: 2rem;
-        margin-bottom: .5em;
-    }
-    p {
-        font-size: .938rem;
-        color: #666;
-    }
-    @media screen and (max-width:545px) {
+        .demo_wrap {
+            max-width: 1200px;
+            margin: 0em auto 1em;
+            padding: 15px 15px 3em;
+            clear: both;
+            background: #FFF
+        }
+
         .demo_wrap h1 {
-            max-width: 100%;
-            float: none;
-            text-align: center
+            display: block;
+            margin: 0px auto;
+            max-width: 300px;
+            float: left;
+            margin-right: 1em
         }
-    }
-    .demo_wrap h1 img {
-        width: 300px
-    }
-    .num {
-       width: 20px;
-    }
-    table {
-        counter-reset: num
-    }
-    table {
-        margin-bottom: 1em
-    }
-    table td{
-        font-size: .938rem;
-        width: 15%;
-    }
-    table td a{
-        white-space: nowrap;
-    }
-    table td a:hover{
-        color: #00b9e7;
-    }
-    table tr td:first-child{
-        width: 20px;
-    }
-    table caption {
-        text-align: left;
-        font-weight: bold;
-        font-size: 1.25em;
-        padding: .5em 0;
-        color: #ff5050
-    }
-    tbody tr td:first-child:before {
-        counter-increment: num;
-        display: block;
-        text-align: center;
-        content: counters(num, ".") " "
-    }
-    tbody tr td:nth-child(2) {
-        width: 12%;
-        font-weight: bold;
-        text-align: center;
-    }
-    .btn_grp {
-        text-align: right
-    }
-    @media screen and (max-width:545px) {
+
+        h3 {
+            font-size: 2rem;
+            margin-bottom: .5em;
+        }
+
+        p {
+            font-size: .938rem;
+            color: #666;
+        }
+
+        @media screen and (max-width:545px) {
+            .demo_wrap h1 {
+                max-width: 100%;
+                float: none;
+                text-align: center
+            }
+        }
+
+        .demo_wrap h1 img {
+            width: 300px
+        }
+
+        .num {
+            width: 20px;
+        }
+
+        table {
+            counter-reset: num
+        }
+
+        table {
+            margin-bottom: 1em
+        }
+
+        table td {
+            font-size: .938rem;
+            width: 15%;
+        }
+
+        table td a {
+            white-space: nowrap;
+        }
+
+        table td a:hover {
+            color: #00b9e7;
+        }
+
+        table tr td:first-child {
+            width: 20px;
+        }
+
+        table caption {
+            text-align: left;
+            font-weight: bold;
+            font-size: 1.25em;
+            padding: .5em 0;
+            color: #ff5050
+        }
+
+        tbody tr td:first-child:before {
+            counter-increment: num;
+            display: block;
+            text-align: center;
+            content: counters(num, ".") " "
+        }
+
+        tbody tr td:nth-child(2) {
+            width: 12%;
+            font-weight: bold;
+            text-align: center;
+        }
+
         .btn_grp {
-            text-align: center
+            text-align: right
         }
-    }
+
+        @media screen and (max-width:545px) {
+            .btn_grp {
+                text-align: center
+            }
+        }
     </style>
 </head>
 
@@ -124,7 +141,7 @@
                         <td>歡迎頁</td>
                         <td colspan="5"><a href="welcome/welcome.htm" class="welcome">welcome.htm</a></td>
                     </tr>
-                   <!--  <tr>
+                    <!--  <tr>
                         <td></td>
                         <td>大廳</td>
                         <td><a href="A-GUI/A_lobby.htm"></a></td>
@@ -134,11 +151,12 @@
                     <tr>
                         <td></td>
                         <td>大廳</td>
-                        <td ><a href="A-GUI/A_lobby_iframe.htm" target="_blank">A_lobby_iframe.htm</a></td>
-                        <td ><a href="A-GUI/B_lobby_iframe.htm" target="_blank">B_lobby_iframe.htm</a></td>
-                        <td ><a href="http://demo10.taiwantradeshow.com.tw/en/index.html" target="_blank">C_lobby_iframe.htm</a></td>
-                        <td ><a href="http://demo3.taiwantradeshow.com.tw/" target="_blank">連結</a></td>
-                        <td ><a href="http://demo4.taiwantradeshow.com.tw/en/index.html" target="_blank">連結</a></td>
+                        <td><a href="A-GUI/A_lobby_iframe.htm" target="_blank">A_lobby_iframe.htm</a></td>
+                        <td><a href="A-GUI/B_lobby_iframe.htm" target="_blank">B_lobby_iframe.htm</a></td>
+                        <td><a href="http://demo10.taiwantradeshow.com.tw/en/index.html"
+                                target="_blank">C_lobby_iframe.htm</a></td>
+                        <td><a href="http://demo3.taiwantradeshow.com.tw/" target="_blank">連結</a></td>
+                        <td><a href="http://demo4.taiwantradeshow.com.tw/en/index.html" target="_blank">連結</a></td>
                     </tr>
                     <tr>
                         <td></td>
@@ -196,7 +214,6 @@
                         <td><a href="A-GUI/show_C_4.htm" target="_blank">show_C_4.htm</a></td>
                         <td><a href="A-GUI/show_C_5.htm" target="_blank">show_C_5.htm</a></td>
                     </tr>
-
                 </tbody>
             </table>
         </div>
@@ -260,6 +277,15 @@
                         <td><a href="A-GUI/booth_E_3.htm" target="_blank">booth_E_3.htm</a></td>
                         <td><a href="A-GUI/booth_E_4.htm" target="_blank">booth_E_4.htm</a></td>
                         <td><a href="A-GUI/booth_E_5.htm" target="_blank">booth_E_5.htm</a></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>F攤位(玩美)</td>
+                        <td><a href="A-GUI/booth_F_1.htm" target="_blank">booth_F_1.htm</a></td>
+                        <td><a href="A-GUI/booth_F_2.htm" target="_blank">booth_F_2.htm</a></td>
+                        <td><a href="A-GUI/booth_F_3.htm" target="_blank">booth_F_3.htm</a></td>
+                        <td><a href="A-GUI/booth_F_4.htm" target="_blank">booth_F_4.htm</a></td>
+                        <td><a href="A-GUI/booth_F_5.htm" target="_blank">booth_F_5.htm</a></td>
                     </tr>
                 </tbody>
             </table>

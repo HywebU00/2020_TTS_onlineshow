@@ -1,9 +1,10 @@
 //最後的版本-----所有色系整併在一起
-$chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444, #99001d, #d74261;
+$chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
+    #99001d, #d74261;
 @mixin booth_content_xs {
     @media screen and (max-height: 850px) {
-        transform: scale(.9);
-        bottom: -50px;
+        transform: scale(0.9);
+        bottom: -20px;
     }
     @media screen and (max-height: 750px) {
         bottom: -100px;
@@ -32,10 +33,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         height: auto;
         top: 0;
         left: 0;
-        background: #FFF;
+        background: #fff;
         margin-bottom: 1em;
         img {
-            transform: scale(.85);
+            transform: scale(0.85);
         }
     }
 }
@@ -47,7 +48,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         top: 0;
         left: 0;
         height: auto;
-        background: #FFF;
+        background: #fff;
         margin-bottom: 1.2em;
         @include aspect-ratio(4, 3);
         // outline: 1px solid rgba(255, 255, 255, .5);
@@ -129,9 +130,9 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             position: absolute;
             width: 100%;
             left: 0%;
-            top: .5em;
+            top: 0.5em;
             height: 20em;
-            content: "";
+            content: '';
             display: block;
             z-index: 1;
         }
@@ -144,7 +145,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             left: 0%;
             top: 0%;
             height: 15em;
-            content: "";
+            content: '';
             display: block;
             background: url(../images/booth/booth_m_bg.jpg) no-repeat center top;
             background-size: contain;
@@ -159,10 +160,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             top: -1em;
             border-radius: 50%;
             // background: #1de3ef;
-            border: 2px solid #FFF;
+            border: 2px solid #fff;
             left: 50%;
-            margin-left: -.5em;
-            content: "";
+            margin-left: -0.5em;
+            content: '';
             z-index: 4;
             -webkit-border-radius: 50%;
             -moz-border-radius: 50%;
@@ -226,7 +227,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             bottom: 60px;
             left: 50%;
             margin-left: -440px;
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
             @include booth_content_xs;
         }
         .company_logo {
@@ -260,7 +261,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             top: 286px;
             left: 32%;
             @include product_xs;
-            [class^="item"] {
+            [class^='item'] {
                 width: 80px;
                 height: 120px;
                 position: absolute;
@@ -285,8 +286,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -297,8 +298,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -313,10 +314,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     top: -1em;
                     border-radius: 50%;
                     // background: #1de3ef;
-                    border: 2px solid #FFF;
+                    border: 2px solid #fff;
                     left: 50%;
-                    margin-left: -.5em;
-                    content: "";
+                    margin-left: -0.5em;
+                    content: '';
                     z-index: 2;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -343,9 +344,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border: 2px solid #FFF;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
                     }
                 }
             }
@@ -412,7 +415,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     display: block;
                     width: 50px;
                     height: 50px;
-                    background: #FFF;
+                    background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     // border: 5px solid #1de3ef;
@@ -427,27 +430,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                     .title {
                         display: block;
-                        padding: .25em;
-                        border-radius: .25rem;
-                        background: rgba(0, 0, 0, .75);
-                        color: #FFF;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
                         text-align: center;
                         right: 70px;
                         top: 10px;
                         position: absolute;
                         white-space: nowrap;
-                        font-size: .938rem;
+                        font-size: 0.938rem;
                         font-weight: bold;
                         min-width: 6em;
                         opacity: 0;
-                        transition: .3s $cubic;
+                        transition: 0.3s $cubic;
                         pointer-events: none;
                     }
                     img {
                         width: 72%;
                         height: 72%;
                         margin: 14%;
-                        opacity: .75
+                        opacity: 0.75;
                     }
                 }
             }
@@ -456,16 +459,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         @for $i from 1 through 5 {
             &.color_#{$i} {
                 background: rgb(1, 2, 4);
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, $i), 38) 66%, darken(nth($color, $i), 46) 66%, rgba(2, 3, 3, 1) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
                 @include screen('xs_mobile') {
-                    background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, $i), 38) 450px);
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
                     &:before {
-                        background:url(../images/booth/booth_m1_#{$i}.png) no-repeat top center;
+                        background: url(../images/booth/booth_m1_#{$i}.png)
+                            no-repeat top center;
                         background-size: contain;
                     }
                 }
                 .booth_content {
-                    background: url(../images/booth/booth_a_#{$i}.png) no-repeat center center;
+                    background: url(../images/booth/booth_a_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
                     background-size: contain;
                     @include screen('xs_mobile') {
                         background: none;
@@ -478,14 +495,23 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                 }
                 .product {
-                    [class^="item"] {
+                    [class^='item'] {
                         &:after {
-                            background: saturate(lighten(nth($color, $i), 10), 60);
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
                             animation-name: wave_#{$i};
                         }
                         a {
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20), 0px 0px 5px #FFF;
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
                             }
                         }
                     }
@@ -494,8 +520,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     .item {
                         a {
                             border: 5px solid saturate(nth($color, $i), 0);
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
                             @include screen('xs_mobile') {
@@ -508,16 +540,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_purple {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m1_1.png) no-repeat top center;
+                    background: url(../images/booth/booth_m1_1.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_a_1.png) no-repeat center center;
+                background: url(../images/booth/booth_a_1.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -530,14 +574,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -546,8 +594,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 1), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
                             animation-name: wave_1;
                         }
                         @include screen('xs_mobile') {
@@ -559,16 +611,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_green {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m1_2.png) no-repeat top center;
+                    background: url(../images/booth/booth_m1_2.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_a_2.png) no-repeat center center;
+                background: url(../images/booth/booth_a_2.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -581,14 +645,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -597,8 +665,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 2), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
                             animation-name: wave_2;
                         }
                         @include screen('xs_mobile') {
@@ -610,16 +682,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_brown {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m1_3.png) no-repeat top center;
+                    background: url(../images/booth/booth_m1_3.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_a_3.png) no-repeat center center;
+                background: url(../images/booth/booth_a_3.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -632,14 +716,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -648,8 +736,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 3), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
                             animation-name: wave_3;
                         }
                         @include screen('xs_mobile') {
@@ -661,16 +753,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_red {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m1_4.png) no-repeat top center;
+                    background: url(../images/booth/booth_m1_4.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_a_4.png) no-repeat center center;
+                background: url(../images/booth/booth_a_4.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -683,14 +787,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -699,8 +807,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 4), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
                             animation-name: wave_4;
                         }
                         @include screen('xs_mobile') {
@@ -712,16 +824,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_blue {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m1_5.png) no-repeat top center;
+                    background: url(../images/booth/booth_m1_5.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_a_5.png) no-repeat center center;
+                background: url(../images/booth/booth_a_5.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -734,14 +858,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -750,8 +878,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 5), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
                             animation-name: wave_5;
                         }
                         @include screen('xs_mobile') {
@@ -777,7 +909,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             bottom: 60px;
             left: 50%;
             margin-left: -550px;
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
             @include booth_content_xs;
         }
         .company_logo {
@@ -833,7 +965,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             top: 258px;
             left: 626px;
             @include product_xs;
-            [class^="item"] {
+            [class^='item'] {
                 width: 177px;
                 height: 108px;
                 position: absolute;
@@ -858,8 +990,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -870,8 +1002,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -886,10 +1018,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     top: -1em;
                     border-radius: 50%;
                     // background: #1de3ef;
-                    border: 2px solid #FFF;
+                    border: 2px solid #fff;
                     left: 50%;
-                    margin-left: -.5em;
-                    content: "";
+                    margin-left: -0.5em;
+                    content: '';
                     z-index: 2;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -913,9 +1045,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border: 2px solid #FFF;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
                     }
                 }
             }
@@ -964,7 +1098,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     display: block;
                     width: 60px;
                     height: 60px;
-                    background: #FFF;
+                    background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     // border: 5px solid #1de3ef;
@@ -979,27 +1113,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                     .title {
                         display: block;
-                        padding: .25em;
-                        border-radius: .25rem;
-                        background: rgba(0, 0, 0, .75);
-                        color: #FFF;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
                         text-align: center;
                         right: 70px;
                         top: 10px;
                         position: absolute;
                         white-space: nowrap;
-                        font-size: .938rem;
+                        font-size: 0.938rem;
                         font-weight: bold;
                         min-width: 6em;
                         opacity: 0;
-                        transition: .3s $cubic;
+                        transition: 0.3s $cubic;
                         pointer-events: none;
                     }
                     img {
                         width: 72%;
                         height: 72%;
                         margin: 14%;
-                        opacity: .75
+                        opacity: 0.75;
                     }
                 }
             }
@@ -1008,16 +1142,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         @for $i from 1 through 5 {
             &.color_#{$i} {
                 background: rgb(1, 2, 4);
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, $i), 38) 66%, darken(nth($color, $i), 46) 66%, rgba(2, 3, 3, 1) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
                 @include screen('xs_mobile') {
-                    background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, $i), 38) 450px);
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
                     &:before {
-                        background:url(../images/booth/booth_m2_#{$i}.png) no-repeat top center;
+                        background: url(../images/booth/booth_m2_#{$i}.png)
+                            no-repeat top center;
                         background-size: contain;
                     }
                 }
                 .booth_content {
-                    background: url(../images/booth/booth_b_#{$i}.png) no-repeat center center;
+                    background: url(../images/booth/booth_b_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
                     background-size: contain;
                     @include screen('xs_mobile') {
                         background: none;
@@ -1030,14 +1178,23 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                 }
                 .product {
-                    [class^="item"] {
+                    [class^='item'] {
                         &:after {
-                            background: saturate(lighten(nth($color, $i), 10), 60);
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
                             animation-name: wave_#{$i};
                         }
                         a {
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20), 0px 0px 5px #FFF;
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
                             }
                         }
                     }
@@ -1046,8 +1203,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     .item {
                         a {
                             border: 5px solid saturate(nth($color, $i), 0);
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
                         }
@@ -1057,16 +1220,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_purple {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m2_1.png) no-repeat top center;
+                    background: url(../images/booth/booth_m2_1.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_b_1.png) no-repeat center center;
+                background: url(../images/booth/booth_b_1.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1079,14 +1254,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1095,8 +1274,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 1), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
                             animation-name: wave_1;
                         }
                         @include screen('xs_mobile') {
@@ -1108,16 +1291,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_green {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m2_2.png) no-repeat top center;
+                    background: url(../images/booth/booth_m2_2.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_b_2.png) no-repeat center center;
+                background: url(../images/booth/booth_b_2.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1130,14 +1325,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1146,8 +1345,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 2), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
                             animation-name: wave_2;
                         }
                         @include screen('xs_mobile') {
@@ -1159,16 +1362,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_brown {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m2_3.png) no-repeat top center;
+                    background: url(../images/booth/booth_m2_3.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_b_3.png) no-repeat center center;
+                background: url(../images/booth/booth_b_3.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1181,14 +1396,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1197,8 +1416,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 3), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
                             animation-name: wave_3;
                         }
                         @include screen('xs_mobile') {
@@ -1210,16 +1433,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_red {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m2_4.png) no-repeat top center;
+                    background: url(../images/booth/booth_m2_4.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_b_4.png) no-repeat center center;
+                background: url(../images/booth/booth_b_4.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1232,14 +1467,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1248,8 +1487,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 4), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
                             animation-name: wave_4;
                         }
                         @include screen('xs_mobile') {
@@ -1261,16 +1504,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_blue {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m2_5.png) no-repeat top center;
+                    background: url(../images/booth/booth_m2_5.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_b_5.png) no-repeat center center;
+                background: url(../images/booth/booth_b_5.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1283,14 +1538,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1299,8 +1558,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 5), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
                             animation-name: wave_5;
                         }
                         @include screen('xs_mobile') {
@@ -1321,7 +1584,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             bottom: 60px;
             left: 50%;
             margin-left: -700px;
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
             @include booth_content_xs;
         }
         .company_logo {
@@ -1346,7 +1609,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             height: 183px;
             top: 219px;
             left: 575px;
-            border: 1px solid #EEE;
+            border: 1px solid #eee;
             a {
                 display: block;
                 position: absolute;
@@ -1372,7 +1635,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             top: 258px;
             left: 185px;
             @include product_xs;
-            [class^="item"] {
+            [class^='item'] {
                 width: 91px;
                 height: 172px;
                 position: absolute;
@@ -1397,8 +1660,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -1409,8 +1672,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -1425,10 +1688,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     top: -1em;
                     border-radius: 50%;
                     // background: #1de3ef;
-                    border: 2px solid #FFF;
+                    border: 2px solid #fff;
                     left: 50%;
-                    margin-left: -.5em;
-                    content: "";
+                    margin-left: -0.5em;
+                    content: '';
                     z-index: 2;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -1455,9 +1718,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border: 2px solid #FFF;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
                     }
                 }
             }
@@ -1513,7 +1778,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             }
             .item {
                 // display: block;
-                margin: 0 .5em;
+                margin: 0 0.5em;
                 height: 60px;
                 width: 60px;
                 margin-bottom: 1em;
@@ -1521,7 +1786,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     display: block;
                     width: 60px;
                     height: 60px;
-                    background: #FFF;
+                    background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     // border: 5px solid #1de3ef;
@@ -1536,27 +1801,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                     .title {
                         display: block;
-                        padding: .25em;
-                        border-radius: .25rem;
-                        background: rgba(0, 0, 0, .75);
-                        color: #FFF;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
                         text-align: center;
                         top: -20px;
                         left: -25px;
                         position: absolute;
                         white-space: nowrap;
-                        font-size: .938rem;
+                        font-size: 0.938rem;
                         font-weight: bold;
                         min-width: 6em;
                         opacity: 0;
-                        transition: .3s $cubic;
+                        transition: 0.3s $cubic;
                         pointer-events: none;
                     }
                     img {
                         width: 72%;
                         height: 72%;
                         margin: 14%;
-                        opacity: .75
+                        opacity: 0.75;
                     }
                 }
             }
@@ -1565,16 +1830,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         @for $i from 1 through 5 {
             &.color_#{$i} {
                 background: rgb(1, 2, 4);
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, $i), 38) 66%, darken(nth($color, $i), 46) 66%, rgba(2, 3, 3, 1) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
                 @include screen('xs_mobile') {
-                    background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, $i), 38) 450px);
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
                     &:before {
-                        background:url(../images/booth/booth_m3_#{$i}.png) no-repeat top center;
+                        background: url(../images/booth/booth_m3_#{$i}.png)
+                            no-repeat top center;
                         background-size: contain;
                     }
                 }
                 .booth_content {
-                    background: url(../images/booth/booth_c_#{$i}.png) no-repeat center center;
+                    background: url(../images/booth/booth_c_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
                     background-size: contain;
                     @include screen('xs_mobile') {
                         background: none;
@@ -1587,14 +1866,23 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                 }
                 .product {
-                    [class^="item"] {
+                    [class^='item'] {
                         &:after {
-                            background: saturate(lighten(nth($color, $i), 10), 60);
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
                             animation-name: wave_#{$i};
                         }
                         a {
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20), 0px 0px 5px #FFF;
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
                             }
                         }
                     }
@@ -1603,8 +1891,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     .item {
                         a {
                             border: 5px solid saturate(nth($color, $i), 0);
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
                         }
@@ -1614,16 +1908,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_purple {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m3_1.png) no-repeat top center;
+                    background: url(../images/booth/booth_m3_1.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_c_1.png) no-repeat center center;
+                background: url(../images/booth/booth_c_1.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1636,14 +1942,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1652,8 +1962,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 1), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
                             animation-name: wave_1;
                         }
                         @include screen('xs_mobile') {
@@ -1665,16 +1979,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_green {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m3_2.png) no-repeat top center;
+                    background: url(../images/booth/booth_m3_2.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_c_2.png) no-repeat center center;
+                background: url(../images/booth/booth_c_2.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1687,14 +2013,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1703,8 +2033,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 2), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
                             animation-name: wave_2;
                         }
                         @include screen('xs_mobile') {
@@ -1716,16 +2050,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_brown {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m3_3.png) no-repeat top center;
+                    background: url(../images/booth/booth_m3_3.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_c_3.png) no-repeat center center;
+                background: url(../images/booth/booth_c_3.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1738,14 +2084,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1754,8 +2104,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 3), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
                             animation-name: wave_3;
                         }
                         @include screen('xs_mobile') {
@@ -1767,16 +2121,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_red {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m3_4.png) no-repeat top center;
+                    background: url(../images/booth/booth_m3_4.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_c_4.png) no-repeat center center;
+                background: url(../images/booth/booth_c_4.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1789,14 +2155,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1805,8 +2175,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 4), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
                             animation-name: wave_4;
                         }
                         @include screen('xs_mobile') {
@@ -1818,16 +2192,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_blue {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m3_5.png) no-repeat top center;
+                    background: url(../images/booth/booth_m3_5.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_c_5.png) no-repeat center center;
+                background: url(../images/booth/booth_c_5.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -1840,14 +2226,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -1856,8 +2246,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 5), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
                             animation-name: wave_5;
                         }
                         @include screen('xs_mobile') {
@@ -1883,7 +2277,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             bottom: 60px;
             left: 50%;
             margin-left: -890px;
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
             @include booth_content_xs;
         }
         .company_logo {
@@ -1908,7 +2302,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             height: 120px;
             top: 174px;
             left: 510px;
-            border: 1px solid #EEE;
+            border: 1px solid #eee;
             a {
                 display: block;
                 position: absolute;
@@ -1935,7 +2329,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             left: 50%;
             margin-left: -550px;
             @include product_xs;
-            [class^="item"] {
+            [class^='item'] {
                 width: 68px;
                 height: 87px;
                 position: absolute;
@@ -1960,8 +2354,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -1972,8 +2366,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -1988,10 +2382,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     top: -1em;
                     border-radius: 50%;
                     // background: #1de3ef;
-                    border: 2px solid #FFF;
+                    border: 2px solid #fff;
                     left: 50%;
-                    margin-left: -.5em;
-                    content: "";
+                    margin-left: -0.5em;
+                    content: '';
                     z-index: 2;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -2018,9 +2412,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border: 2px solid #FFF;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
                     }
                 }
             }
@@ -2076,7 +2472,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             }
             .item {
                 // display: block;
-                margin: 0 .5em;
+                margin: 0 0.5em;
                 height: 60px;
                 width: 60px;
                 margin-bottom: 1em;
@@ -2084,7 +2480,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     display: block;
                     width: 60px;
                     height: 60px;
-                    background: #FFF;
+                    background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     // border: 5px solid #1de3ef;
@@ -2099,27 +2495,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                     .title {
                         display: block;
-                        padding: .25em;
-                        border-radius: .25rem;
-                        background: rgba(0, 0, 0, .75);
-                        color: #FFF;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
                         text-align: center;
                         top: -20px;
                         left: -25px;
                         position: absolute;
                         white-space: nowrap;
-                        font-size: .938rem;
+                        font-size: 0.938rem;
                         font-weight: bold;
                         min-width: 6em;
                         opacity: 0;
-                        transition: .3s $cubic;
+                        transition: 0.3s $cubic;
                         pointer-events: none;
                     }
                     img {
                         width: 72%;
                         height: 72%;
                         margin: 14%;
-                        opacity: .75
+                        opacity: 0.75;
                     }
                 }
             }
@@ -2128,16 +2524,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         @for $i from 1 through 5 {
             &.color_#{$i} {
                 background: rgb(1, 2, 4);
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, $i), 38) 66%, darken(nth($color, $i), 46) 66%, rgba(2, 3, 3, 1) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
                 @include screen('xs_mobile') {
-                    background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, $i), 38) 450px);
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
                     &:before {
-                        background:url(../images/booth/booth_m4_#{$i}.png) no-repeat top center;
+                        background: url(../images/booth/booth_m4_#{$i}.png)
+                            no-repeat top center;
                         background-size: contain;
                     }
                 }
                 .booth_content {
-                    background: url(../images/booth/booth_d_#{$i}.png) no-repeat center center;
+                    background: url(../images/booth/booth_d_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
                     background-size: contain;
                     @include screen('xs_mobile') {
                         background: none;
@@ -2150,14 +2560,23 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                 }
                 .product {
-                    [class^="item"] {
+                    [class^='item'] {
                         &:after {
-                            background: saturate(lighten(nth($color, $i), 10), 60);
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
                             animation-name: wave_#{$i};
                         }
                         a {
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20), 0px 0px 5px #FFF;
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
                             }
                         }
                     }
@@ -2166,8 +2585,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     .item {
                         a {
                             border: 5px solid saturate(nth($color, $i), 0);
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
                         }
@@ -2177,16 +2602,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_purple {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m4_1.png) no-repeat top center;
+                    background: url(../images/booth/booth_m4_1.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_d_1.png) no-repeat center center;
+                background: url(../images/booth/booth_d_1.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2199,14 +2636,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2215,8 +2656,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 1), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
                             animation-name: wave_1;
                         }
                         @include screen('xs_mobile') {
@@ -2228,16 +2673,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_green {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m4_2.png) no-repeat top center;
+                    background: url(../images/booth/booth_m4_2.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_d_2.png) no-repeat center center;
+                background: url(../images/booth/booth_d_2.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2250,14 +2707,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2266,8 +2727,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 2), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
                             animation-name: wave_2;
                         }
                         @include screen('xs_mobile') {
@@ -2279,16 +2744,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_brown {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m4_3.png) no-repeat top center;
+                    background: url(../images/booth/booth_m4_3.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_d_3.png) no-repeat center center;
+                background: url(../images/booth/booth_d_3.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2301,14 +2778,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2317,8 +2798,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 3), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
                             animation-name: wave_3;
                         }
                         @include screen('xs_mobile') {
@@ -2330,16 +2815,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_red {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m4_4.png) no-repeat top center;
+                    background: url(../images/booth/booth_m4_4.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_d_4.png) no-repeat center center;
+                background: url(../images/booth/booth_d_4.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2352,14 +2849,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2368,8 +2869,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 4), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
                             animation-name: wave_4;
                         }
                         @include screen('xs_mobile') {
@@ -2381,16 +2886,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_blue {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m4_5.png) no-repeat top center;
+                    background: url(../images/booth/booth_m4_5.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_d_5.png) no-repeat center center;
+                background: url(../images/booth/booth_d_5.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2403,14 +2920,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2419,8 +2940,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 5), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
                             animation-name: wave_5;
                         }
                         @include screen('xs_mobile') {
@@ -2446,7 +2971,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             bottom: 60px;
             left: 50%;
             margin-left: -990px;
-            transition: .3s ease-out;
+            transition: 0.3s ease-out;
             @include booth_content_xs;
         }
         .company_logo {
@@ -2471,7 +2996,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             height: 103px;
             top: 158px;
             left: 820px;
-            border: 1px solid #EEE;
+            border: 1px solid #eee;
             a {
                 display: block;
                 position: absolute;
@@ -2498,7 +3023,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             left: 50%;
             margin-left: -550px;
             @include product_xs;
-            [class^="item"] {
+            [class^='item'] {
                 width: 100px;
                 height: 80px;
                 position: absolute;
@@ -2523,8 +3048,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -2535,8 +3060,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                         flex-basis: 40px;
                         height: 40px;
                         margin: 0 1%;
-                        background: rgba(0, 0, 0, .5);
-                        border-radius: .25rem;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
                         img {
                             position: relative;
                             width: 100%;
@@ -2551,10 +3076,10 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     top: -1em;
                     border-radius: 50%;
                     // background: #1de3ef;
-                    border: 2px solid #FFF;
+                    border: 2px solid #fff;
                     left: 50%;
-                    margin-left: -.5em;
-                    content: "";
+                    margin-left: -0.5em;
+                    content: '';
                     z-index: 2;
                     -webkit-border-radius: 50%;
                     -moz-border-radius: 50%;
@@ -2581,9 +3106,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     height: 100%;
                     top: 0;
                     left: 0;
-                    border: 2px solid #FFF;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef, 0px 0px 5px #FFF;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
                     }
                 }
             }
@@ -2640,7 +3167,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             }
             .item {
                 // display: block;
-                margin: 0 .5em;
+                margin: 0 0.5em;
                 height: 60px;
                 width: 60px;
                 margin-bottom: 1em;
@@ -2648,7 +3175,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     display: block;
                     width: 60px;
                     height: 60px;
-                    background: #FFF;
+                    background: #fff;
                     box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
                     border-radius: 50%;
                     // border: 5px solid #1de3ef;
@@ -2663,27 +3190,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                     .title {
                         display: block;
-                        padding: .25em;
-                        border-radius: .25rem;
-                        background: rgba(0, 0, 0, .75);
-                        color: #FFF;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
                         text-align: center;
                         top: -20px;
                         left: -25px;
                         position: absolute;
                         white-space: nowrap;
-                        font-size: .938rem;
+                        font-size: 0.938rem;
                         font-weight: bold;
                         min-width: 6em;
                         opacity: 0;
-                        transition: .3s $cubic;
+                        transition: 0.3s $cubic;
                         pointer-events: none;
                     }
                     img {
                         width: 72%;
                         height: 72%;
                         margin: 14%;
-                        opacity: .75
+                        opacity: 0.75;
                     }
                 }
             }
@@ -2692,16 +3219,30 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         @for $i from 1 through 5 {
             &.color_#{$i} {
                 background: rgb(1, 2, 4);
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, $i), 38) 66%, darken(nth($color, $i), 46) 66%, rgba(2, 3, 3, 1) 100%);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
                 @include screen('xs_mobile') {
-                    background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, $i), 38) 450px);
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
                     &:before {
-                        background:url(../images/booth/booth_m5_#{$i}.png) no-repeat top center;
+                        background: url(../images/booth/booth_m5_#{$i}.png)
+                            no-repeat top center;
                         background-size: contain;
                     }
                 }
                 .booth_content {
-                    background: url(../images/booth/booth_e_#{$i}.png) no-repeat center center;
+                    background: url(../images/booth/booth_e_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
                     background-size: contain;
                     @include screen('xs_mobile') {
                         background: none;
@@ -2714,14 +3255,23 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     }
                 }
                 .product {
-                    [class^="item"] {
+                    [class^='item'] {
                         &:after {
-                            background: saturate(lighten(nth($color, $i), 10), 60);
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
                             animation-name: wave_#{$i};
                         }
                         a {
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20), 0px 0px 5px #FFF;
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
                             }
                         }
                     }
@@ -2730,8 +3280,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                     .item {
                         a {
                             border: 5px solid saturate(nth($color, $i), 0);
-                            &:hover, &:focus {
-                                box-shadow: 0px 0px 30px saturate(nth($color, $i), 20), 0px 0px 20px saturate(nth($color, $i), 20), 0px 0px 10px saturate(nth($color, $i), 20);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
                                 animation-name: wave_#{$i};
                             }
                         }
@@ -2741,16 +3297,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_purple {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 1), 38) 66%, darken(nth($color, 1), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 1), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m5_1.png) no-repeat top center;
+                    background: url(../images/booth/booth_m5_1.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_e_1.png) no-repeat center center;
+                background: url(../images/booth/booth_e_1.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2763,14 +3331,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2779,8 +3351,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 1), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 1), 20), 0px 0px 20px saturate(nth($color, 1), 20), 0px 0px 10px saturate(nth($color, 1), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
                             animation-name: wave_1;
                         }
                         @include screen('xs_mobile') {
@@ -2792,16 +3368,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_green {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 2), 38) 66%, darken(nth($color, 2), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 2), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m5_2.png) no-repeat top center;
+                    background: url(../images/booth/booth_m5_2.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_e_2.png) no-repeat center center;
+                background: url(../images/booth/booth_e_2.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2814,14 +3402,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2830,8 +3422,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 2), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 2), 20), 0px 0px 20px saturate(nth($color, 2), 20), 0px 0px 10px saturate(nth($color, 2), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
                             animation-name: wave_2;
                         }
                         @include screen('xs_mobile') {
@@ -2843,16 +3439,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_brown {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 3), 38) 66%, darken(nth($color, 3), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 3), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m5_3.png) no-repeat top center;
+                    background: url(../images/booth/booth_m5_3.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_e_3.png) no-repeat center center;
+                background: url(../images/booth/booth_e_3.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2865,14 +3473,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2881,8 +3493,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 3), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 3), 20), 0px 0px 20px saturate(nth($color, 3), 20), 0px 0px 10px saturate(nth($color, 3), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
                             animation-name: wave_3;
                         }
                         @include screen('xs_mobile') {
@@ -2894,16 +3510,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_red {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 4), 38) 66%, darken(nth($color, 4), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 4), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m5_4.png) no-repeat top center;
+                    background: url(../images/booth/booth_m5_4.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_e_4.png) no-repeat center center;
+                background: url(../images/booth/booth_e_4.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2916,14 +3544,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2932,8 +3564,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 4), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 4), 20), 0px 0px 20px saturate(nth($color, 4), 20), 0px 0px 10px saturate(nth($color, 4), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
                             animation-name: wave_4;
                         }
                         @include screen('xs_mobile') {
@@ -2945,16 +3581,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &.color_blue {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg, rgba(1, 2, 4, 1) 0%, darken(nth($color, 5), 38) 66%, darken(nth($color, 5), 46) 66%, rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
             @include screen('xs_mobile') {
-                background: linear-gradient(180deg, rgba(1, 2, 4, 1) 100px, darken(nth($color, 5), 38) 450px);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
                 &:before {
-                    background: url(../images/booth/booth_m5_5.png) no-repeat top center;
+                    background: url(../images/booth/booth_m5_5.png) no-repeat
+                        top center;
                     background-size: contain;
                 }
             }
             .booth_content {
-                background: url(../images/booth/booth_e_5.png) no-repeat center center;
+                background: url(../images/booth/booth_e_5.png) no-repeat center
+                    center;
                 background-size: contain;
                 @include screen('xs_mobile') {
                     background: none;
@@ -2967,14 +3615,18 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 }
             }
             .product {
-                [class^="item"] {
+                [class^='item'] {
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
                     }
                     a {
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20), 0px 0px 5px #FFF;
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
                         }
                     }
                 }
@@ -2983,8 +3635,701 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .item {
                     a {
                         border: 5px solid saturate(nth($color, 5), 0);
-                        &:hover, &:focus {
-                            box-shadow: 0px 0px 30px saturate(nth($color, 5), 20), 0px 0px 20px saturate(nth($color, 5), 20), 0px 0px 10px saturate(nth($color, 5), 20);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
+                            animation-name: wave_5;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 5), 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.style_F {
+        // background: url(../images/showground_a_bg.jpg) no-repeat center bottom;
+        // background-size: cover;
+        &:before {
+            @include screen('xs_mobile') {
+                top: 2em;
+                width: 80%;
+                left: 10%;
+            }
+        }
+        .booth_content {
+            width: 1980px;
+            height: 650px;
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            margin-left: -990px;
+            transition: 0.3s ease-out;
+            @include booth_content_xs;
+        }
+        .company_logo {
+            position: absolute;
+            width: 350px;
+            height: 80px;
+            top: 110px;
+            left: 360px;
+
+            img {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                margin: auto;
+            }
+            @include company_logo_xs;
+        }
+        .youtube {
+            position: absolute;
+            background: #000;
+            width: 180px;
+            height: 120px;
+            top: 300px;
+            left: 1220px;
+            border: 1px solid #eee;
+
+            a {
+                display: block;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                z-index: 2;
+            }
+            iframe {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+            @include youtube_xs;
+        }
+        .product {
+            position: absolute;
+            width: 550px;
+            height: 180px;
+            top: 320px;
+            left: 50%;
+            margin-left: -420px;
+            @include product_xs;
+
+            [class^='item'] {
+                width: 80px;
+                height: 100px;
+                position: absolute;
+
+                @include item_xs;
+                img {
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    object-fit: cover;
+                }
+                .hasWhat {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0em;
+                    left: 0;
+                    height: 42px;
+                    display: flex;
+                    justify-content: flex-end;
+                    .has_720 {
+                        flex-basis: 40px;
+                        height: 40px;
+                        margin: 0 1%;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
+                        img {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .has_360 {
+                        flex-basis: 40px;
+                        height: 40px;
+                        margin: 0 1%;
+                        background: rgba(0, 0, 0, 0.5);
+                        border-radius: 0.25rem;
+                        img {
+                            position: relative;
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                }
+                &:after {
+                    position: absolute;
+                    width: 1em;
+                    height: 1em;
+                    top: -1em;
+                    border-radius: 50%;
+                    // background: #1de3ef;
+                    border: 2px solid #fff;
+                    left: 50%;
+                    margin-left: -0.5em;
+                    content: '';
+                    z-index: 2;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    transition: 250ms color;
+                    -webkit-transition: 250ms color;
+                    -moz-transition: 250ms color;
+                    -ms-transition: 250ms color;
+                    -o-transition: 250ms color;
+                    // animation-name: wave_1;
+                    animation-duration: 1s;
+                    animation-timing-function: linear;
+                    animation-iteration-count: infinite;
+                    pointer-events: none;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
+                }
+                a {
+                    display: block;
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    border: 2px solid #fff;
+                    &:hover,
+                    &:focus {
+                        box-shadow: 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef,
+                            0px 0px 5px #fff;
+                    }
+                }
+            }
+            .item_01 {
+                top: 0px;
+                left: 0px;
+            }
+            .item_02 {
+                top: 0px;
+                left: 100px;
+            }
+            .item_03 {
+                top: 0px;
+                left: 280px;
+            }
+            .item_04 {
+                top: 0px;
+                left: 380px;
+            }
+            .item_05 {
+                top: 0px;
+                left: 480px;
+            }
+        }
+        // function
+        .function {
+            position: absolute;
+            left: 50%;
+            margin-left: -500px;
+            top: auto;
+            bottom: 10px;
+            height: 60px;
+            width: 1000px;
+            z-index: 99;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: flex-end;
+            @include function_xs;
+            @include screen('xs_mobile') {
+                display: block;
+                margin-left: auto;
+            }
+            .item {
+                // display: block;
+                margin: 0 0.5em;
+                height: 60px;
+                width: 60px;
+                margin-bottom: 1em;
+                a {
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background: #fff;
+                    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+                    border-radius: 50%;
+                    // border: 5px solid #1de3ef;
+                    position: relative;
+                    &:hover {
+                        // box-shadow: 0px 0px 30px #1de3ef, 0px 0px 20px #1de3ef, 0px 0px 10px #1de3ef;
+                        .title {
+                            display: block;
+                            opacity: 1;
+                            top: -40px;
+                        }
+                    }
+                    .title {
+                        display: block;
+                        padding: 0.25em;
+                        border-radius: 0.25rem;
+                        background: rgba(0, 0, 0, 0.75);
+                        color: #fff;
+                        text-align: center;
+                        top: -20px;
+                        left: -25px;
+                        position: absolute;
+                        white-space: nowrap;
+                        font-size: 0.938rem;
+                        font-weight: bold;
+                        min-width: 6em;
+                        opacity: 0;
+                        transition: 0.3s $cubic;
+                        pointer-events: none;
+                    }
+                    img {
+                        width: 72%;
+                        height: 72%;
+                        margin: 14%;
+                        opacity: 0.75;
+                    }
+                }
+            }
+        }
+        // --------------------------------------色系設定-----//
+        @for $i from 1 through 5 {
+            &.color_#{$i} {
+                background: rgb(1, 2, 4);
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 0%,
+                    darken(nth($color, $i), 38) 66%,
+                    darken(nth($color, $i), 46) 66%,
+                    rgba(2, 3, 3, 1) 100%
+                );
+                @include screen('xs_mobile') {
+                    background: linear-gradient(
+                        180deg,
+                        rgba(1, 2, 4, 1) 100px,
+                        darken(nth($color, $i), 38) 450px
+                    );
+                    &:before {
+                        background: url(../images/booth/booth_f_#{$i}.png)
+                            no-repeat top center;
+                        background-size: contain;
+                    }
+                }
+                .booth_content {
+                    background: url(../images/booth/booth_f_#{$i}.png)
+                        no-repeat
+                        center
+                        center;
+                    background-size: contain;
+                    @include screen('xs_mobile') {
+                        background: none;
+                    }
+                }
+                .youtube {
+                    &:after {
+                        background: saturate(lighten(nth($color, $i), 10), 60);
+                        animation-name: wave_#{$i};
+                    }
+                }
+                .product {
+                    [class^='item'] {
+                        &:after {
+                            background: saturate(
+                                lighten(nth($color, $i), 10),
+                                60
+                            );
+                            animation-name: wave_#{$i};
+                        }
+                        a {
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        20px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20),
+                                    0px 0px 5px #fff;
+                            }
+                        }
+                    }
+                }
+                .function {
+                    .item {
+                        a {
+                            border: 5px solid saturate(nth($color, $i), 0);
+                            &:hover,
+                            &:focus {
+                                box-shadow: 0px
+                                        0px
+                                        30px
+                                        saturate(nth($color, $i), 20),
+                                    0px 0px 20px saturate(nth($color, $i), 20),
+                                    0px 0px 10px saturate(nth($color, $i), 20);
+                                animation-name: wave_#{$i};
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.color_purple {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 1), 38) 66%,
+                darken(nth($color, 1), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
+            @include screen('xs_mobile') {
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 1), 38) 450px
+                );
+                &:before {
+                    background: url(../images/booth/booth_f_1.png) no-repeat top
+                        center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_f_1.png) no-repeat center
+                    center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 1), 10), 60);
+                    animation-name: wave_1;
+                }
+            }
+            .product {
+                [class^='item'] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 1), 10), 60);
+                        animation-name: wave_1;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20),
+                                0px 0px 5px #fff;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 1), 0);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 1), 20),
+                                0px 0px 20px saturate(nth($color, 1), 20),
+                                0px 0px 10px saturate(nth($color, 1), 20);
+                            animation-name: wave_1;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 1), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_green {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 2), 38) 66%,
+                darken(nth($color, 2), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
+            @include screen('xs_mobile') {
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 2), 38) 450px
+                );
+                &:before {
+                    background: url(../images/booth/booth_f_2.png) no-repeat top
+                        center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_f_2.png) no-repeat center
+                    center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 2), 10), 60);
+                    animation-name: wave_2;
+                }
+            }
+            .product {
+                [class^='item'] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 2), 10), 60);
+                        animation-name: wave_2;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20),
+                                0px 0px 5px #fff;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 2), 0);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 2), 20),
+                                0px 0px 20px saturate(nth($color, 2), 20),
+                                0px 0px 10px saturate(nth($color, 2), 20);
+                            animation-name: wave_2;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 2), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 3), 38) 66%,
+                darken(nth($color, 3), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
+            @include screen('xs_mobile') {
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 3), 38) 450px
+                );
+                &:before {
+                    background: url(../images/booth/booth_f_3.png) no-repeat top
+                        center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_f_3.png) no-repeat center
+                    center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 3), 10), 60);
+                    animation-name: wave_3;
+                }
+            }
+            .product {
+                [class^='item'] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 3), 10), 60);
+                        animation-name: wave_3;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20),
+                                0px 0px 5px #fff;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 3), 0);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 3), 20),
+                                0px 0px 20px saturate(nth($color, 3), 20),
+                                0px 0px 10px saturate(nth($color, 3), 20);
+                            animation-name: wave_3;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 3), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_red {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 4), 38) 66%,
+                darken(nth($color, 4), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
+            @include screen('xs_mobile') {
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 4), 38) 450px
+                );
+                &:before {
+                    background: url(../images/booth/booth_f_4.png) no-repeat top
+                        center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_f_4.png) no-repeat center
+                    center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 4), 10), 60);
+                    animation-name: wave_4;
+                }
+            }
+            .product {
+                [class^='item'] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 4), 10), 60);
+                        animation-name: wave_4;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20),
+                                0px 0px 5px #fff;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 4), 0);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 4), 20),
+                                0px 0px 20px saturate(nth($color, 4), 20),
+                                0px 0px 10px saturate(nth($color, 4), 20);
+                            animation-name: wave_4;
+                        }
+                        @include screen('xs_mobile') {
+                            border: 3px solid saturate(nth($color, 4), 0);
+                        }
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            background: rgb(1, 2, 4);
+            background: linear-gradient(
+                180deg,
+                rgba(1, 2, 4, 1) 0%,
+                darken(nth($color, 5), 38) 66%,
+                darken(nth($color, 5), 46) 66%,
+                rgba(2, 3, 3, 1) 100%
+            );
+            @include screen('xs_mobile') {
+                background: linear-gradient(
+                    180deg,
+                    rgba(1, 2, 4, 1) 100px,
+                    darken(nth($color, 5), 38) 450px
+                );
+                &:before {
+                    background: url(../images/booth/booth_f_5.png) no-repeat top
+                        center;
+                    background-size: contain;
+                }
+            }
+            .booth_content {
+                background: url(../images/booth/booth_f_5.png) no-repeat center
+                    center;
+                background-size: contain;
+                @include screen('xs_mobile') {
+                    background: none;
+                }
+            }
+            .youtube {
+                &:after {
+                    background: saturate(lighten(nth($color, 5), 10), 60);
+                    animation-name: wave_5;
+                }
+            }
+            .product {
+                [class^='item'] {
+                    &:after {
+                        background: saturate(lighten(nth($color, 5), 10), 60);
+                        animation-name: wave_5;
+                    }
+                    a {
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 20px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20),
+                                0px 0px 5px #fff;
+                        }
+                    }
+                }
+            }
+            .function {
+                .item {
+                    a {
+                        border: 5px solid saturate(nth($color, 5), 0);
+                        &:hover,
+                        &:focus {
+                            box-shadow: 0px 0px 30px
+                                    saturate(nth($color, 5), 20),
+                                0px 0px 20px saturate(nth($color, 5), 20),
+                                0px 0px 10px saturate(nth($color, 5), 20);
                             animation-name: wave_5;
                         }
                         @include screen('xs_mobile') {
@@ -3000,14 +4345,15 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
 .booth_company {
     max-width: 600px;
     padding: 1em 2em 5em;
-    background: #FFF;
+    background: #fff;
     a {
         word-break: break-all;
     }
-    h1, h2 {
+    h1,
+    h2 {
         line-height: 1.25em;
         margin: 0;
-        padding: .5em 0 0 0;
+        padding: 0.5em 0 0 0;
     }
     img {
         max-width: 100%;
@@ -3020,10 +4366,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
 .booth_product {
     max-width: 100%;
     padding: 0em 2em;
-    h1, h2 {
+    h1,
+    h2 {
         line-height: 1.25em;
         margin: 0;
-        padding: .5em 0 0 0;
+        padding: 0.5em 0 0 0;
     }
     .product_content {
         display: flex;
@@ -3036,7 +4383,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             min-width: 400px;
             margin: 0 1em 1em 0;
             .slick-slide {
-                &:hover, &:focus {
+                &:hover,
+                &:focus {
                     box-shadow: none;
                 }
             }
@@ -3052,7 +4400,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             .Slider-for {
                 width: 100%;
                 margin: 0;
-                outline: 1px solid #DDD;
+                outline: 1px solid #ddd;
                 .img-container {
                     width: 100%;
                     margin: 0;
@@ -3062,23 +4410,27 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             .Slider-nav {
                 width: 100%;
                 margin: 0;
-                border: 1px solid #DDD;
+                border: 1px solid #ddd;
                 .slick-slide {
-                    outline: 1px solid #DDD;
+                    outline: 1px solid #ddd;
                 }
                 &:hover {
-                    .slick-prev, .slick-next {
+                    .slick-prev,
+                    .slick-next {
                         opacity: 1;
                     }
                 }
                 .slick-prev {
                     left: 0;
                     opacity: 0;
-                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat rgba(0, 0, 0, .25);
+                    background: url(../vendor/slick/icon_arrow_left.png) center
+                        center no-repeat rgba(0, 0, 0, 0.25);
                     background-size: 80%;
-                    transition: .3s ease-out;
-                    &:hover, &:focus {
-                        background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat rgba(0, 0, 0, .5);
+                    transition: 0.3s ease-out;
+                    &:hover,
+                    &:focus {
+                        background: url(../vendor/slick/icon_arrow_left.png)
+                            center center no-repeat rgba(0, 0, 0, 0.5);
                         background-size: 80%;
                         box-shadow: none;
                         outline: none;
@@ -3087,11 +4439,14 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 .slick-next {
                     right: 0;
                     opacity: 0;
-                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat rgba(0, 0, 0, .25);
+                    background: url(../vendor/slick/icon_arrow_right.png) center
+                        center no-repeat rgba(0, 0, 0, 0.25);
                     background-size: 80%;
-                    transition: .3s ease-out;
-                    &:hover, &:focus {
-                        background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat rgba(0, 0, 0, .5);
+                    transition: 0.3s ease-out;
+                    &:hover,
+                    &:focus {
+                        background: url(../vendor/slick/icon_arrow_right.png)
+                            center center no-repeat rgba(0, 0, 0, 0.5);
                         background-size: 80%;
                         box-shadow: none;
                         outline: none;
@@ -3108,12 +4463,13 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                             width: 48px;
                             height: 48px;
                             border-radius: 50%;
-                            content: "";
+                            content: '';
                             left: 50%;
                             margin-left: -24px;
                             top: 25%;
-                            opacity: .85;
-                            background: url(../images/play.png) no-repeat center center;
+                            opacity: 0.85;
+                            background: url(../images/play.png) no-repeat center
+                                center;
                         }
                     }
                 }
@@ -3125,7 +4481,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
             flex: 1 1 auto;
             padding: 0em 1em;
             h3 {
-                margin: 0 0 .5em 0;
+                margin: 0 0 0.5em 0;
                 padding: 0;
                 color: $primaryColor;
             }
@@ -3134,7 +4490,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
                 line-height: 1.75em;
             }
             @include screen('xs_mobile') {
-                border-top: 1px solid #DDD;
+                border-top: 1px solid #ddd;
                 padding-top: 1em;
                 padding-bottom: 5em;
             }
@@ -3153,10 +4509,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
 @for $i from 1 through 5 {
     @keyframes wave_#{$i} {
         0% {
-            box-shadow: 0 0 0px 0px rgba(saturate(lighten(nth($color, $i), 10), 60), 1);
+            box-shadow: 0 0 0px 0px
+                rgba(saturate(lighten(nth($color, $i), 10), 60), 1);
         }
         100% {
-            box-shadow: 0 0 0px 15px rgba(saturate(lighten(nth($color, $i), 10), 60), 0);
+            box-shadow: 0 0 0px 15px
+                rgba(saturate(lighten(nth($color, $i), 10), 60), 0);
         }
     }
 }
@@ -3164,10 +4522,11 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: url(../images/icon/icon_chat_white.svg) no-repeat center center $color-green;
+    background: url(../images/icon/icon_chat_white.svg) no-repeat center center
+        $color-green;
     background-size: 50%;
     text-align: center;
-    color: #FFF;
+    color: #fff;
     line-height: 60px;
     text-decoration: none;
     position: fixed;
@@ -3179,26 +4538,28 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         bottom: 130px;
     }
     span {
-        border-radius: .25em;
+        border-radius: 0.25em;
         background: $color-red;
         display: block;
         position: absolute;
-        top: -.5em;
-        right: -.5em;
-        color: #FFF;
-        font-size: .75rem;
+        top: -0.5em;
+        right: -0.5em;
+        color: #fff;
+        font-size: 0.75rem;
         font-weight: bold;
         height: 1.5em;
         line-height: 1.5em;
-        padding: 0 .5em;
+        padding: 0 0.5em;
     }
     &.has_bottom {
         @include screen('mobile') {
             bottom: 4em;
         }
     }
-    &:hover, &:focus {
-        background: url(../images/icon/icon_chat_white.svg) no-repeat center center $color-green;
+    &:hover,
+    &:focus {
+        background: url(../images/icon/icon_chat_white.svg) no-repeat center
+            center $color-green;
         background-size: 50%;
         box-shadow: none;
     }
@@ -3213,8 +4574,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
     z-index: 999999;
     background: $primaryColor;
     overflow: hidden;
-    background: #FFF;
-    box-shadow: -5px -5px 30px -5px rgba(0, 0, 0, .25);
+    background: #fff;
+    box-shadow: -5px -5px 30px -5px rgba(0, 0, 0, 0.25);
     transform: translateX(100%);
     // transition: .3s $cubic;
     &.color_1 {
@@ -3262,7 +4623,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         left: 0;
         // margin-top: 60px;
     }
-    @media screen and (max-width:565px) {
+    @media screen and (max-width: 565px) {
         width: 100%;
         height: calc(100% - 60px);
     }
@@ -3272,12 +4633,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
     height: 2rem;
     width: 100%;
     .messenger {
-        color: #FFF;
-        padding: .3em .25em .2em;
+        color: #fff;
+        padding: 0.3em 0.25em 0.2em;
         span {
             display: inline-block;
-            font-size: .875rem;
-            margin-left: .5em;
+            font-size: 0.875rem;
+            margin-left: 0.5em;
         }
     }
     a.close {
@@ -3286,8 +4647,8 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         display: block;
         float: left;
         position: relative;
-        margin: .25em 0 0 .5em;
-        margin-right: .5em;
+        margin: 0.25em 0 0 0.5em;
+        margin-right: 0.5em;
         &:hover {
             &:before {
                 background: rgba(255, 255, 255, 1);
@@ -3295,12 +4656,12 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &:before {
             position: absolute;
-            top: .65em;
+            top: 0.65em;
             left: 0em;
             width: 100%;
             height: 3px;
-            background: rgba(255, 255, 255, .5);
-            content: "";
+            background: rgba(255, 255, 255, 0.5);
+            content: '';
         }
     }
     a.minimize {
@@ -3309,7 +4670,7 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         display: block;
         position: absolute;
         right: 1em;
-        top: .35em;
+        top: 0.35em;
         @media screen and (max-width: 565px) {
             display: none;
         }
@@ -3322,24 +4683,25 @@ $chat_color:#047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444,
         }
         &:before {
             position: absolute;
-            top: .25em;
-            left: .25em;
+            top: 0.25em;
+            left: 0.25em;
             width: 10px;
             height: 10px;
-            border: 2px solid rgba(255, 255, 255, .25);
+            border: 2px solid rgba(255, 255, 255, 0.25);
             border-left: none;
             border-bottom: none;
             transform: rotate(45deg);
-            content: "";
+            content: '';
         }
         &.inverse {
             &:before {
-                left: .5em;
-                border: 2px solid rgba(255, 255, 255, .25);
+                left: 0.5em;
+                border: 2px solid rgba(255, 255, 255, 0.25);
                 border-right: none;
                 border-top: none;
             }
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 &:before {
                     border: 2px solid rgba(255, 255, 255, 1);
                     border-right: none;

@@ -1,6 +1,6 @@
 // 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
 // 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
-$color:#aa5ac5, #5cb85c, #ff981f, #d74261, #4a93f6;
+$color: #aa5ac5, #5cb85c, #ff981f, #d74261, #4a93f6;
 //-------------------------------------------------------------顏色---------//
 // 定義顏色 此顏色可自由變換
 $primaryColor: #21baff; //主色
@@ -39,21 +39,22 @@ $aHover: lighten($aColor, 10);
     background: linear-gradient(145deg, #e6ad33, #ab511b);
 }
 %color_red {
-    background: #FC5C7D;
-    background: -webkit-linear-gradient(145deg, #6A82FB, #FC5C7D);
-    background: linear-gradient(145deg, #6A82FB, #FC5C7D);
+    background: #fc5c7d;
+    background: -webkit-linear-gradient(145deg, #6a82fb, #fc5c7d);
+    background: linear-gradient(145deg, #6a82fb, #fc5c7d);
 }
 %color_blue {
-    background: #7474BF;
-    background: -webkit-linear-gradient(145deg, #348AC7, #7474BF);
-    background: linear-gradient(145deg, #348AC7, #7474BF);
+    background: #7474bf;
+    background: -webkit-linear-gradient(145deg, #348ac7, #7474bf);
+    background: linear-gradient(145deg, #348ac7, #7474bf);
 }
 // 表單focus顏色
 $form-focus: #21baff; //表單
 $form-btn: #21baff; //表單
 //-------------------------------------------------------------字型--------//
 // 字型設定
-$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體, Arial, sans-serif;
+$font-family: Lato, 'PingFang TC', 'Helvetica Neue', Helvetica, 微軟正黑體,
+    Arial, sans-serif;
 $font-size: 1em;
 //-------------------------------------------------------------格線系統-----//
 // 格線系統
