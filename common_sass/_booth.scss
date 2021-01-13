@@ -2961,6 +2961,44 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 height: 144px;
                 display: none;
             }
+            .item_png_01 {
+                top: 150px;
+                left: 460px;
+                width: 250px;
+                height: 200px;
+                a{
+                    border:none;
+                    &:hover{
+                        background:rgba(0,0,0,.35);
+                    }
+                    @include screen('xs_mobile') {
+                        border:2px solid #ddd;
+                        background:rgba(0,0,0,.25);
+                    }
+                    img{
+                        object-fit:contain;
+                    }
+                }
+            }
+            .item_png_02 {
+                top: 85px;
+                left: -35px;
+                width: 182px;
+                height: 244px;
+                a{
+                    border:none;
+                    &:hover{
+                        background:rgba(0,0,0,.35);
+                    }
+                    @include screen('xs_mobile') {
+                        border:2px solid #ddd;
+                        background:rgba(0,0,0,.25);
+                    }
+                    img{
+                        object-fit:contain;
+                    }
+                }
+            }
         }
         // function
         .function {
