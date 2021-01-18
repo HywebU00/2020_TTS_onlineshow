@@ -35,6 +35,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         left: 0;
         background: #fff;
         margin-bottom: 1em;
+        box-shadow: none;
         img {
             transform: scale(0.85);
         }
@@ -49,6 +50,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         left: 0;
         height: auto;
         background: #fff;
+        border: 1px solid #000;
         margin-bottom: 1.2em;
         @include aspect-ratio(4, 3);
         // outline: 1px solid rgba(255, 255, 255, .5);
@@ -247,11 +249,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         }
         .youtube {
             position: absolute;
-            width: 118px;
-            height: 72px;
+            width: 148px;
+            height: 86px;
             top: 296px;
-            left: 159px;
+            left: 120px;
             background: #000;
+            border: 2px solid #FFF;
             @include youtube_xs;
         }
         .product {
@@ -354,7 +357,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
             .item_01 {
                 top: 16px;
-                left: 35px;
+                left: 25px;
                 @include screen('xs_mobile') {
                     top: 0;
                     left: 0;
@@ -362,7 +365,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
             .item_02 {
                 top: 16px;
-                left: 123px;
+                left: 113px;
                 @include screen('xs_mobile') {
                     top: 0;
                     left: 0;
@@ -370,7 +373,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
             .item_03 {
                 top: 16px;
-                left: 211px;
+                left: 201px;
                 @include screen('xs_mobile') {
                     top: 0;
                     left: 0;
@@ -378,7 +381,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
             .item_04 {
                 top: 16px;
-                left: 298px;
+                left: 288px;
                 @include screen('xs_mobile') {
                     top: 0;
                     left: 0;
@@ -859,9 +862,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         .company_logo {
             position: absolute;
             width: 140px;
-            height: 100px;
-            top: 8%;
-            left: 41%;
+            height: 139px;
+            top: 38px;
+            left: 451px;
+            background: #FFF;
+            box-shadow: 0px 0px 30px -10px #FFF, 0px 0px 20px 5px #FFF;
             img {
                 position: absolute;
                 width: 100%;
@@ -873,11 +878,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         }
         .youtube {
             position: absolute;
-            width: 177px;
-            height: 108px;
+            width: 180px;
+            height: 110px;
             top: 258px;
-            left: 240px;
+            left: 246px;
             background: #000;
+            border: 2px solid #FFF;
             a {
                 display: block;
                 position: absolute;
@@ -907,11 +913,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             width: 177px;
             height: 108px;
             top: 258px;
-            left: 626px;
+            left: 615px;
             @include product_xs;
             [class^='item'] {
-                width: 177px;
-                height: 108px;
+                width: 180px;
+                height: 110px;
                 position: absolute;
                 @include item_xs;
                 img {
@@ -1478,9 +1484,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         .company_logo {
             position: absolute;
             width: 180px;
-            height: 120px;
-            top: 13%;
-            left: 43.5%;
+            height: 52px;
+            top: 170px;
+            left: 593px;
             img {
                 position: absolute;
                 width: 100%;
@@ -1495,8 +1501,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: #000;
             width: 241px;
             height: 183px;
-            top: 219px;
-            left: 575px;
+            top: 239px;
+            left: 565px;
             border: 1px solid #eee;
             a {
                 display: block;
@@ -1615,18 +1621,18 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
             .item_01 {
-                top: 0px;
-                left: 156px;
+                top: 18px;
+                left: 164px;
             }
             .item_02 {
-                top: 0px;
-                left: 780px;
+                top: 18px;
+                left: 750px;
             }
             .item_03 {
                 width: 112px;
                 height: 60px;
                 top: 53px;
-                left: 5px;
+                left: 50px;
                 transform-origin: left top;
                 transform: perspective(1200px) rotateY(30deg);
             }
@@ -1634,7 +1640,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 width: 112px;
                 height: 60px;
                 top: 53px;
-                left: 911px;
+                left: 840px;
                 transform-origin: right top;
                 transform: perspective(1200px) rotateY(-30deg);
             }
@@ -2117,7 +2123,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             width: 163px;
             height: 135px;
             top: 191px;
-            left: 1293px;
+            left: 1296px;
+            background: #FFF;
+            box-shadow: 0px 0px 30px -10px #FFF, 0px 0px 20px -5px #FFF;
             img {
                 position: absolute;
                 width: 100%;
@@ -2130,7 +2138,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         .youtube {
             position: absolute;
             background: #000;
-            width: 137px;
+            width: 152px;
             height: 120px;
             top: 174px;
             left: 510px;
@@ -2288,17 +2296,17 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 left: 460px;
                 width: 250px;
                 height: 200px;
-                a{
-                    border:none;
-                    &:hover{
-                        background:rgba(0,0,0,.35);
+                a {
+                    border: none;
+                    &:hover {
+                        background: rgba(0, 0, 0, .35);
                     }
                     @include screen('xs_mobile') {
-                        border:2px solid #ddd;
-                        background:rgba(0,0,0,.25);
+                        border: 2px solid #ddd;
+                        background: rgba(0, 0, 0, .25);
                     }
-                    img{
-                        object-fit:contain;
+                    img {
+                        object-fit: contain;
                     }
                 }
             }
@@ -2307,21 +2315,20 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 left: -35px;
                 width: 182px;
                 height: 244px;
-                a{
-                    border:none;
-                    &:hover{
-                        background:rgba(0,0,0,.35);
+                a {
+                    border: none;
+                    &:hover {
+                        background: rgba(0, 0, 0, .35);
                     }
                     @include screen('xs_mobile') {
-                        border:2px solid #ddd;
-                        background:rgba(0,0,0,.25);
+                        border: 2px solid #ddd;
+                        background: rgba(0, 0, 0, .25);
                     }
-                    img{
-                        object-fit:contain;
+                    img {
+                        object-fit: contain;
                     }
                 }
             }
-
         }
         // function
         .function {
@@ -2459,8 +2466,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 1), 38) 66%,
-                darken(nth($color, 1), 46) 66%,
+                darken(nth($color, 1), 38) 60%,
+                darken(nth($color, 1), 46) 60%,
                 rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
@@ -2522,8 +2529,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 2), 38) 66%,
-                darken(nth($color, 2), 46) 66%,
+                darken(nth($color, 2), 38) 60%,
+                darken(nth($color, 2), 46) 60%,
                 rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
@@ -2585,8 +2592,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 3), 38) 66%,
-                darken(nth($color, 3), 46) 66%,
+                darken(nth($color, 3), 38) 60%,
+                darken(nth($color, 3), 46) 60%,
                 rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
@@ -2648,8 +2655,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 66%,
-                darken(nth($color, 4), 46) 66%,
+                darken(nth($color, 4), 38) 60%,
+                darken(nth($color, 4), 46) 60%,
                 rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
@@ -2711,8 +2718,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 5), 38) 66%,
-                darken(nth($color, 5), 46) 66%,
+                darken(nth($color, 5), 38) 60%,
+                darken(nth($color, 5), 46) 60%,
                 rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
@@ -2793,8 +2800,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             position: absolute;
             width: 220px;
             height: 156px;
-            top: 110px;
-            left: 1450px;
+            top: 140px;
+            left: 1439px;
             img {
                 position: absolute;
                 width: 100%;
@@ -2966,17 +2973,17 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 left: 460px;
                 width: 250px;
                 height: 200px;
-                a{
-                    border:none;
-                    &:hover{
-                        background:rgba(0,0,0,.35);
+                a {
+                    border: none;
+                    &:hover {
+                        background: rgba(0, 0, 0, .35);
                     }
                     @include screen('xs_mobile') {
-                        border:2px solid #ddd;
-                        background:rgba(0,0,0,.25);
+                        border: 2px solid #ddd;
+                        background: rgba(0, 0, 0, .25);
                     }
-                    img{
-                        object-fit:contain;
+                    img {
+                        object-fit: contain;
                     }
                 }
             }
@@ -2985,17 +2992,17 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 left: -35px;
                 width: 182px;
                 height: 244px;
-                a{
-                    border:none;
-                    &:hover{
-                        background:rgba(0,0,0,.35);
+                a {
+                    border: none;
+                    &:hover {
+                        background: rgba(0, 0, 0, .35);
                     }
                     @include screen('xs_mobile') {
-                        border:2px solid #ddd;
-                        background:rgba(0,0,0,.25);
+                        border: 2px solid #ddd;
+                        background: rgba(0, 0, 0, .25);
                     }
-                    img{
-                        object-fit:contain;
+                    img {
+                        object-fit: contain;
                     }
                 }
             }
@@ -4254,7 +4261,6 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
 .open_chat {
     width: 50px;
     height: 50px;
-    border-radius: 50%;
     background: url(../images/icon/icon_chat_white.svg) no-repeat center center $color-green;
     background-size: 50%;
     text-align: center;
@@ -4263,8 +4269,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     text-decoration: none;
     position: fixed;
     transform: translateZ(0);
-    bottom: 70px;
-    right: 10px;
+    bottom: 0px;
+    right: 0px;
     z-index: 100001;
     @include screen('mobile') {
         bottom: 130px;
@@ -4275,7 +4281,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         display: block;
         position: absolute;
         top: -0.5em;
-        right: -0.5em;
+        right: 0em;
         color: #fff;
         font-size: 0.75rem;
         font-weight: bold;
