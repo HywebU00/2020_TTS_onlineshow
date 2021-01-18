@@ -714,17 +714,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink{
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg,
-                rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 66%,
-                darken(nth($color, 4), 46) 66%,
-                rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(180deg,rgba(1, 2, 4, 1) 0%,lighten(nth($color, 4), 8) 66%,lighten(nth($color, 4), 0) 66%,rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
                     rgba(1, 2, 4, 1) 100px,
-                    darken(nth($color, 4), 38) 450px);
+                    darken(nth($color, 4), 10) 450px);
                 &:before {
                     background: url(../images/booth/booth_m1_4.png) no-repeat top center;
                     background-size: contain;
@@ -1341,13 +1337,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg,
-                rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 66%,
-                darken(nth($color, 4), 46) 66%,
-                rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(180deg,rgba(1, 2, 4, 1) 0%,lighten(nth($color, 4), 8) 66%,lighten(nth($color, 4), 0) 66%,rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
                     rgba(1, 2, 4, 1) 100px,
@@ -1973,13 +1965,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg,
-                rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 66%,
-                darken(nth($color, 4), 46) 66%,
-                rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(180deg,rgba(1, 2, 4, 1) 0%,lighten(nth($color, 4), 8) 52%,lighten(nth($color, 4), 0) 52%,rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
                     rgba(1, 2, 4, 1) 100px,
@@ -2262,11 +2250,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             }
             .item_01 {
                 top: 108px;
-                left: 474px;
+                left: 450px;
             }
             .item_02 {
-                top: 106px;
-                left: 609px;
+                top: 108px;
+                left: 530px;
             }
             .item_03 {
                 width: 102px;
@@ -2277,12 +2265,12 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 transform: perspective(500px) rotateY(-34deg);
             }
             .item_04 {
-                width: 64px;
-                height: 50px;
-                top: 200px;
-                left: 550px;
-                transform-origin: center bottom;
-                transform: perspective(1200px) rotateX(30deg);
+                // width: 64px;
+                // height: 50px;
+                top: 108px;
+                left: 610px;
+                // transform-origin: center bottom;
+                // transform: perspective(1200px) rotateX(30deg);
             }
             .item_05 {
                 top: 15px;
@@ -2651,13 +2639,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg,
-                rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 60%,
-                darken(nth($color, 4), 46) 60%,
-                rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(180deg,rgba(1, 2, 4, 1) 0%,lighten(nth($color, 4), 8) 52%,lighten(nth($color, 4), 0) 52%,rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
                     rgba(1, 2, 4, 1) 100px,
@@ -3328,13 +3312,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink {
             background: rgb(1, 2, 4);
-            background: linear-gradient(180deg,
-                rgba(1, 2, 4, 1) 0%,
-                darken(nth($color, 4), 38) 66%,
-                darken(nth($color, 4), 46) 66%,
-                rgba(2, 3, 3, 1) 100%);
+            background: linear-gradient(180deg,rgba(1, 2, 4, 1) 0%,lighten(nth($color, 4), 8) 52%,lighten(nth($color, 4), 0) 52%,rgba(2, 3, 3, 1) 100%);
             @include screen('xs_mobile') {
                 background: linear-gradient(180deg,
                     rgba(1, 2, 4, 1) 100px,
@@ -3960,7 +3940,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 }
             }
         }
-        &.color_red {
+        &.color_red,&.color_pink {
             background: rgb(1, 2, 4);
             background: linear-gradient(180deg,
                 rgba(1, 2, 4, 1) 0%,
@@ -4321,7 +4301,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     &.color_blue {
         background: darken(nth($chat_color, 1), 20);
     }
-    &.color_red {
+    &.color_red,&.color_pink {
         background: darken(nth($chat_color, 2), 20);
     }
     &.color_brown {
