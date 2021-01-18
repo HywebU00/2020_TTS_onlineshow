@@ -4253,7 +4253,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
     right: 0px;
     z-index: 100001;
     @include screen('mobile') {
-        bottom: 130px;
+        bottom: 0px;
     }
     span {
         border-radius: 0.25em;
