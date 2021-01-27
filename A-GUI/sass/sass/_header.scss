@@ -117,27 +117,84 @@
         .top_language {
             position: absolute;
             right: 9em;
-            width: 120px;
-            height: 60px;
-            padding: 18px;
-            top: .25em;
+            width: 8em;
+            height: 1.5em;
+            top: 1.5em;
+            // @include screen('tablet') {
+            //     display:none;
+            // }
             @include screen('mobile') {
-                top: 0;
-                width: 6em;
-                padding: 18px.5em;
-                right: 7.5em;
+                top:1em;
             }
             span {
                 font-size: .813rem;
                 color: #000;
                 display: block;
                 text-align: center;
+                background:#F1F1F1;
+                border-radius:.25rem;
+                line-height: 2em;
             }
             &:hover, &:focus {
                 outline: none;
                 box-shadow: none;
                 span{
-                    color:$aHover;
+                    background:#999;
+                    color:#FFF;
+                }
+            }
+        }
+        .btn_login {
+            position: absolute;
+            right: 18em;
+            width: 8em;
+            height: 1.5em;
+            top: 1.5em;
+            @include screen('tablet') {
+                display:none;
+            }
+            span {
+                font-size: .813rem;
+                color: #000;
+                display: block;
+                text-align: center;
+                background:#F1F1F1;
+                border-radius:.25rem;
+                line-height: 2em;
+            }
+            &:hover, &:focus {
+                outline: none;
+                box-shadow: none;
+                span{
+                    background:#999;
+                    color:#FFF;
+                }
+            }
+        }
+        .btn_register {
+            position: absolute;
+            right: 27em;
+            width: 8em;
+            height: 1.5em;
+            top: 1.5em;
+            @include screen('tablet') {
+                display:none;
+            }
+            span {
+                font-size: .813rem;
+                color: #000;
+                display: block;
+                text-align: center;
+                background:#F1F1F1;
+                border-radius:.25rem;
+                line-height: 2em;
+            }
+            &:hover, &:focus {
+                outline: none;
+                box-shadow: none;
+                span{
+                    background:#999;
+                    color:#FFF;
                 }
             }
         }

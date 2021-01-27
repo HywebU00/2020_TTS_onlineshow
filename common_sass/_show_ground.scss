@@ -342,7 +342,7 @@
             }
             @extend %color_brown;
         }
-        &.color_red {
+        &.color_red ,&.color_pink{
             .show_item {
                 background: url(../images/showground/item_b_bg.png) no-repeat center bottom;
                 background-size: 100%;
@@ -620,7 +620,7 @@
                 }
             }
         }
-        &.color_red {
+        &.color_red ,&.color_pink{
             @extend %color_red;
             .showgroundSlider {
                 .item {
@@ -681,7 +681,7 @@
         &.color_brown {
             @extend %color_brown;
         }
-        &.color_red {
+        &.color_red ,&.color_pink{
             @extend %color_red;
         }
         &.color_blue {

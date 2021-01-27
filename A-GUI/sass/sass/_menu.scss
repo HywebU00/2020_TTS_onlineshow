@@ -5,19 +5,55 @@
     width: 100%;
     height: 60px;
     z-index: 9998;
-    overflow:hidden;
+    overflow: hidden;
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s;
     pointer-events: none;
     @include screen('mobile') {
-        top:60px;
+        top: 60px;
+    }
+    .btn_block {
+        display: none;
+        @include screen('tablet') {
+            display: flex;
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 1em 36px;
+            transform: scale(1.15) translateY(-30px);
+            opacity: 0;
+            transition: transform 0.5s $cubic, opacity 0.6s $cubic;
+            transition-delay: 1s;
+        }
+        a {
+            flex: 0 1 45%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 45%;
+            text-align: center;
+            margin: .5em;
+            span {
+                display: block;
+                border: 1px solid #999;
+                color: #FFF;
+                border-radius: .25em;
+                text-align: center;
+                padding: .5em 1em;
+                font-size: .875rem;
+            }
+            &:hover, &:focus {
+                span {
+                    color: #FFF;
+                    border: 1px solid #DDD;
+                }
+            }
+        }
     }
     ul.menu {
         position: relative;
         display: block;
         padding: 12px 48px 0;
         list-style: none;
-        max-width:960px;
+        max-width: 960px;
         margin: 0 auto;
         li.menu-item {
             border-bottom: 1px solid #333;
@@ -41,23 +77,27 @@
                 line-height: 2.35;
                 font-weight: 200;
                 width: 100%;
-                transition:.3s ease-out;
+                transition: .3s ease-out;
                 @include screen('mobile') {
                     font-size: 1.125rem;
                 }
-                &:hover,&:focus {
+                &:hover, &:focus {
                     padding-left: .5em;
                 }
             }
         }
     }
     &.menu-opened {
-        display:block;
+        display: block;
         pointer-events: auto;
         height: 100%;
         background-color: rgba(0, 0, 0, .9);
         transition: all 0.3s ease-in, background 0.5s ease-in;
         transition-delay: 0.25s;
+        .btn_block {
+            transform: scale(1) translateY(0px);
+            opacity: 1;
+        }
         ul.menu {
             li.menu-item {
                 transform: scale(1) translateY(0px);
