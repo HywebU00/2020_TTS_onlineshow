@@ -125,6 +125,7 @@
             // }
             @include screen('mobile') {
                 top:1em;
+                right: 6em;
             }
             span {
                 font-size: .813rem;
@@ -209,7 +210,7 @@
             top: .25em;
             @include screen('mobile') {
                 top: 0;
-                right: 4em;
+                right: 3em;
             }
             &:hover, &:focus {
                 outline: none;
