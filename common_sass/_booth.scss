@@ -2967,25 +2967,22 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 width: 102px;
                 height: 200px;
                 top: 60px;
-                left: 120px;
+                left: -10px;
+
                 // transform-origin: right center;
                 // transform: perspective(500px) rotateY(-34deg);
             }
             .item_04 {
-                width: 64px;
-                height: 50px;
-                top: 200px;
-                left: 550px;
-                transform-origin: center bottom;
-                transform: perspective(1200px) rotateX(30deg);
-                display: none;
+                width: 102px;
+                height: 200px;
+                top: 60px;
+                left: 120px;
             }
             .item_05 {
-                top: 15px;
-                left: 398px;
-                width: 82px;
-                height: 144px;
-                display: none;
+                width: 102px;
+                height: 200px;
+                top: 60px;
+                left: 250px;
             }
             .item_png_01 {
                 top: 150px;
