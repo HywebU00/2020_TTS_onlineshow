@@ -4258,9 +4258,13 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
 .fancybox-slide--iframe .fancybox-content {
     width: 1200px;
     height: 732px;
-    max-width: 90%;
+    max-width: 96%;
     max-height: 90%;
     margin: 0;
+    @include screen('xs_mobile') {
+        max-width: 90%;
+    }
+
 }
 // ripple animation
 @for $i from 1 through 5 {

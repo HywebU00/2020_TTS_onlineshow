@@ -208,14 +208,14 @@ $(function() {
     $('.product').find("[data-fancybox]").fancybox({
         iframe: {
             css: {
-                width: '800px'
+                // width: '800px'
             }
         }
     });
     $('.youtube').find("[data-fancybox]").fancybox({
         iframe: {
             css: {
-                width: '800px'
+                // width: '800px'
             }
         }
     });
