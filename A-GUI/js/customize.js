@@ -183,6 +183,8 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: false,
+        autoplay:false,
+        loop:true,
         asNavFor: '.Slider-nav'
     });
     $('.Slider-nav').slick({
@@ -191,6 +193,8 @@ $(function() {
         asNavFor: '.Slider-for',
         dots: false,
         centerMode: false,
+        autoplay:false,
+        loop:true,
         focusOnSelect: true
     });
     // 設定iframe
