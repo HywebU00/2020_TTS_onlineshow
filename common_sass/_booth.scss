@@ -4254,6 +4254,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         }
     }
 }
+.Slider-nav{
+    .slick-track{
+        margin-left: 0;
+    }
+}
 // fancy iframe
 .fancybox-slide--iframe .fancybox-content {
     width: 1200px;

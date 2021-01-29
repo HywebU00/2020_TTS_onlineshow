@@ -192,6 +192,7 @@ $(function() {
         slidesToScroll: 1,
         asNavFor: '.Slider-for',
         dots: false,
+        arrows: true,
         centerMode: false,
         autoplay:false,
         loop:true,
