@@ -1,3 +1,24 @@
+.watermark {
+    position: fixed;
+    transform: translateZ(0);
+    width: 200px;
+    height: 70px;
+    left: 0em;
+    bottom:1em;
+    z-index:99;
+    opacity:.75;
+    pointer-events: none;
+    img{
+        width: 100%;
+        object-fit:contain;
+    }
+    @include screen('xs_mobile') {
+        position: relative;
+        margin: 1em auto .25em;
+        width:150px;
+        height: auto;
+    }
+}
 // tab的外框線
 // a:focus {
 //     outline: none;
