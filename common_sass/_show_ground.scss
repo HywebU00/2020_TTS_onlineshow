@@ -69,6 +69,7 @@
         &:hover, &:focus {
             background: rgba(0, 0, 0, .8);
         }
+
     }
     h2 {
         width: 90%;
@@ -83,6 +84,12 @@
         }
     }
     &.style_A {
+        .back{
+            @media screen and (orientation: landscape) and (min-height:550px) and (max-height:768px){
+                right: 2em;
+                top:2em;
+            }
+        }
         &:before {
             position: absolute;
             width: 80%;
