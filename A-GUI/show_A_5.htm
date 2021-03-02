@@ -226,7 +226,7 @@
                         var rx = x - halfWidth;
                         var ry = halfHeight - y;
                         var length = items.length;
-                        var max = 10;
+                        var max = 5;
                         for (var i = 0; i < length; i++) {
                             var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth) + 100);
                             var dy = Math.floor((items[i].getBoundingClientRect().height / max) * (ry / halfHeight));
