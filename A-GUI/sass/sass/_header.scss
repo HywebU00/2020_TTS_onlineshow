@@ -63,7 +63,7 @@
         flex-flow:row nowrap;
         justify-content: flex-end;
         padding-right: 135px;
-        outline:1px solid red;
+        // outline:1px solid red;
         @include screen('mobile') {
             padding-right: 115px;
         }
@@ -129,9 +129,8 @@
             // @include screen('tablet') {
             //     display:none;
             // }
-            @include screen('mobile') {
-                margin: 1em 0 0;
-                width: auto;
+            @include screen('tablet') {
+                display:none;
             }
             span {
                 font-size: .813rem;
@@ -142,9 +141,6 @@
                 border-radius:.25rem;
                 line-height: 2em;
                 white-space: nowrap;
-                @include screen('mobile') {
-                    background:none;
-                }
             }
             &:hover, &:focus {
                 outline: none;
