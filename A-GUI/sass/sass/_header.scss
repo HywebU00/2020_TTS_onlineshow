@@ -460,7 +460,8 @@
             height: 60px;
             background: none;
             border: none;
-            position: relative;
+            right: 0em;
+            position: absolute;
             &:hover, &:focus {
                 border: none !important;
                 outline: none !important;
@@ -526,10 +527,56 @@
         &.text {
             width: 50%;
             animation: showSearch_text .8s $cubic, opacity .8s $cubic;
+            display:block;
+            @include screen('tablet') {
+                width:75%;
+            }
             @include screen('mobile') {
                 width: 100%;
                 float: none;
                 animation: none;
+            }
+            .radio_grp{
+                display:flex;
+                flex-flow:row wrap;
+                flex-basis: 100%;
+                justify-content: space-between;
+                border-bottom:1px solid #333;
+                label{
+                    flex-basis: 40%;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex:1 1 40%;
+                    margin: 0 .5em 1em;
+                    padding: .25em ;
+                    float:none;
+                    display:block;
+                    font-size:.938em;
+                    height: auto;
+                    color:#FFF;
+                    border-radius:.25em;
+                    pointer-events:initial;
+                    white-space:nowrap;
+                    &:hover,&:focus {
+                        cursor:pointer;
+                    }
+                    input[type="radio"]{
+                        width: 1.25em;
+                        height: 1.25em;
+                        background:rgba(0,0,0,.8);
+                        border:2px solid #444;
+                        padding: 0;
+                        margin-right: .5em;
+                        background:#444;
+                        color:#AAA;
+                        box-shadow:0px 0px 0px 4px #000 inset;
+                        &:checked{
+                            background:#FFF;
+                            border:2px solid #FFF;
+                            color:#FFF;
+                        }
+                    }
+                }
             }
             input[type="text"] {
                 margin: 0;
@@ -541,8 +588,8 @@
             .dropdown-content {
                 max-width: 30em;
                 position: absolute;
-                top: 3em;
-                left: 0;
+                top: 5.5em;
+                left: 2em;
                 @include screen('mobile') {
                     max-width: 100%;
                 }
