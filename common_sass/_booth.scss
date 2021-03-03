@@ -123,6 +123,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         left: 0;
         top: 45%;
         z-index: 999999;
+        @include screen('xs_mobile') {
+            top:5%;
+        }
         a {
             display: block;
             width: 40px;

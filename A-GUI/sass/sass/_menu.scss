@@ -16,6 +16,8 @@
         display: none;
         @include screen('tablet') {
             display: flex;
+            flex-flow:row wrap;
+            justify-content: center;
             max-width: 960px;
             margin: 0 auto;
             padding: 1em 36px;
@@ -25,10 +27,10 @@
             transition-delay: 1s;
         }
         a {
-            flex: 0 1 45%;
+            flex: 1 1 45%;
             flex-grow: 1;
             flex-shrink: 1;
-            flex-basis: 45%;
+            flex-basis: 40%;
             text-align: center;
             margin: .5em;
             span {

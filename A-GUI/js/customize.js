@@ -3,9 +3,11 @@ $(function() {
     // header btn
     var btnRegister = $('header').find('.btn_register'),
         btnLogin = $('header').find('.btn_login');
+        btnLang = $('header').find('.top_language');
     $('.menuBlock .menu').after('<div class="btn_block"></div>');
     btnRegister.clone().prependTo('.btn_block');
     btnLogin.clone().prependTo('.btn_block');
+    btnLang.clone().prependTo('.btn_block');
     // 控制音效
     $('.audio').find('a').off().click(function(e) {
         if ($(this).hasClass('off')) {

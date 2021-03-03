@@ -40,6 +40,10 @@
         <div class="container">
             <a href="#" class="close"></a>
             <div class="form_grp text">
+                <div class="radio_grp form_inline">
+                    <label><input name="radioSample" type="radio" value="">選項一</label>
+                    <label><input name="radioSample" type="radio" value="">選項二</label>
+                </div>
                 <input name="" id="mustSameAsId" type="text" placeholder="請輸入文字">
                 <div class="dropdown-content" style="display: none;">
                     <ul>
@@ -226,7 +230,7 @@
                         var rx = x - halfWidth;
                         var ry = halfHeight - y;
                         var length = items.length;
-                        var max = 10;
+                        var max = 5;
                         for (var i = 0; i < length; i++) {
                             var dx = Math.floor((items[i].getBoundingClientRect().width / max) * (rx / -halfWidth) + 100);
                             var dy = Math.floor((items[i].getBoundingClientRect().height / max) * (ry / halfHeight));
