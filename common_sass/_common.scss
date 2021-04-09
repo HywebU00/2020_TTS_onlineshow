@@ -3,11 +3,11 @@
     position: fixed;
     transform: translateZ(0);
     width: 100%;
-    height: calc(100% - 35px);
+    height: calc(100% - 25px);
     // flex-flow: row wrap;
     justify-content: center;
-    padding: 10% 0 0;
-    margin-top: 35px;
+    padding: 8% 0 0;
+    margin-top: 25px;
     top:0;
     transition:.3s ease-out;
     // align-content: flex-start;
@@ -36,9 +36,9 @@
     h2 {
         // flex-basis: 90%;
         width: 90%;
-        max-width: 600px;
-        margin: 0 auto 1em;
-        font-size: 3.75rem;
+        max-width: 800px;
+        margin: 0 auto .5em;
+        font-size: 3.2rem;
         font-weight: bold;
         text-align: center;
         color:#FFF;
@@ -77,9 +77,9 @@
     h2 {
         // flex-basis: 90%;
         width: 90%;
-        max-width: 600px;
-        margin: 0 auto .75em;
-        font-size: 3.75rem;
+        max-width: 800px;
+        margin: 0 auto .5em;
+        font-size: 3.2rem;
         font-weight: bold;
         text-align: center;
         @include screen('xs_mobile') {
@@ -241,6 +241,7 @@
         width: 100%;
         height: 100%;
         padding-top: 1em;
+        padding-bottom: 15em;
         position: fixed;
         transform: translateZ(0);
         overflow-x: hidden !important;
@@ -280,10 +281,11 @@
                         right: auto;
                         bottom: auto;
                         transform: translate(-50%, -50%);
+                        object-fit:contain;
                     }
                 }
                 .company_name {
-                    font-size: .938rem;
+                    font-size: .875rem;
                     color: #555;
                 }
                 &:hover, &:focus {

@@ -237,7 +237,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 height: 100%;
                 left: 0;
                 top: 0;
-                object-fit: cover;
+                object-fit: contain;
             }
         }
         iframe {
@@ -926,6 +926,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 top: 0;
                 left: 0;
                 z-index: 2;
+                img{
+                    object-fit: contain;
+                }
                 &.only_for_image {
                     z-index: 3;
                     // img{
@@ -1542,6 +1545,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 top: 0;
                 left: 0;
                 z-index: 2;
+                img{
+                    object-fit:contain;
+                }
             }
             iframe {
                 position: absolute;
@@ -2177,6 +2183,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 top: 0;
                 left: 0;
                 z-index: 2;
+                img{
+                    object-fit: contain;
+                }
             }
             iframe {
                 position: absolute;
@@ -4245,6 +4254,10 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             p {
                 color: #555;
                 line-height: 1.75em;
+            }
+            a.more{
+                min-width:10em;
+                display:inline-block;
             }
             @include screen('xs_mobile') {
                 border-top: 1px solid #ddd;

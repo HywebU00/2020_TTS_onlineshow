@@ -48,6 +48,9 @@
             position: relative;
             margin-top: 0 !important;
         }
+        @media screen and (max-height:800px){
+            padding: 1% 0 1em;
+        }
     }
     @include screen('mobile') {
         height: calc(100% - 60px);
@@ -73,7 +76,7 @@
     }
     h2 {
         width: 90%;
-        margin: 0 auto .25em;
+        margin: 0 auto;
         font-size: 3.75rem;
         font-weight: bold;
         text-align: center;
@@ -254,113 +257,63 @@
                     }
                 }
             }
-            // 1
-            &.item_20 {
-                left: 100px;
-                top: 220px;
-            }
-            // 2
-            &.item_14 {
-                left: 240px;
-                top: 300px;
-            }
-            // 3
-            &.item_13 {
-                left: 380px;
-                top: 380px;
-            }
-            // 4
-            &.item_19 {
-                left: 240px;
-                top: 140px;
-            }
-            // 5
-            &.item_06 {
-                left: 380px;
-                top: 220px;
-            }
-            // 6
             &.item_01 {
-                left: 520px;
-                top: 300px;
-            }
-            // 7
-            &.item_17 {
-                left: 380px;
-                top: 60px;
-            }
-            // 8
-            &.item_05 {
-                left: 520px;
-                top: 140px;
-            }
-            // 9
-            &.item_04 {
-                left: 660px;
+                left: 200px;
                 top: 220px;
             }
-            // 10
-            &.item_09 {
-                left: 660px;
-                top: 60px;
-            }
-            // 11
-            &.item_08 {
-                left: 800px;
-                top: 140px;
-            }
-            // 12
-            &.item_21 {
-                left: 940px;
-                top: 60px;
-            }
-            // 13
-            &.item_12 {
-                left: 520px;
-                top: 460px;
-            }
-            // 14
             &.item_02 {
-                left: 660px;
-                top: 380px;
+                left: 370px;
+                top: 320px;
             }
-            // 15
             &.item_03 {
-                left: 800px;
-                top: 300px;
+                left: 540px;
+                top: 420px;
             }
-            // 16
-            &.item_07 {
-                left: 940px;
+            &.item_04 {
+                left: 370px;
+                top: 120px;
+            }
+            &.item_05 {
+                left: 540px;
                 top: 220px;
             }
-            // 17
-            &.item_18 {
-                left: 1080px;
-                top: 140px;
+            &.item_06 {
+                left: 710px;
+                top: 320px;
             }
-            // 18
-            &.item_16 {
-                left: 660px;
-                top: 540px;
+            &.item_07 {
+                left: 540px;
+                top: 20px;
             }
-            // 19
-            &.item_15 {
-                left: 800px;
-                top: 460px;
+            &.item_08 {
+                left: 710px;
+                top: 120px;
             }
-            // 20
+            &.item_09 {
+                left: 880px;
+                top: 220px;
+            }
             &.item_10 {
-                left: 940px;
-                top: 380px;
+                left: 880px;
+                top: 20px;
             }
-            // 21
             &.item_11 {
-                left: 1080px;
-                top: 300px;
+                left: 1050px;
+                top: 120px;
             }
-            // 22
-            &.item_22 {
+            &.item_12 {
+                left: 710px;
+                top: 520px;
+            }
+            &.item_13 {
+                left: 880px;
+                top: 420px;
+            }
+            &.item_14 {
+                left: 1050px;
+                top: 320px;
+            }
+            &.item_15 {
                 left: 1220px;
                 top: 220px;
             }
