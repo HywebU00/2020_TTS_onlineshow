@@ -208,6 +208,8 @@
         top: 0;
         left: 0;
         width: 100%;
+        font-size: 1.25rem;
+        @include text-overflow;
     }
     .form_inline{
         background:#F1F1F1;
