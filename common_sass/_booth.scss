@@ -600,6 +600,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -663,6 +666,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -726,6 +732,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -785,6 +794,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -848,6 +860,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1227,6 +1242,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1290,6 +1308,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1353,6 +1374,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1412,6 +1436,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1475,6 +1502,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1859,6 +1889,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1922,6 +1955,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -1985,6 +2021,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2044,6 +2083,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2107,6 +2149,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2537,6 +2582,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2600,6 +2648,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2663,6 +2714,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2722,6 +2776,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -2785,6 +2842,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3208,6 +3268,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3271,6 +3334,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3334,6 +3400,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3393,6 +3462,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3456,6 +3528,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3837,6 +3912,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 1), 10), 60);
                         animation-name: wave_1;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3900,6 +3978,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 2), 10), 60);
                         animation-name: wave_2;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -3963,6 +4044,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 3), 10), 60);
                         animation-name: wave_3;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -4026,6 +4110,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 4), 10), 60);
                         animation-name: wave_4;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
@@ -4089,6 +4176,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     &:after {
                         background: saturate(lighten(nth($color, 5), 10), 60);
                         animation-name: wave_5;
+                        @include screen('xs_mobile') {
+                            display:none;
+                        }
                     }
                     a {
                         &:hover,
