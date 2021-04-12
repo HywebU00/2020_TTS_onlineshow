@@ -41,7 +41,7 @@
         left: 0;
         bottom: 0;
         right: 0;
-        padding: 5% 0 1em;
+        padding: 2% 0 1em;
         z-index: 1;
         @include screen('xs_mobile') {
             padding-top: 4em;
@@ -74,7 +74,7 @@
     h2 {
         width: 90%;
         margin: 0 auto .25em;
-        font-size: 3.75rem;
+        font-size: 3rem;
         font-weight: bold;
         text-align: center;
         position: relative;
