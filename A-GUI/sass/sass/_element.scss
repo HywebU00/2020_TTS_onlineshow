@@ -160,7 +160,7 @@ img.img-responsive {
     overflow-y: visible;
     position: relative;
     @media screen and (max-height: 800px) {
-        transform:scale(.8);
+        transform:scale(.8) translateX(-5%);
         margin-top: -2em;
     }
 }

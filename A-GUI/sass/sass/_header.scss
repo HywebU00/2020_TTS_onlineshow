@@ -12,7 +12,6 @@
     left: 0;
     height: 75px;
     transition: all 0.5s ease-out, background 1s ease-out;
-    transition-delay: 0.2s;
     &.menu-opened {
         background: #FFF;
     }
@@ -59,8 +58,8 @@
         max-width: $container-max;
         overflow: visible;
         position: relative; // menu
-        display:flex;
-        flex-flow:row nowrap;
+        display: flex;
+        flex-flow: row nowrap;
         justify-content: flex-end;
         padding-right: 135px;
         // outline:1px solid red;
@@ -124,30 +123,37 @@
         }
         .top_language {
             margin: 1.5em .5em 0;
-            width: 8em;
+            width: 9em;
             height: 1.5em;
             // @include screen('tablet') {
             //     display:none;
             // }
             @include screen('tablet') {
-                display:none;
+                display: none;
             }
             span {
                 font-size: .813rem;
                 color: #000;
                 display: block;
                 text-align: center;
-                background:#F1F1F1;
-                border-radius:.25rem;
+                background: #F1F1F1;
+                border-radius: .25rem;
                 line-height: 2em;
                 white-space: nowrap;
+                i {
+                    color: #666;
+                    margin-right: 0.25em;
+                }
             }
             &:hover, &:focus {
                 outline: none;
                 box-shadow: none;
-                span{
-                    background:#999;
-                    color:#FFF;
+                span {
+                    background: #999;
+                    color: #FFF;
+                    i {
+                        color: #FFF;
+                    }
                 }
             }
         }
@@ -156,51 +162,65 @@
             // right: 18em;
             // top: 1.5em;
             margin: 1.5em .5em 0;
-            width: 8em;
+            width: 9em;
             height: 1.5em;
             @include screen('tablet') {
-                display:none;
+                display: none;
             }
             span {
                 font-size: .813rem;
                 color: #000;
                 display: block;
                 text-align: center;
-                background:#F1F1F1;
-                border-radius:.25rem;
+                background: #F1F1F1;
+                border-radius: .25rem;
                 line-height: 2em;
+                i {
+                    color: #666;
+                    margin-right: 0.25em;
+                }
             }
             &:hover, &:focus {
                 outline: none;
                 box-shadow: none;
-                span{
-                    background:#999;
-                    color:#FFF;
+                span {
+                    background: #999;
+                    color: #FFF;
+                    i {
+                        color: #FFF;
+                    }
                 }
             }
         }
         .btn_register {
             margin: 1.5em .5em 0;
-            width: 8em;
+            width: 9em;
             height: 1.5em;
             @include screen('tablet') {
-                display:none;
+                display: none;
             }
             span {
                 font-size: .813rem;
                 color: #000;
                 display: block;
                 text-align: center;
-                background:#F1F1F1;
-                border-radius:.25rem;
+                background: #F1F1F1;
+                border-radius: .25rem;
                 line-height: 2em;
+                i {
+                    color: #666;
+                    margin-right: 0.25em;
+                }
             }
             &:hover, &:focus {
                 outline: none;
                 box-shadow: none;
-                span{
-                    background:#999;
-                    color:#FFF;
+                span {
+                    background: #999;
+                    color: #FFF;
+                    i {
+                        color: #FFF;
+                    }
                 }
             }
         }
@@ -283,7 +303,8 @@
         transition: .3s ease-out;
         @include box-sizing;
         a {
-            display: inline-block;
+            display: block;
+            margin-top: 3px;
         }
         img {
             display: block;
@@ -300,6 +321,7 @@
                 height: auto;
                 max-height: 54px;
                 margin: 0px auto 0 0;
+                max-width: 100%;
             }
         }
     }
@@ -527,53 +549,53 @@
         &.text {
             width: 50%;
             animation: showSearch_text .8s $cubic, opacity .8s $cubic;
-            display:block;
+            display: block;
             @include screen('tablet') {
-                width:75%;
+                width: 75%;
             }
             @include screen('mobile') {
                 width: 100%;
                 float: none;
                 animation: none;
             }
-            .radio_grp{
-                display:flex;
-                flex-flow:row wrap;
+            .radio_grp {
+                display: flex;
+                flex-flow: row wrap;
                 flex-basis: 100%;
                 justify-content: space-between;
-                border-bottom:1px solid #333;
-                label{
+                border-bottom: 1px solid #333;
+                label {
                     flex-basis: 40%;
                     flex-grow: 1;
                     flex-shrink: 1;
-                    flex:1 1 40%;
+                    flex: 1 1 40%;
                     margin: 0 .5em 1em;
-                    padding: .25em ;
-                    float:none;
-                    display:block;
-                    font-size:.938em;
+                    padding: .25em;
+                    float: none;
+                    display: block;
+                    font-size: .938em;
                     height: auto;
-                    color:#FFF;
-                    border-radius:.25em;
-                    pointer-events:initial;
-                    white-space:nowrap;
-                    &:hover,&:focus {
-                        cursor:pointer;
+                    color: #FFF;
+                    border-radius: .25em;
+                    pointer-events: initial;
+                    white-space: nowrap;
+                    &:hover, &:focus {
+                        cursor: pointer;
                     }
-                    input[type="radio"]{
+                    input[type="radio"] {
                         width: 1.25em;
                         height: 1.25em;
-                        background:rgba(0,0,0,.8);
-                        border:2px solid #444;
+                        background: rgba(0, 0, 0, .8);
+                        border: 2px solid #444;
                         padding: 0;
                         margin-right: .5em;
-                        background:#444;
-                        color:#AAA;
-                        box-shadow:0px 0px 0px 4px #000 inset;
-                        &:checked{
-                            background:#FFF;
-                            border:2px solid #FFF;
-                            color:#FFF;
+                        background: #444;
+                        color: #AAA;
+                        box-shadow: 0px 0px 0px 4px #000 inset;
+                        &:checked {
+                            background: #FFF;
+                            border: 2px solid #FFF;
+                            color: #FFF;
                         }
                     }
                 }

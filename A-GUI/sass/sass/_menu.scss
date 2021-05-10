@@ -16,7 +16,7 @@
         display: none;
         @include screen('tablet') {
             display: flex;
-            flex-flow:row wrap;
+            flex-flow: row wrap;
             justify-content: center;
             max-width: 960px;
             margin: 0 auto;
@@ -41,11 +41,18 @@
                 text-align: center;
                 padding: .5em 1em;
                 font-size: .875rem;
+                i {
+                    color: #FFF;
+                    margin-right: .25em;
+                }
             }
             &:hover, &:focus {
                 span {
                     color: #FFF;
                     border: 1px solid #DDD;
+                    i {
+                        color: #FFF;
+                    }
                 }
             }
         }

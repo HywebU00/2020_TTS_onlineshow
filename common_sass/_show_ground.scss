@@ -86,7 +86,7 @@
     &.style_A {
         .back{
             @media screen and (orientation: landscape) and (min-height:550px) and (max-height:768px){
-                right: 2em;
+                right: 3em;
                 top:2em;
             }
         }
@@ -201,6 +201,7 @@
                     top: 0px;
                     left: 0;
                     transform: rotate(30deg) skew(-30deg, -1deg) translateX(49px) translateY(-8px);
+                    object-fit: contain;
                     @include screen('xs_mobile') {
                         transform: none;
                         margin: 1em auto;

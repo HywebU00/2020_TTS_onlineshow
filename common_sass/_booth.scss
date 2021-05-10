@@ -910,6 +910,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             margin-left: -550px;
             transition: 0.3s ease-out;
             @include booth_content_xs;
+            padding:15em 1em 5em;
         }
         .company_logo {
             position: absolute;
@@ -1095,6 +1096,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             width: 60px;
             z-index: 99;
             @include function_xs;
+            @include screen('xs_mobile') {
+                top:14.5em !important;
+            }
             .item {
                 display: block;
                 height: 60px;
@@ -4277,6 +4281,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                     width: 100%;
                     margin: 0;
                     @include aspect-ratio(4, 3);
+                    img{
+                        object-fit: contain;
+                    }
                 }
             }
             .Slider-nav {
