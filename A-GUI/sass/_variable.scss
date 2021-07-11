@@ -1,7 +1,36 @@
 // 此變數為框架之整體變數，控制整體網站之設定，包含 顏色、文字、格線系統
 // 於mixins 資料夾內，各個模組也有其個別使用的變數，請至個別檔案設定，個別使用變數不含在此設定
-$color: #aa5ac5, #5cb85c, #ff981f, #e0717e, #4a93f6;
+$color: #aa5ac5, #5cb85c, #ff981f, #e0717e, #4a93f6 ,#e2e172, #c8c62b, #d5af12, #de9100 ,#e24b00 , #D51025, #8a0a0b, #947be1, #4730a1, #0202cb,#112e7d,#0e9715,#bb9466,#9d8f84,#739a91,#48a8a8,#a4a4a4,#8f8f8f,#898989,#4b4b4b;
+
+//--------------------------------------------------------------booth color//
+$booth-purple:#aa5ac5;        //01
+$booth-green:#5cb85c;         //02
+$booth-brown:#ff981f;         //03
+$booth-pink:#e0717e;          //04
+$booth-blue:#4a93f6;          //05
+$booth-yellow1:#e2e172;       //06
+$booth-yellow2:#c8c62b;       //07
+$booth-yellow3:#d5af12;       //08
+$booth-orange1:#de9100;       //09
+$booth-orange2:#e24b00;       //10
+$booth-red:#D51025;           //11
+$booth-soulred:#8a0a0b;       //12
+$booth-violet1:#947be1;       //13
+$booth-violet2:#4730a1;       //14
+$booth-diamondblue:#0202cb;   //15
+$booth-darkblue:#112e7d;      //16
+$booth-matchagreen:#0e9715;   //17
+$booth-earthtone1:#bb9466;    //18
+$booth-earthtone2:#9d8f84;    //19
+$booth-morandi:#739a91;       //20
+$booth-tiffanyblue:#48a8a8;   //21
+$booth-silver:#a4a4a4;        //22
+$booth-darksilver:#8f8f8f;    //23
+$booth-metaldot:#898989;      //24
+$booth-metalpattern1:#4b4b4b; //25
 //-------------------------------------------------------------顏色---------//
+
+
 // 定義顏色 此顏色可自由變換
 $primaryColor: #21baff; //主色
 $secondaryColor: #781f79; //輔色
@@ -74,3 +103,4 @@ $rounded-angle: 10px; //整站導角
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 $mukta: 'Ek Mukta', sans-serif;
 $menuItems: 8;
+

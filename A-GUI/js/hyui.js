@@ -216,7 +216,7 @@ $(function() {
         search_mode = false;
     });
     // 固定版頭
-     // hh = Math.floor($('.header').outerHeight(true));
+    // hh = Math.floor($('.header').outerHeight(true));
     if ($('header .menu').length > 0) {
         var stickyMenuTop = Math.floor($('header .menu').offset().top);
         console.log(stickyMenuTop);
@@ -407,7 +407,7 @@ $(function() {
             if (ww >= wwSmall) {
                 _tabContent.css('top', tabItemHeight);
                 _tab.height(tabContentHeight + tabItemHeight);
-                tabItemWidth = (tabwidth - (tabItemLength - 1) * tiGap) / tabItemLength;
+                tabItemWidth = Math.floor((tabwidth - (tabItemLength - 1) * tiGap) / tabItemLength);
                 _tabItem.width(tabItemWidth).css('margin-left', tiGap);
                 _tabItem.first().css('margin-left', 0);
                 _tabItem.last().css({ 'position': 'absolute', 'top': 0, 'right': 0 }).width(tabItemWidth);
