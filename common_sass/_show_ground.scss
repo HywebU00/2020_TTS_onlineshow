@@ -986,15 +986,15 @@
         }
         .showgroundContent {
             position: absolute;
-            width: 70%;
-            height: 70%;
-            top: 50%;
+            width: 85%;
+            height: 57%;
+            top: 40%;
             left: 50%;
-            transform: translate(-50%, -48%);
             z-index: 9;
             border-radius: 1em;
             padding: 1em;
-
+            transform-origin: right center;
+            transform: perspective(1000px) rotateX(4deg) rotateY(-4deg) rotateZ(-4deg) translate(-64%, -62%);
             @include screen('xs_mobile') {
                 position: relative;
                 margin: 0 auto 1em;
@@ -1007,7 +1007,6 @@
                 height: 100%;
                 margin: 0;
                 padding: 0 .5em 4em;
-                border-radius: 1em;
                 display: flex;
                 flex-flow: row wrap;
                 justify-content: flex-start;
@@ -1028,19 +1027,18 @@
                     padding: 1em;
                     height: 30%;
                     min-height: 200px;
-                    border-radius: .8em;
-                    background: #FFF;
-                    padding: .5em;
                     display: flex;
                     transition: .3s ease-out;
-                    &:hover, &:focus {
-                        box-shadow: 0px 0px 5px#FFF, 0px 0px 15px#FFF, 0px 0px 25px#FFF;
-                    }
+                    border: 5px solid #FFF;
                     @include screen('notebook') {
                         flex-basis: 31%;
                     }
                     @include screen('tablet') {
                         flex-basis: 48%;
+                        background: rgba(0, 0, 0, .75);
+                        &:hover, &:focus {
+                            background: rgba(0, 0, 0, .95);
+                        }
                     }
                     @include screen('xs_mobile') {
                         flex-basis: 100%;
@@ -1061,6 +1059,7 @@
                         @include screen('xs_mobile') {
                             display: flex;
                             flex-flow: row nowrap;
+
                         }
                         img {
                             flex-grow: 0;
@@ -1123,8 +1122,15 @@
 
                 .itemContent {
                     .show_item {
+                        &:hover, &:focus {
+                            border: 5px solid #f9bcff;
+                        }
                         a {
-                            @extend %d_color_purple;
+                            &:hover, &:focus {
+                                .title {
+                                    color: #f9bcff;
+                                }
+                            }
                         }
                     }
                 }
@@ -1134,9 +1140,15 @@
             .showgroundContent {
                 .itemContent {
                     .show_item {
+                        &:hover, &:focus {
+                            border: 5px solid $color-green;
+                        }
                         a {
-                            @extend %d_color_green;
-
+                            &:hover, &:focus {
+                                .title {
+                                    color: $color-green;
+                                }
+                            }
                         }
                     }
                 }
@@ -1146,9 +1158,15 @@
             .showgroundContent {
                 .itemContent {
                     .show_item {
+                        &:hover, &:focus {
+                            border: 5px solid $color-yellow;
+                        }
                         a {
-                            @extend %d_color_brown;
-
+                            &:hover, &:focus {
+                                .title {
+                                    color: $color-yellow;
+                                }
+                            }
                         }
                     }
                 }
@@ -1158,9 +1176,15 @@
             .showgroundContent {
                 .itemContent {
                     .show_item {
+                        &:hover, &:focus {
+                            border: 5px solid $color-red;
+                        }
                         a {
-                            @extend %d_color_pink;
-
+                            &:hover, &:focus {
+                                .title {
+                                    color: $color-red;
+                                }
+                            }
                         }
                     }
                 }
@@ -1170,8 +1194,15 @@
             .showgroundContent {
                 .itemContent {
                     .show_item {
+                        &:hover, &:focus {
+                            border: 5px solid $color-blue;
+                        }
                         a {
-                            @extend %d_color_blue;
+                            &:hover, &:focus {
+                                .title {
+                                    color: $color-blue;
+                                }
+                            }
 
                         }
                     }
