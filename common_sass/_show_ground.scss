@@ -986,15 +986,15 @@
         }
         .showgroundContent {
             position: absolute;
-            width: 85%;
+            width: 72%;
             height: 57%;
             top: 40%;
             left: 50%;
             z-index: 9;
             border-radius: 1em;
             padding: 1em;
-            transform-origin: right center;
-            transform: perspective(1000px) rotateX(4deg) rotateY(-4deg) rotateZ(-4deg) translate(-64%, -62%);
+            transform-origin: left center;
+            transform: perspective(348px) rotateX(2deg) rotateY(-7deg) rotateZ(1deg) translate(-62%, -41%);
             @include screen('xs_mobile') {
                 position: relative;
                 margin: 0 auto 1em;
