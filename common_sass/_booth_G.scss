@@ -74,11 +74,11 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
 @mixin item_xs {
     @include screen('xs_mobile') {
         position: relative;
-        min-width: 47%;
+        min-width: 100%;
         width: auto !important;
-        flex-basis: 47% !important;
+        flex-basis: 100% !important;
         height: auto !important;
-        flex: 0 1 47%;
+        flex: 0 1 100%;
         margin-bottom: 1.2em;
         left: 0 !important;
         top: 0 !important;
@@ -4661,7 +4661,7 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             [class^='item'] {
                 width: 130px;
                 height: 210px;
-                box-shadow:3px 3px 5px rgba(0,0,0,.5);
+                box-shadow: 3px 3px 5px rgba(0, 0, 0, .5);
                 position: absolute;
                 @include item_xs;
                 img {

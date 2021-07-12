@@ -1,25 +1,25 @@
 @charset "utf-8";
 
 // 共通
-@import "_variable";					//變數
-@import "sass/_normalize";				//reset
-@import "sass/_mixin";					//客製MIXIN
-@import "sass/_typography";				//CP文字排版
-@import "sass/_font";					//文字設定
+@import "_variable"; //變數
+@import "sass/_normalize"; //reset
+@import "sass/_mixin"; //客製MIXIN
+@import "sass/_typography"; //CP文字排版
+@import "sass/_font"; //文字設定
 
 // 元素
-@import "sass/_grid";					//格線
-@import "sass/_breadcrumb";				//麵包屑
-@import "sass/_divider";				//分隔線
-@import "sass/_btn";					//按鈕設定
-@import "sass/_hr";						//分隔線
-@import "sass/_image";					//圖片
+@import "sass/_grid"; //格線
+@import "sass/_breadcrumb"; //麵包屑
+@import "sass/_divider"; //分隔線
+@import "sass/_btn"; //按鈕設定
+@import "sass/_hr"; //分隔線
+@import "sass/_image"; //圖片
 // @import "sass/_tooltip";				//tooltip
 // @import "sass/_tabs";					//頁籤
-@import "sass/_table";					//表格
-@import "sass/_form";					//表單
-@import "sass/_icon";					//圖示
-@import "sass/_element";				//小元素
+@import "sass/_table"; //表格
+@import "sass/_form"; //表單
+@import "sass/_icon"; //圖示
+@import "sass/_element"; //小元素
 
 // 模組
 // @import "sass/_header";					//header
@@ -45,22 +45,14 @@
 
 // @import "../../common_sass/_common";	//Common共通元素
 
-@import "../../common_sass/_booth";		//SP
-@import "page/_sitemap";				//Sitemap
+@import "../../common_sass/_booth"; //SP
+@import "page/_sitemap"; //Sitemap
 
 // 外掛
-@import "sass/_slick";					//slick
+@import "sass/_slick"; //slick
 
 // 無障礙
-@import "sass/_nojs";					//無障礙關閉js設定
+@import "sass/_nojs"; //無障礙關閉js設定
 
 // 列印
-@import "sass/_print";					//列印樣式
-
-
-
-
-
-
-
-
+@import "sass/_print"; //列印樣式
