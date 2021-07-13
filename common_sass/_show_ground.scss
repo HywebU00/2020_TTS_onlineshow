@@ -1210,6 +1210,363 @@
             }
         }
     }
+    &.style_F {
+        .bg_img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 0;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+            &:after {
+                content: "";
+                position: absolute;
+                background: rgba(0, 0, 0, .15);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                z-index: 2;
+            }
+        }
+        .container {
+            width: 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: stretch;
+            margin: 0;
+            padding: 0;
+            @include screen('xs_mobile') {
+                flex-flow: row wrap;
+                position: relative;
+                height: 80vh;
+                align-content: flex-start;
+            }
+        }
+        h2 {
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 18%;
+            padding: 0 1rem;
+            margin-right: 1rem;
+            text-align: left;
+            position: relative;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            min-width: 240px;
+            text-shadow: 0px 0px 5px rgba(0, 0, 0, .5), 0px 0px 10px rgba(0, 0, 0, .5), 0px 0px 15px rgba(0, 0, 0, .5);
+            @include screen('mobile') {
+                font-size: 2em;
+                flex-basis: 15%;
+            }
+            @include screen('xs_mobile') {
+                flex-basis: 100%;
+                margin-right: 0em;
+                font-size: 2.5em;
+                margin-top: 1.5em;
+                text-align: center;
+                display: block;
+            }
+        }
+        .showgroundSlider {
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 30%;
+            display: block;
+            margin: 0;
+            padding: 0 2em;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+            @include screen('xs_mobile') {
+                margin: 0 auto;
+                flex-basis: 100%;
+                width: 300px;
+            }
+            .slick-list {
+                position: absolute;
+                height: 100%;
+                width: 90%;
+                left: 5%;
+                @include screen('xs_mobile') {
+                    position: relative;
+                    width: 80%;
+                    left: 0;
+                    margin: 0 auto;
+                }
+            }
+            .slick-prev {
+                background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(0, 0, 0, .5);
+                background-size: 30px 30px;
+                left: 10px;
+                &:hover, &:focus {
+                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(0, 0, 0, .75);
+                    background-size: 30px 30px;
+                    box-shadow: none;
+                }
+                @include screen('mobile') {
+                    left: 5%;
+                }
+            }
+            .slick-next {
+                right: 10px;
+                background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(0, 0, 0, .5);
+                background-size: 30px 30px;
+                &:hover, &:focus {
+                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(0, 0, 0, .75);
+                    background-size: 30px 30px;
+                    box-shadow: none;
+                }
+                @include screen('mobile') {
+                    right: 5%;
+                }
+            }
+            &:hover {
+                .slick-prev {
+                    left: 10px;
+                    @include screen('mobile') {
+                        left: 2%;
+                    }
+                }
+                .slick-next {
+                    right: 10px;
+                    @include screen('mobile') {
+                        right: 2%;
+                    }
+                }
+            }
+            .slick-slide {
+                height: 2000px;
+                padding-top: 200px;
+                overflow: hidden;
+                position: relative;
+                transition: .3s ease-out;
+                @include screen('xs_mobile') {
+                    height: auto;
+                    padding-top: 30px;
+                    background: rgba(0, 0, 0, 0.25);
+                    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.95));
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.95));
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -100px;
+                    left: -200px;
+                    width: 600px;
+                    height: 700px;
+                    background: rgba(0, 0, 0, 0.25);
+                    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85));
+                    background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85));
+                    z-index: -1;
+                    transform: rotate(10deg);
+                    transition: .3s ease-out;
+                    @include screen('xs_mobile') {
+                        display: none;
+                    }
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        top: 100px;
+                        left: -200px;
+                        width: 700px;
+                        height: 1000px;
+                        background: rgba(0, 0, 0, 0.25);
+                        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85));
+                        background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.85));
+                        z-index: -1;
+                        transform: rotate(-10deg);
+                        transition: .3s ease-out;
+                        @include screen('xs_mobile') {
+                            display: none;
+                        }
+                    }
+                }
+                &:hover {
+                    &:after {
+                        background: rgba(0, 0, 0, 0.25);
+                        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+                        background: linear-gradient(to top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+
+                    }
+                    &:nth-child(2n) {
+                        &:after {
+
+                            background: rgba(0, 0, 0, 0.25);
+                            background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+                            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 1));
+
+                        }
+                    }
+                }
+            }
+
+            .item {
+                margin: 0em 1em;
+                @include screen('xs_mobile') {}
+                .img-container {
+                    @include aspect-ratio(1, 1);
+                    margin: 0 auto 1em;
+                    width: 100px;
+                    background: none;
+                    img {
+                        transition: .3s ease-out;
+                        object-fit: cover;
+                    }
+                }
+                &:hover {
+                    outline: none;
+                    border: none;
+                    .img-container {
+                        img {
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+                a {
+                    outline: none;
+                    border: none;
+                    position: relative;
+                    z-index: 2;
+                    text-align: center;
+                }
+            }
+            .title {
+                min-height: 10rem;
+                padding: 1em;
+                overflow: hidden;
+                transition: .3s ease-out;
+                position: relative;
+                h3 {
+                    margin: 0;
+                    line-height: 1.45;
+                }
+                p {
+                    color: #FFF;
+                    font-size: .875rem;
+                    @include text-line(4, 1.45em);
+                }
+            }
+            a {
+                color: #FFF;
+            }
+        }
+        &.color_purple {
+            .slick-slide {
+                @include screen('xs_mobile') {
+                    border-top: 10px solid saturate(lighten(nth($color, 1), 14), 50);
+
+                }
+                &:after {
+                    border-bottom: 20px solid nth($color, 1);
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        border-top: 20px solid nth($color, 1);
+                    }
+                }
+                a {
+                    .title {
+                        color: saturate(lighten(nth($color, 1), 14), 50);
+                    }
+                }
+            }
+        }
+        &.color_green {
+            .slick-slide {
+                @include screen('xs_mobile') {
+                    border-top: 10px solid saturate(lighten(nth($color, 2), 14), 50);
+
+                }
+                &:after {
+                    border-bottom: 20px solid nth($color, 2);
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        border-top: 20px solid nth($color, 2);
+                    }
+                }
+                a {
+                    .title {
+                        color: saturate(lighten(nth($color, 2), 14), 50);
+                    }
+                }
+            }
+        }
+        &.color_brown {
+            .slick-slide {
+                @include screen('xs_mobile') {
+                    border-top: 10px solid saturate(lighten(nth($color, 3), 14), 50);
+
+                }
+                &:after {
+                    border-bottom: 20px solid nth($color, 3);
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        border-top: 20px solid nth($color, 3);
+                    }
+                }
+                a {
+                    .title {
+                        color: saturate(lighten(nth($color, 3), 14), 50);
+                    }
+                }
+            }
+        }
+        &.color_red, &.color_pink {
+            .slick-slide {
+                @include screen('xs_mobile') {
+                    border-top: 10px solid saturate(lighten(nth($color, 4), 14), 50);
+
+                }
+
+                &:after {
+                    border-bottom: 20px solid nth($color, 4);
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        border-top: 20px solid nth($color, 4);
+                    }
+                }
+                a {
+                    .title {
+                        color: saturate(lighten(nth($color, 4), 14), 50);
+                    }
+                }
+            }
+        }
+        &.color_blue {
+            .slick-slide {
+                @include screen('xs_mobile') {
+                    border-top: 10px solid saturate(lighten(nth($color, 5), 14), 50);
+
+                }
+
+                &:after {
+                    border-bottom: 20px solid nth($color, 5);
+                }
+                &:nth-child(2n) {
+                    &:after {
+                        border-top: 20px solid nth($color, 5);
+                    }
+                }
+                a {
+                    .title {
+                        color: saturate(lighten(nth($color, 5), 14), 50);
+                    }
+                }
+            }
+        }
+    }
     &.style_G {
         h2 {
             position: relative;

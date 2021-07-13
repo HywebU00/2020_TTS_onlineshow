@@ -3,7 +3,7 @@ $(function() {
     // header btn
     var btnRegister = $('header').find('.btn_register'),
         btnLogin = $('header').find('.btn_login');
-        btnLang = $('header').find('.top_language');
+    btnLang = $('header').find('.top_language');
     $('.menuBlock .menu').after('<div class="btn_block"></div>');
     btnRegister.clone().prependTo('.btn_block');
     btnLogin.clone().prependTo('.btn_block');
@@ -75,6 +75,63 @@ $(function() {
         pauseOnHover: true,
         lazyLoad: 'ondemand',
         ease: 'ease'
+    });
+    // F展區
+    $('.style_F .showgroundSlider').slick({
+        mobileFirst: true,
+        dots: false,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        arrow: true,
+        lazyLoaded: true,
+        lazyLoad: 'ondemand',
+        ease: 'ease',
+        responsive: [{
+            breakpoint: 1400,
+            settings: {
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 992,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 575,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }, {
+            breakpoint: 200,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: true
+            }
+        }]
     });
     // 展區
     $('.showgroundSlider').slick({
@@ -185,8 +242,8 @@ $(function() {
         slidesToScroll: 1,
         arrows: false,
         fade: false,
-        autoplay:false,
-        loop:true,
+        autoplay: false,
+        loop: true,
         asNavFor: '.Slider-nav'
     });
     $('.Slider-nav').slick({
@@ -196,8 +253,8 @@ $(function() {
         dots: false,
         arrows: true,
         centerMode: false,
-        autoplay:false,
-        loop:true,
+        autoplay: false,
+        loop: true,
         focusOnSelect: true
     });
     // 設定iframe
