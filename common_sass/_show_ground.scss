@@ -1424,7 +1424,6 @@
                 }
                 &:hover {
                     outline: none;
-                    border: none;
                     .img-container {
                         img {
                             transform: scale(1.1);
@@ -1433,7 +1432,6 @@
                 }
                 a {
                     outline: none;
-                    border: none;
                     position: relative;
                     z-index: 2;
                     text-align: center;
