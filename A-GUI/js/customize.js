@@ -133,8 +133,8 @@ $(function() {
             }
         }]
     });
-    // 展區
-    $('.showgroundSlider').slick({
+    // B展區
+    $('.style_B  .showgroundSlider').slick({
         mobileFirst: true,
         dots: false,
         infinite: true,
