@@ -8,8 +8,8 @@
     justify-content: center;
     padding: 5% 0 0;
     margin-top: 25px;
-    top:0;
-    transition:.3s ease-out;
+    top: 0;
+    transition: .3s ease-out;
     // align-content: flex-start;
     @include screen('mobile') {
         height: calc(100% - 60px);
@@ -41,8 +41,8 @@
         font-size: 3rem;
         font-weight: bold;
         text-align: center;
-        color:#FFF;
-        text-shadow:0px 0px 15px rgba(0,0,0,.5);
+        color: #FFF;
+        text-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
         @include screen('xs_mobile') {
             font-size: 2.75rem;
             width: 90%;
@@ -211,18 +211,18 @@
         font-size: 1.25rem;
         @include text-overflow;
     }
-    .form_inline{
-        background:#F1F1F1;
+    .form_inline {
+        background: #F1F1F1;
         margin-top: 2em;
-        padding:1em 1em 0em;
-        display:flex;
+        padding: 1em 1em 0em;
+        display: flex;
         align-items: flex-start;
-        .form_grp{
+        .form_grp {
             flex-grow: 1;
             flex-shrink: 1;
             flex-basis: 50%;
         }
-        .btn_grp{
+        .btn_grp {
             flex-grow: 0;
             flex-shrink: 1;
             flex-basis: 100px;
@@ -277,13 +277,13 @@
                         width: auto !important;
                         height: auto !important;
                         max-width: 80%;
-                        max-height:80%;
+                        max-height: 80%;
                         top: 50%;
                         left: 50%;
                         right: auto;
                         bottom: auto;
                         transform: translate(-50%, -50%);
-                        object-fit:contain;
+                        object-fit: contain;
                     }
                 }
                 .company_name {
@@ -299,6 +299,19 @@
                     }
                 }
             }
+        }
+    }
+    .company_counter {
+        position: absolute;
+        bottom: 0em;
+        left: 0em;
+        width: 100%;
+        font-size: .875rem;
+        background: #FFF;
+        padding: .25em 1em;
+        border-top: 1px solid #ddd;
+        span {
+            color: $color-orange;
         }
     }
 }
@@ -322,4 +335,11 @@
     @include screen('xs_mobile') {
         z-index: 999999;
     }
+}
+.fancybox-slide--iframe .fancybox-content {
+    width: 800px;
+    height: 600px;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 0;
 }
