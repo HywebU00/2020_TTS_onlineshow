@@ -34,6 +34,20 @@
             <div class="btn_grp">
                 <button type="button" class="btn">查詢</button>
             </div>
+            <a href="#" class="pickTag">選取標籤</a>
+        </div>
+        <div class="tag_block">
+            <ul>
+                <li><a href="#">標籤1<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤2<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤3<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤4<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤5<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤4<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤5<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤4<i class="fas fa-times"></i></a></li>
+                <li><a href="#">標籤5<i class="fas fa-times"></i></a></li>
+            </ul>
         </div>
         <ul>
             <li>
@@ -230,6 +244,29 @@
             </li>
         </ul>
         <div class="company_counter">廠商筆數:<span>123456</span></div>
+        <div class="tag_group">
+            <a href="#" class="close"><i class="fas fa-times"></i></a>
+            <ul>
+                <li><a href="#">標籤1</a></li>
+                <li><a href="#">標籤2</a> </li>
+                <li><a href="#">標籤3</a> </li>
+                <li><a href="#">標籤4</a> </li>
+                <li><a href="#">標籤5</a> </li>
+                <li><a href="#">標籤6</a> </li>
+                <li><a href="#">標籤7</a> </li>
+                <li><a href="#">標籤8</a> </li>
+                <li><a href="#">標籤9</a> </li>
+                <li><a href="#">標籤10</a> </li>
+                <li><a href="#">標籤11</a> </li>
+                <li><a href="#">標籤12</a> </li>
+                <li><a href="#">標籤13</a> </li>
+                <li><a href="#">標籤14</a> </li>
+                <li><a href="#">標籤15</a> </li>
+                <li><a href="#">標籤16</a> </li>
+                <li><a href="#">標籤17</a> </li>
+                <li><a href="#">標籤18</a> </li>
+            </ul>
+        </div>
     </div>
 </body>
 <!-- JQ -->
@@ -244,6 +281,18 @@
 <script src="js/customize.js"></script><!-- 客製js -->
 <script src="vendor/flipdown/flipdown.min.js"></script><!-- flipdown -->
 <script src="vendor/fancybox/jquery.fancybox.min.js"></script><!-- fancybox -->
+<script>
+jQuery(document).ready(function($) {
+    $('.company_list').find('.pickTag').off().click(function(e) {
+        $('.tag_group').stop().addClass('open');
+        e.preventDefault();
+    });
+    $('.tag_group').find('a.close').off().click(function(e) {
+        $('.tag_group').stop().removeClass('open');
+        e.preventDefault();
+    });
+});
+</script>
 </body>
 
 </html>
