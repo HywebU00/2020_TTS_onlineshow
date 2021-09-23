@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
 }
-html{
+html {
     scroll-behavior: smooth;
 }
 // @media screen and (min-width: 320px) and (max-width: 767px) and (orientation: landscape) {
@@ -15,6 +15,19 @@ html{
 //     left: 0;
 //   }
 // }
+// 設定scrollbar背景色
+body::-webkit-scrollbar, body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, .1)
+}
+// 設定scrollbar寬度
+body::-webkit-scrollbar {
+    width: 4px
+}
+// 設定scrollbar實體顏色，可設定圓角
+body::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, .2)
+}
 body {
     // background:#000;
     &.noscroll {
@@ -31,7 +44,7 @@ body {
 .wrapper {
     width: 100%;
     margin: 0px auto;
-    background:#000;
+    background: #000;
     @include screen('mobile') {
         background: #FFF;
         overflow: hidden;
@@ -48,7 +61,7 @@ body {
     position: relative;
     margin: 0 auto;
     padding: 0;
-    background:#000;
+    background: #000;
     // 可先設定一個中央區塊最大寬，限制accesskey對齊
     @include screen('mobile') {
         padding-top: 60px;
