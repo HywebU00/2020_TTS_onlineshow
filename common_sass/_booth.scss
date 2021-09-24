@@ -486,11 +486,16 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             width: 900px;
             height: 692px;
             position: absolute;
-            bottom: 60px;
+            bottom: 90px;
             left: 50%;
             margin-left: -440px;
             transition: 0.3s ease-out;
             @include booth_content_xs;
+            @media screen and (max-height: 750px) and (orientation: landscape) {
+                bottom: auto;
+                top: -5%;
+                transform: scale(0.8);
+            }
         }
         .company_logo {
             position: absolute;
@@ -665,13 +670,15 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         .function {
             position: absolute;
             right: 0px;
-            top: 50px;
-            height: auto;
-            width: 60px;
+            bottom: 0px;
+            height: 60px;
+            width: auto;
             z-index: 99;
             @include function_xs;
             .item {
                 display: block;
+                float: left;
+                margin-right: 1em;
                 height: 50px;
                 width: 50px;
                 margin-bottom: 1em;
@@ -699,8 +706,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                         background: rgba(0, 0, 0, 0.75);
                         color: #fff;
                         text-align: center;
-                        right: 70px;
-                        top: 10px;
+                        left: 0;
+                        margin-left: -50%;
+                        top: -50px;
                         position: absolute;
                         white-space: nowrap;
                         font-size: 0.938rem;
@@ -2385,6 +2393,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
             transition: 0.3s ease-out;
             @include booth_content_xs;
             padding: 15em 1em 5em;
+            @media screen and (max-height: 750px) {
+                bottom: -20px;
+            }
         }
         .company_logo {
             position: absolute;
@@ -2565,9 +2576,9 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
         .function {
             position: absolute;
             right: 0px;
-            top: 50px;
-            height: auto;
-            width: 60px;
+            bottom: 0px;
+            height: 60px;
+            width: auto;
             z-index: 99;
             @include function_xs;
             @include screen('xs_mobile') {
@@ -2577,6 +2588,8 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                 display: block;
                 height: 60px;
                 width: 60px;
+                float: left;
+                margin-right: 1em;
                 margin-bottom: 1em;
                 a {
                     display: block;
@@ -19557,6 +19570,104 @@ $chat_color: #047cc3, #bc2769, #853512, #f8920f, #36810e, #008699, #7f50b4, #444
                             border: 3px solid saturate(nth($color, 25), 0);
                         }
                     }
+                }
+            }
+        }
+    }
+}
+// video_lightbox
+.video_lightbox {
+    position: fixed;
+    width: 720px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    margin-left: -360px;
+    background: rgba(0, 0, 0, 0);
+    padding-top: 100px;
+    &.fancybox-content {
+        padding: 144px 15px 44px;
+        @include screen('xs_mobile') {
+            padding: 144px 5px 44px;
+        }
+    }
+    @include screen('notebook') {
+        width: 640px;
+        margin-left: -320px;
+    }
+    @include screen('xs_mobile') {
+        width: 100%;
+        margin-left: -50%;
+    }
+    .container {
+        max-width: 100%;
+        margin: 0 auto;
+        @include gutter;
+        transition: .3s ease-out;
+        @media screen and (max-height: 760px) {
+            max-width: 520px;
+        }
+        .showVideo {
+            width: 100%;
+            @include aspect-ratio(4, 3);
+            margin: 0 auto 1em;
+            position: relative;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .videoList {
+            .slick-prev {
+                background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(0, 0, 0, 0);
+                background-size: 30px 30px;
+                left: -35px;
+                @include screen('xs_mobile') {
+                    background: url(../vendor/slick/icon_arrow_left.png) center center no-repeat RGBA(0, 0, 0, .5);
+                    background-size: 30px 30px;
+                    left: 0px;
+                }
+            }
+            .slick-next {
+                background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(0, 0, 0, 0);
+                background-size: 30px 30px;
+                right: -35px;
+                @include screen('xs_mobile') {
+                    background: url(../vendor/slick/icon_arrow_right.png) center center no-repeat RGBA(0, 0, 0, .5);
+                    background-size: 30px 30px;
+                    right: 0px;
+                }
+            }
+            .item {
+                a {
+                    display: block;
+                    width: 90%;
+                    margin: 0 auto;
+                    @include aspect-ratio(4, 3);
+                    position: relative;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0;
+                        position: absoulte;
+                    }
+                    span {
+                        display: block;
+                        background: rgba(0, 0, 0, .75);
+                        padding: .5em 1em;
+                        text-align: left;
+                        color: #FFF;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        @include text-overflow;
+                    }
+
                 }
             }
         }
