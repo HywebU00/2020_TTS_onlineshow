@@ -20,7 +20,8 @@ html {
     html {
         width: 100vw;
         height: 100vh;
-        position: absolute;
+        position: fixed;
+        overflow: hidden;
         top: 0;
         left: 0;
         right: 0;
@@ -42,8 +43,8 @@ html {
             position: absolute;
             background: url(../images/lock.svg) center center no-repeat;
             background-size: contain;
-            width: 10em;
-            height: 10em;
+            width: 6em;
+            height: 6em;
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
