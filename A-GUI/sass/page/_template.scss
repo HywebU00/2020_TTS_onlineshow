@@ -25,6 +25,23 @@ html {
         position: absolute;
         top: 100%;
         left: 0;
+        &:after {
+            content: "";
+            position: fixed;
+            background: rgba(0, 0, 0, .85);
+            width: 100%;
+            height: 100%;
+            z-index: 999999;
+        }
+        &:after {
+            content: "url(../images/lock.svg)";
+            position: absolute;
+            width: 10em;
+            height: 10em;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 }
 body::-webkit-scrollbar, body::-webkit-scrollbar-track {
